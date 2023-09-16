@@ -19,6 +19,7 @@
   - Michelle Song - Server-side + Testing
   - Jonathan Romain - Frontend + Testing
   - Edwin Choi - Project Coordinator + Design
+  - Mike B - Special Advisor
 
 ## Optimizations
 
