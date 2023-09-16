@@ -6,4 +6,32 @@
 </p>
 <h2 align="center">The Long-awaited Portal for the 750 YP Community</h2>
 
+## How It's Made:
+
+**Tech used:** 
+    <img src="https://img.shields.io/static/v1?label=|&message=CSS3&color=285f65&style=plastic&logo=css3"/>
+    <img src="https://img.shields.io/static/v1?label=|&message=JAVASCRIPT&color=3c7f5d&style=plastic&logo=javascript"/>
+    <img src="https://img.shields.io/static/v1?label=|&message=REACT.JS&color=4a935c&style=plastic&logo=react"/>
+
+**Team:** 
+  - AJ McCraw - Frontend + Design
+  - Trey Clark - Frontend + Server-side
+  - Michelle Song - Server-side + Testing
+  - Jonathan Romain - Frontend + Testing
+  - Edwin Choi - Project Coordinator + Design
+
+## Optimizations
+
+## Lessons Learned:
+
+## Completed Goals:
+
+## Bugs:
+
+## Project Logs:
+
+9/15/2023
+1. Established client and serverside folders for app repository.
+2. Uploaded React frontend template to connect with partenered backend systems.
+
 
