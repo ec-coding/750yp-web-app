@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://github.com/ec-coding/750yp-web-app/blob/main/images/750yp%20Logo.png" width="35%">
+<h1 align="center">750yp.com</h2>
 </p>
 <p align="center">
 <img src="https://github.com/ec-coding/750yp-web-app/blob/main/images/750yp%20Banner.png" width="90%">
