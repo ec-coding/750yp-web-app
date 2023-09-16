@@ -8,12 +8,12 @@
 
 ## How It's Made:
 
-**Tech used:** 
+**Languages & Technologies:** 
     <img src="https://img.shields.io/static/v1?label=|&message=CSS3&color=285f65&style=plastic&logo=css3"/>
     <img src="https://img.shields.io/static/v1?label=|&message=JAVASCRIPT&color=3c7f5d&style=plastic&logo=javascript"/>
     <img src="https://img.shields.io/static/v1?label=|&message=REACT.JS&color=4a935c&style=plastic&logo=react"/>
 
-**Team:** 
+**Team Members:** 
   - AJ McCraw - Frontend + Design
   - Trey Clark - Frontend + Server-side
   - Michelle Song - Server-side + Testing
