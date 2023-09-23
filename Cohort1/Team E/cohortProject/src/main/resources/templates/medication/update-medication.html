@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>MedTrakker Plus - Update Medication</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/main.css}">
+    <style>
+        .fakeimg {
+            height: 200px;
+            background: #aaa;
+        }
+    </style>
+</head>
+<body>
+
+<div class="p-3 bg-info text-center">
+    <h1>MedTrakker Plus</h1>
+    <p>The only app to keep you stat!</p>
+</div>
+
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <div class="container justify-content-center">
+
+        <ul class="navbar-nav mx-auto">
+            <li class="nav-item mx-5">
+                <a class="nav-link" th:href="@{/}">Home</a>
+            </li>
+            <li class="nav-item mx-5">
+                <a class="nav-link" th:href="@{/medications}">Dashboard</a>
+            </li>
+            <li class="nav-item mx-5">
+                <a class="nav-link" th:href="@{/logout}">Logout</a>
+            </li>
+        </ul>
+
+    </div>
+</nav>
+
+<div class="container">
+
+    <form th:action="@{/medications/{id}/update/{reminderId}(id=${medicationId},reminderId=${reminderId})}" th:object="${medication}" method="post">
+        <div class="mb-3 mt-3 w-25 mx-auto">
+            <label for="medication-name" class="form-label">Medication Name</label>
+            <input type="text" th:field="*{medicationName}" class="form-control" id="medication-name" placeholder="Enter medication name" disabled>
+        </div>
+        <div class="mb-3 mt-3 w-25 mx-auto">
+            <label for="medication-name" class="form-label">Medication Type</label>
+            <input type="text" th:field="*{medicationType}" class="form-control" id="medication-type" placeholder="Enter medication type" disabled>
+        </div>
+        <div class="mb-3 mt-3 w-25 mx-auto">
+            <label for="dosage" class="form-label">Dosage Amount</label>
+            <input type="text" th:field="*{dosageAmount}" class="form-control" id="dosage" placeholder="Enter dosage amount">
+        </div>
+        <div class="mb-3 mt-3 w-25 mx-auto">
+            <label for="frequency" class="form-label">Dosage Frequency</label>
+            <select class="form-select" th:field="*{dosageFrequency}" id="frequency">
+                <option th:value="'Daily'" selected>Daily</option>
+                <!--            <option th:value="'Weekly'">Weekly</option>-->
+            </select>
+        </div>
+        <div class="mb-3 mt-3 w-25 mx-auto">
+            <label for="dosage-time" class="form-label">Dosage Time</label>
+            <input type="time" th:field="*{dosageTime}" class="form-control" id="dosage-time">
+        </div>
+        <br>
+        <div class="mb-3 mt-3 w-25 mx-auto">
+            <button type="submit" class="btn btn-info">Submit</button>
+        </div>
+    </form>
+
+</div>
+
+</body>
+</html>
