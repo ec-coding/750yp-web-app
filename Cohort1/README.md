@@ -1,1 +1,0 @@
-# Cohort 1 projects will reside here!
