@@ -24,9 +24,9 @@ const Features = () => {
     <div className="h-screen w-2/3 mx-auto my-0">
       <div className="container px-4">
         <div className="text-center w-2/5 mb-36 mx-auto my-0">
-          <h1 className="text-3xl font-semibold mb-4">Features of Convi</h1>
+          <h1 className="text-3xl font-semibold mb-4">Features of 750YP</h1>
           <p className="text-gray-600">
-            Convi offers a comprehensive set of features designed to make event management a breeze. From planning to execution, our platform provides all the tools you need to create successful events.
+            750YP offers a comprehensive set of features designed to make event management a breeze. From planning to execution, our platform provides all the tools you need to create successful events.
           </p>
         </div>
 

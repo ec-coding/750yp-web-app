@@ -39,12 +39,12 @@ const AboutUs = () => {
         <div className="h-screen py-8">
         <div className="container px-4 mx-auto">
             <div className="text-center w-2/3 my-0 mx-auto ">
-            <h1 className="text-3xl font-semibold mb-4">About Convi</h1>
+            <h1 className="text-3xl font-semibold mb-4">About 750YP</h1>
             <p className="text-gray-600">
-                Convi is your go-to event management platform for organizing memorable and seamless events. Whether you are planning a small gathering, a corporate conference, a wedding, or any other type of event, Convi has got you covered.
+                750YP is your go-to event management platform for organizing memorable and seamless events. Whether you are planning a small gathering, a corporate conference, a wedding, or any other type of event, 750YP has got you covered.
             </p>
             <p className="text-gray-600">
-                Our mission is to provide you with the tools and resources to plan, manage, and execute successful events, making the process as effortless as possible. With Convi, you can streamline event registration, manage attendees, send invitations and reminders, track event progress, and much more. We believe that every event should be a memorable and enjoyable experience for both organizers and attendees, and that is exactly what we aim to deliver through our platform.
+                Our mission is to provide you with the tools and resources to plan, manage, and execute successful events, making the process as effortless as possible. With 750YP, you can streamline event registration, manage attendees, send invitations and reminders, track event progress, and much more. We believe that every event should be a memorable and enjoyable experience for both organizers and attendees, and that is exactly what we aim to deliver through our platform.
             </p>
             </div>
 

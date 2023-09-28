@@ -24,7 +24,7 @@ const ContactForm = () => {
         <div className="text-center">
           <h1 className="text-3xl font-semibold mb-4">Contact Us</h1>
           <p className="text-gray-600">
-            Have questions or want to know more about Convi? Do not hesitate to reach out to us. We would love to hear from you!
+            Have questions or want to know more about 750YP? Do not hesitate to reach out to us. We would love to hear from you!
           </p>
         </div>
 

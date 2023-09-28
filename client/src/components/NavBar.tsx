@@ -1,54 +1,158 @@
-
-import logo from "../images/ConviLogo.png"
-import { useUser } from '@auth0/nextjs-auth0/client';
+// import { useUser } from '@auth0/nextjs-auth0/client';
 import Link from "next/link";
 
+import { CSSProperties, Fragment } from 'react'
+import { Disclosure, Menu, Transition } from '@headlessui/react'
+import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 
+const navigation = [
+  { name: 'About Us', href: './about', current: true },
+  { name: 'Features', href: './features', current: false },
+  { name: 'Contact', href: './contact', current: false },
+//   { name: 'Events', href: '#', current: false },
+]
 
-
-const NavBar = () => {
-    const {user, isLoading, error} = useUser()
-
-    return(
-        <div className="mb-32">
-            <nav className="flex items-center justify-between flex-wrap">
-                <div className="flex items-center flex-shrink-0 text-white mr-8">
-                    <Link href="/" className="flex flex-row items-center">
-                    <img src={logo.src} alt="ConviLogo" className="transform scale-150 h-16 "/>
-                    <span className="text-xl text-black">Convi</span>
-                    </Link>
-                </div>
-                <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-                    <div className="text-sm lg:flex-grow">
-                        <a href="./about" className="block mt-4 lg:inline-block lg:mt-0  text-black-200 font-medium hover:text-blue-800 mr-4">
-                            About Us
-                        </a>
-                        <a href="./features" className="block mt-4 lg:inline-block lg:mt-0 text-black-200 font-medium hover:text-blue-800 mr-4">
-                            Features
-                        </a>
-                        <a href="./contact" className="block mt-4 lg:inline-block lg:mt-0  text-black-200 font-medium hover:text-blue-800 mr-4">
-                            Contact
-                        </a>
-                        </div>
-                    <div className="pt-6">
-                        
-                        {/* eslint-disable */
-                        user ?
-                        <>
-                        <Link href="/events" className="inline-block text-md px-4 py-2 mr-4 leading-none border rounded text-white bg-blue-500 border-white hover:border-transparent hover:text-white-800 hover:bg-blue-400 mt-4 lg:mt-0">Dashboard</Link>
-                        <a href="/api/auth/logout" className="inline-block text-md px-4 py-2 mr-4 leading-none border rounded text-white bg-red-500 border-white hover:border-transparent hover:text-white-800 hover:bg-red-400 mt-4 lg:mt-0">Logout</a>
-                        </>
-                        :       
-                        <>                 
-                        <a href="/api/auth/login" className="inline-block text-md px-4 py-2 leading-none border rounded text-white border-white bg-green-500 hover:border-transparent hover:bg-green-400 mt-4 lg:mt-0">Login</a>
-                        <a href="/api/auth/login" className="inline-block text-md px-4 py-2 leading-none border rounded text-white border-white bg-blue-500 hover:bg-blue-400 hover: mt-4 lg:mt-0 m-4">Sign Up</a>
-                        </>
-                        /* eslint-enable */}
-                    </div>
-                </div>
-            </nav>
-        </div>
-    )
+function classNames(...classes: String[] ) {
+  return classes.filter(Boolean).join(' ')
 }
 
-export default NavBar;
+export default function NavBar() {
+    // const {user, isLoading, error} = useUser()
+return (
+    <Disclosure as="nav" className="bg-gray-800">
+      {({ open }) => (
+        <>
+          <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+            <div className="relative flex h-16 items-center justify-between">
+              <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                {/* Mobile menu button*/}
+                <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                  <span className="absolute -inset-0.5" />
+                  <span className="sr-only">Open main menu</span>
+                  {open ? (
+                    <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
+                  ) : (
+                    <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
+                  )}
+                </Disclosure.Button>
+              </div>
+              <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+                <div className="flex flex-shrink-0 items-center">
+                  <img
+                    className="h-8 w-auto"
+                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+                    alt="Your Company"
+                  />
+                </div>
+                <div className="hidden sm:ml-6 sm:block">
+                  <div className="flex space-x-4">
+                    {navigation.map((item) => (
+                      <a
+                        key={item.name}
+                        href={item.href}
+                        className={classNames(
+                          item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                          'rounded-md px-3 py-2 text-sm font-medium'
+                        )}
+                        aria-current={item.current ? 'page' : undefined}
+                      >
+                        {item.name}
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              </div>
+              <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                <button
+                  type="button"
+                  className="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+                >
+                  <span className="absolute -inset-1.5" />
+                  <span className="sr-only">View notifications</span>
+                  <BellIcon className="h-6 w-6" aria-hidden="true" />
+                </button>
+
+                {/* Profile dropdown */}
+                <Menu as="div" className="relative ml-3">
+                  <div>
+                    <Menu.Button className="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+                      <span className="absolute -inset-1.5" />
+                      <span className="sr-only">Open user menu</span>
+                      <img
+                        className="h-8 w-8 rounded-full"
+                        src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                        alt=""
+                      />
+                    </Menu.Button>
+                  </div>
+                  <Transition
+                    as={Fragment}
+                    enter="transition ease-out duration-100"
+                    enterFrom="transform opacity-0 scale-95"
+                    enterTo="transform opacity-100 scale-100"
+                    leave="transition ease-in duration-75"
+                    leaveFrom="transform opacity-100 scale-100"
+                    leaveTo="transform opacity-0 scale-95"
+                  >
+                    <Menu.Items className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                      <Menu.Item>
+                        {({ active }) => (
+                          <a
+                            href="#"
+                            className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
+                          >
+                            Your Profile
+                          </a>
+                        )}
+                      </Menu.Item>
+                      <Menu.Item>
+                        {({ active }) => (
+                          <a
+                            href="#"
+                            className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
+                          >
+                            Settings
+                          </a>
+                        )}
+                      </Menu.Item>
+                      <Menu.Item>
+                        {({ active }) => (
+                          <a
+                            href="#"
+                            className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
+                          >
+                            Sign out
+                          </a>
+                        )}
+                      </Menu.Item>
+                    </Menu.Items>
+                  </Transition>
+                </Menu>
+              </div>
+            </div>
+          </div>
+
+          <Disclosure.Panel className="sm:hidden">
+            <div className="space-y-1 px-2 pb-3 pt-2">
+              {navigation.map((item) => (
+                <Disclosure.Button
+                  key={item.name}
+                  as="a"
+                  href={item.href}
+                  className={classNames(
+                    item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                    'block rounded-md px-3 py-2 text-base font-medium'
+                  )}
+                  aria-current={item.current ? 'page' : undefined}
+                >
+                  {item.name}
+                </Disclosure.Button>
+              ))}
+            </div>
+          </Disclosure.Panel>
+        </>
+      )}
+    </Disclosure>
+  )
+}
+
