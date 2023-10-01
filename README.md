@@ -164,7 +164,7 @@
   <img src="https://img.shields.io/static/v1?label=|&message=WEBSITE&color=cdf998&style=plastic&logo=wordpress&logo-color=white"/>
 </a>
 	</p>
-    <p>Edwin is currently acting as the project lead to coordinate site needs between the 750 YP stakeholders and the development team.</p>
+    <p>Edwin is currently acting as the project lead to coordinate site needs between the 750 YP stakeholders and the developers.</p>
 <h4 align="center">Languages Used</h4>
 <p align="center">
     <img src="https://img.shields.io/static/v1?label=|&message=JIRA&color=98bf53&style=plastic&logo=jira"/>
