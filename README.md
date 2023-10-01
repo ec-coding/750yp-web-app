@@ -21,8 +21,10 @@
    	</p>
 	<br />
 	  <p align="center">
-<a href="https://github.com/ajmccraw" target="_blank" style="border-radius:50">
+<a href="https://github.com/ajmccraw" target="_blank">
+<kbd>
   <img src="https://img.shields.io/static/v1?label=|&message=GITHUB&color=23555f&style=plastic&logo=github&logo-color=white"/>
+</kbd>
 </a>
 <a href="https://ajmccraw.com/" target="_blank">
   <img src="https://img.shields.io/static/v1?label=|&message=WEBSITE&color=cdf998&style=plastic&logo=wordpress&logo-color=white"/>
