@@ -16,7 +16,7 @@
 	<br />
 	<p align="center">
 	  <a target="_blank" href="https://github.com/ajmccraw">
-		<img src="https://avatars.githubusercontent.com/u/81527014?v=4" width="128px" height="128px" alt="AugLink"/>
+		<img src="https://avatars.githubusercontent.com/u/81527014?v=4" width="156px" height="156px" alt="AugLink"/>
 	  </a>
    	</p>
 	<br />
@@ -35,7 +35,7 @@
 	<br />
 	<p align="center">
 	  <a target="_blank" href="https://github.com/clarktr1">
-		<img src="https://avatars.githubusercontent.com/u/109874965?v=4" width="128px" height="128px" alt="PokéDrafts"/>
+		<img src="https://avatars.githubusercontent.com/u/109874965?v=4" width="156px" height="156px" alt="PokéDrafts"/>
 	  </a>
 	</p>
 	<br />
