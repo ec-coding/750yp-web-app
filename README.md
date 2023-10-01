@@ -188,17 +188,31 @@
     <img src="https://img.shields.io/static/v1?label=|&message=NODE.JS&color=cdf998&style=plastic&logo=node.js"/>
     <img src="https://img.shields.io/static/v1?label=|&message=EXPRESS&color=bbb111&style=plastic&logo=express"/>
 
-## Optimizations
+## Layout Goals:
 
-## Lessons Learned:
+- Home
+- About Us (3 Pillars)
+  - Hosting mixers
+  - Brunch/Lunch and learns
+  - Giving back to the community
+- Events
+- Gallery
+- Register / Login (CRM) - PRIORITY
+  - Standard Login
+  - OAuth Login (Social Media)
+  - What should the username format be? So that you can easily keep track of people
+  - CRM should be linked to RSVP
+  - Event Counter (how many times each person has attended the events)
+  - Database that stores attendance
+  - Anonymous RSVPing is allowed
+- Contact Us
+  - Name
+  - Email
+  - Phone
+  - Message
+
 
 ## Completed Goals:
 
 ## Bugs:
-
-## Project Logs:
-
-9/15/2023
-1. Established client and serverside folders for app repository.
-2. Uploaded React frontend template to connect with partenered backend systems.
 
