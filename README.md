@@ -16,15 +16,15 @@
 	<br />
 	<p align="center">
 	  <a target="_blank" href="https://github.com/ajmccraw">
+		<kbd>
 		<img src="https://avatars.githubusercontent.com/u/81527014?v=4" width="192px" height="192px" alt="AugLink"/>
+		</kbd>
 	  </a>
    	</p>
 	<br />
 	  <p align="center">
 <a href="https://github.com/ajmccraw" target="_blank">
-<kbd>
   <img src="https://img.shields.io/static/v1?label=|&message=GITHUB&color=23555f&style=plastic&logo=github&logo-color=white"/>
-</kbd>
 </a>
 <a href="https://ajmccraw.com/" target="_blank">
   <img src="https://img.shields.io/static/v1?label=|&message=WEBSITE&color=cdf998&style=plastic&logo=wordpress&logo-color=white"/>
