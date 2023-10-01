@@ -33,9 +33,11 @@
 <td width="50%" valign="top">
 	<h3 align="center">Trey Clark</h3>
 	<br />
-	  <a align="center" target="_blank" href="https://github.com/clarktr1">
+	<p align="center">
+	  <a target="_blank" href="https://github.com/clarktr1">
 		<img src="https://avatars.githubusercontent.com/u/109874965?v=4" width="128px" height="128px" alt="PokéDrafts"/>
 	  </a>
+	</p>
 	<br />
 	  <p align="center">
 <a href="https://github.com/clarktr1" target="_blank">
