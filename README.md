@@ -15,7 +15,7 @@
 	<h3 align="center">AJ McCraw</h3>
 	<br />
 	  <a target="_blank" href="https://github.com/ajmccraw">
-		<img src="https://avatars.githubusercontent.com/u/81527014?v=4" width="" alt="AugLink"/>
+		<img src="https://avatars.githubusercontent.com/u/81527014?v=4" width="96px" height="96px" alt="AugLink"/>
 	  </a>
 	<br />
 	  <p align="center">
@@ -32,7 +32,7 @@
 	<h3 align="center">Trey Clark</h3>
 	<br />
 	  <a target="_blank" href="https://github.com/clarktr1">
-		<img src="https://avatars.githubusercontent.com/u/109874965?v=4" width="" alt="PokéDrafts"/>
+		<img src="https://avatars.githubusercontent.com/u/109874965?v=4" width="96px" height="96px" alt="PokéDrafts"/>
 	  </a>
 	<br />
 	  <p align="center">
