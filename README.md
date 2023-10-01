@@ -14,8 +14,10 @@
 <td width="50%" valign="top">
 	<h3 align="center">AJ McCraw</h3>
 	<br />
-	  <a align="center" target="_blank" href="https://github.com/ajmccraw">
-		<img src="https://avatars.githubusercontent.com/u/81527014?v=4" width="128px" height="128px" alt="AugLink"/>
+	  <a target="_blank" href="https://github.com/ajmccraw">
+		<p align="center">
+			<img src="https://avatars.githubusercontent.com/u/81527014?v=4" width="128px" height="128px" alt="AugLink"/>
+		</p>
 	  </a>
 	<br />
 	  <p align="center">
