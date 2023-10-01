@@ -7,7 +7,7 @@
 <h2 align="center">The Long-awaited Portal for the 750 YP Community</h2>
 
 <table bordercolor="#66b2b2"> 
-<h2 align="center">Team Members</h2>
+<h2 align="center">Development Team</h2>
 </table>
 <table bordercolor="#66b2b2">
 <tr>
