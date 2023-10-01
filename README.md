@@ -16,7 +16,7 @@
 	<br />
 	<p align="center">
 	  <a target="_blank" href="https://github.com/ajmccraw">
-		<img src="https://avatars.githubusercontent.com/u/81527014?v=4" width="192px" height="192px" alt="AugLink"/>
+		<img src="https://avatars.githubusercontent.com/u/81527014?v=4" width="192px" height="192px"/>
 	  </a>
    	</p>
 	<br />
@@ -42,7 +42,7 @@
 	<br />
 	<p align="center">
 	  <a target="_blank" href="https://github.com/clarktr1">
-		<img src="https://avatars.githubusercontent.com/u/109874965?v=4" width="192px" height="192px" alt="PokéDrafts"/>
+		<img src="https://avatars.githubusercontent.com/u/109874965?v=4" width="192px" height="192px"/>
 	  </a>
 	</p>
 	<br />
@@ -71,7 +71,7 @@
 	<br />
 	<p align="center">
 	  <a target="_blank" href="https://github.com/em-ess">
-		<img src="https://avatars.githubusercontent.com/u/101286675?v=4" width="192px" height="192px" alt="AugLink"/>
+		<img src="https://avatars.githubusercontent.com/u/101286675?v=4" width="192px" height="192px"/>
 	  </a>
    	</p>
 	<br />
@@ -97,7 +97,7 @@
 	<br />
 	<p align="center">
 	  <a target="_blank" href="https://github.com/Jonathan-Romain">
-		<img src="https://avatars.githubusercontent.com/u/108165850?v=4" width="192px" height="192px" alt="PokéDrafts"/>
+		<img src="https://avatars.githubusercontent.com/u/108165850?v=4" width="192px" height="192px"/>
 	  </a>
 	</p>
 	<br />
@@ -119,6 +119,61 @@
 </p>
   </td>
 </tr>
+
+<tr>
+<td width="50%" valign="top">
+	<h3 align="center">Michelle's Friend</h3>
+	<br />
+	<p align="center">
+	  <a target="_blank" href="https://github.com/em-ess">
+		<img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png" width="192px" height="192px"/>
+	  </a>
+   	</p>
+	<br />
+	  <p align="center">
+<a href="https://github.com/em-ess" target="_blank">
+  <img src="https://img.shields.io/static/v1?label=|&message=GITHUB&color=23555f&style=plastic&logo=github&logo-color=white"/>
+</a>
+<a href="linkedin.com/in/michellessong" target="_blank">
+  <img src="https://img.shields.io/static/v1?label=|&message=WEBSITE&color=cdf998&style=plastic&logo=wordpress&logo-color=white"/>
+</a>
+	</p>
+    <p>Jane Doe is a frontend wireframing specialist who is currently helping us develop design standards and site layout.</p>
+<h4 align="center">Languages Used</h4>
+<p align="center">
+    <img src="https://img.shields.io/static/v1?label=|&message=HTML5&color=23555f&style=plastic&logo=html5"/>
+    <img src="https://img.shields.io/static/v1?label=|&message=CSS3&color=285f65&style=plastic&logo=css3"/>
+    <img src="https://img.shields.io/static/v1?label=|&message=JAVASCRIPT&color=3c7f5d&style=plastic&logo=javascript"/>
+    <img src="https://img.shields.io/static/v1?label=|&message=FIGMA&color=bbb111&style=plastic&logo=figma"/>
+</p>
+</td>
+<td width="50%" valign="top">
+	<h3 align="center">Edwin Choi</h3>
+	<br />
+	<p align="center">
+	  <a target="_blank" href="https://github.com/ec-coding">
+		<img src="https://i.imgur.com/zHQfcsL.jpg" width="192px" height="192px" alt="PokéDrafts"/>
+	  </a>
+	</p>
+	<br />
+	  <p align="center">
+<a href="https://github.com/ec-coding" target="_blank">
+  <img src="https://img.shields.io/static/v1?label=|&message=GITHUB&color=23555f&style=plastic&logo=github&logo-color=white"/>
+</a>
+<a href="https://edwinchoi.netlify.app//" target="_blank">
+  <img src="https://img.shields.io/static/v1?label=|&message=WEBSITE&color=cdf998&style=plastic&logo=wordpress&logo-color=white"/>
+</a>
+	</p>
+    <p>Edwin is currently acting as the project lead to coordinate site needs between the 750 YP stakeholders and the development team.</p>
+<h4 align="center">Languages Used</h4>
+<p align="center">
+    <img src="https://img.shields.io/static/v1?label=|&message=JIRA&color=98bf53&style=plastic&logo=jira"/>
+    <img src="https://img.shields.io/static/v1?label=|&message=GIT&color=cbb148&style=plastic&logo=git"/>
+    <img src="https://img.shields.io/static/v1?label=|&message=JAVASCRIPT&color=3c7f5d&style=plastic&logo=javascript"/>
+    <img src="https://img.shields.io/static/v1?label=|&message=REACT.JS&color=4a935c&style=plastic&logo=react"/>
+</p>
+</td>
+</tr>
  
 </tr>	
 </table>
@@ -126,17 +181,12 @@
 ## How It's Made:
 
 **Languages & Technologies:** 
+    <img src="https://img.shields.io/static/v1?label=|&message=HTML5&color=23555f&style=plastic&logo=html5"/>
     <img src="https://img.shields.io/static/v1?label=|&message=CSS3&color=285f65&style=plastic&logo=css3"/>
     <img src="https://img.shields.io/static/v1?label=|&message=JAVASCRIPT&color=3c7f5d&style=plastic&logo=javascript"/>
     <img src="https://img.shields.io/static/v1?label=|&message=REACT.JS&color=4a935c&style=plastic&logo=react"/>
-
-**Team Members:** 
-  - AJ McCraw - Frontend + Design
-  - Trey Clark - Frontend + Server-side
-  - Michelle Song - Server-side + Testing
-  - Jonathan Romain - Frontend + Testing
-  - Edwin Choi - Project Coordinator + Design
-  - Mike B - Special Advisor
+    <img src="https://img.shields.io/static/v1?label=|&message=NODE.JS&color=cdf998&style=plastic&logo=node.js"/>
+    <img src="https://img.shields.io/static/v1?label=|&message=EXPRESS&color=bbb111&style=plastic&logo=express"/>
 
 ## Optimizations
 
