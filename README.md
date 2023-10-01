@@ -50,7 +50,7 @@
 <a href="https://github.com/clarktr1" target="_blank">
   <img src="https://img.shields.io/static/v1?label=|&message=GITHUB&color=23555f&style=plastic&logo=github&logo-color=white"/>
 </a>
-<a href="https://clarktr1.github.io/portfolio" target="_blank">
+<a href="https://webdevtreyclark.com/" target="_blank">
   <img src="https://img.shields.io/static/v1?label=|&message=WEBSITE&color=cdf998&style=plastic&logo=wordpress&logo-color=white"/>
 </a>
 	</p>
