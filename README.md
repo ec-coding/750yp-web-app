@@ -16,9 +16,7 @@
 	<br />
 	<p align="center">
 	  <a target="_blank" href="https://github.com/ajmccraw">
-		<kbd>
 		<img src="https://avatars.githubusercontent.com/u/81527014?v=4" width="192px" height="192px" alt="AugLink"/>
-		</kbd>
 	  </a>
    	</p>
 	<br />
