@@ -64,7 +64,6 @@
 </p>
   </td>
 </tr>
-
 <tr>
 <td width="50%" valign="top">
 	<h3 align="center">Michelle Song</h3>
@@ -119,7 +118,6 @@
 </p>
   </td>
 </tr>
-
 <tr>
 <td width="50%" valign="top">
 	<h3 align="center">Michelle's Friend</h3>
@@ -156,14 +154,14 @@
 	  </a>
 	</p>
 	<br />
-	  <p align="center">
+<p align="center">
 <a href="https://github.com/ec-coding" target="_blank">
   <img src="https://img.shields.io/static/v1?label=|&message=GITHUB&color=23555f&style=plastic&logo=github&logo-color=white"/>
 </a>
 <a href="https://edwinchoi.netlify.app//" target="_blank">
   <img src="https://img.shields.io/static/v1?label=|&message=WEBSITE&color=cdf998&style=plastic&logo=wordpress&logo-color=white"/>
 </a>
-	</p>
+</p>
     <p>Edwin is currently acting as the project lead to coordinate site needs between the 750 YP stakeholders and the developers.</p>
 <h4 align="center">Languages Used</h4>
 <p align="center">
@@ -174,7 +172,6 @@
 </p>
 </td>
 </tr>
- 
 </tr>	
 </table>
 
@@ -211,13 +208,26 @@
   - Phone
   - Message
 
-Extra: 
+Post-MVP Content: 
 - Partners & Affiliates
   - Lewisville Chamber
   - Potentially volunteer organizations
 - Testimonials (Success stories)
 
+## Database Setup:
+
+- MongoDB
+- User Registration
+  - E-mail blasts for events and networking opportunities
+- Universal admin e-mail
+  - Contact form submissions will be funneled to this account
+
 ## Completed Goals:
+
+- 08-27-2023 - Established team discord server
+- 09-01-2023 - Developed project repository on Github
+- 09-15-2023 - React template for the web app has been chosen
 
 ## Bugs:
 
+- Coming soon!
