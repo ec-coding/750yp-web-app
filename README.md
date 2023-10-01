@@ -16,7 +16,7 @@
 	<br />
 	<p align="center">
 	  <a target="_blank" href="https://github.com/ajmccraw">
-		<img src="https://avatars.githubusercontent.com/u/81527014?v=4" width="156px" height="156px" alt="AugLink"/>
+		<img src="https://avatars.githubusercontent.com/u/81527014?v=4" width="192px" height="192px" alt="AugLink"/>
 	  </a>
    	</p>
 	<br />
@@ -42,7 +42,7 @@
 	<br />
 	<p align="center">
 	  <a target="_blank" href="https://github.com/clarktr1">
-		<img src="https://avatars.githubusercontent.com/u/109874965?v=4" width="156px" height="156px" alt="PokéDrafts"/>
+		<img src="https://avatars.githubusercontent.com/u/109874965?v=4" width="192px" height="192px" alt="PokéDrafts"/>
 	  </a>
 	</p>
 	<br />
@@ -71,7 +71,7 @@
 	<br />
 	<p align="center">
 	  <a target="_blank" href="https://github.com/em-ess">
-		<img src="https://avatars.githubusercontent.com/u/101286675?v=4" width="156px" height="156px" alt="AugLink"/>
+		<img src="https://avatars.githubusercontent.com/u/101286675?v=4" width="192px" height="192px" alt="AugLink"/>
 	  </a>
    	</p>
 	<br />
@@ -97,7 +97,7 @@
 	<br />
 	<p align="center">
 	  <a target="_blank" href="https://github.com/Jonathan-Romain">
-		<img src="https://avatars.githubusercontent.com/u/108165850?v=4" width="156px" height="156px" alt="PokéDrafts"/>
+		<img src="https://avatars.githubusercontent.com/u/108165850?v=4" width="192px" height="192px" alt="PokéDrafts"/>
 	  </a>
 	</p>
 	<br />
