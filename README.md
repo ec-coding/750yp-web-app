@@ -6,13 +6,6 @@
 </p>
 <h2 align="center">The Long-awaited Portal for the 750 YP Community</h2>
 
-## How It's Made:
-
-**Languages & Technologies:** 
-    <img src="https://img.shields.io/static/v1?label=|&message=CSS3&color=285f65&style=plastic&logo=css3"/>
-    <img src="https://img.shields.io/static/v1?label=|&message=JAVASCRIPT&color=3c7f5d&style=plastic&logo=javascript"/>
-    <img src="https://img.shields.io/static/v1?label=|&message=REACT.JS&color=4a935c&style=plastic&logo=react"/>
-
 <table bordercolor="#66b2b2"> 
 <h1 align="center">Team Members</h1>
 </table>
@@ -56,6 +49,12 @@
 </tr>	
 </table>
 
+## How It's Made:
+
+**Languages & Technologies:** 
+    <img src="https://img.shields.io/static/v1?label=|&message=CSS3&color=285f65&style=plastic&logo=css3"/>
+    <img src="https://img.shields.io/static/v1?label=|&message=JAVASCRIPT&color=3c7f5d&style=plastic&logo=javascript"/>
+    <img src="https://img.shields.io/static/v1?label=|&message=REACT.JS&color=4a935c&style=plastic&logo=react"/>
 
 **Team Members:** 
   - AJ McCraw - Frontend + Design
