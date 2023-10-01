@@ -152,7 +152,7 @@
 	<br />
 	<p align="center">
 	  <a target="_blank" href="https://github.com/ec-coding">
-		<img src="https://avatars.githubusercontent.com/u/106490163?v=4" width="192px" height="192px" alt="PokéDrafts"/>
+		<img src="https://i.imgur.com/SsJRmu2.jpg" width="192px" height="192px" alt="PokéDrafts"/>
 	  </a>
 	</p>
 	<br />
