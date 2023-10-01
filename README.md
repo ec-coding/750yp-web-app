@@ -152,7 +152,7 @@
 	<br />
 	<p align="center">
 	  <a target="_blank" href="https://github.com/ec-coding">
-		<img src="https://i.imgur.com/zHQfcsL.jpg" width="144px" height="192px" alt="PokéDrafts"/>
+		<img src="https://i.imgur.com/i7cE5Kr.jpg" width="192px" height="192px" alt="PokéDrafts"/>
 	  </a>
 	</p>
 	<br />
@@ -211,6 +211,11 @@
   - Phone
   - Message
 
+Extra: 
+- Partners & Affiliates
+  - Lewisville Chamber
+  - Potentially volunteer organizations
+- Testimonials (Success stories)
 
 ## Completed Goals:
 
