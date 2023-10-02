@@ -120,32 +120,6 @@
 </tr>
 <tr>
 <td width="50%" valign="top">
-	<h3 align="center">Michelle's Friend</h3>
-	<br />
-	<p align="center">
-	  <a target="_blank" href="https://github.com/em-ess">
-		<img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png" width="192px" height="192px"/>
-	  </a>
-   	</p>
-	<br />
-	  <p align="center">
-<a href="https://github.com/em-ess" target="_blank">
-  <img src="https://img.shields.io/static/v1?label=|&message=GITHUB&color=23555f&style=plastic&logo=github&logo-color=white"/>
-</a>
-<a href="linkedin.com/in/michellessong" target="_blank">
-  <img src="https://img.shields.io/static/v1?label=|&message=WEBSITE&color=cdf998&style=plastic&logo=wordpress&logo-color=white"/>
-</a>
-	</p>
-    <p>Jane Doe is a frontend wireframing specialist who is currently helping us develop design standards and site layout.</p>
-<h4 align="center">Languages Used</h4>
-<p align="center">
-    <img src="https://img.shields.io/static/v1?label=|&message=HTML5&color=23555f&style=plastic&logo=html5"/>
-    <img src="https://img.shields.io/static/v1?label=|&message=CSS3&color=285f65&style=plastic&logo=css3"/>
-    <img src="https://img.shields.io/static/v1?label=|&message=JAVASCRIPT&color=3c7f5d&style=plastic&logo=javascript"/>
-    <img src="https://img.shields.io/static/v1?label=|&message=FIGMA&color=bbb111&style=plastic&logo=figma"/>
-</p>
-</td>
-<td width="50%" valign="top">
 	<h3 align="center">Edwin Choi</h3>
 	<br />
 	<p align="center">
@@ -162,7 +136,7 @@
   <img src="https://img.shields.io/static/v1?label=|&message=WEBSITE&color=cdf998&style=plastic&logo=wordpress&logo-color=white"/>
 </a>
 </p>
-    <p>Edwin is currently acting as the project lead to coordinate site needs between the 750 YP stakeholders and the developers.</p>
+    <p>Edwin is currently acting as the project lead to coordinate site needs between the 750 YP stakeholders and the development team.</p>
 <h4 align="center">Languages Used</h4>
 <p align="center">
     <img src="https://img.shields.io/static/v1?label=|&message=JIRA&color=98bf53&style=plastic&logo=jira"/>
