@@ -54,13 +54,12 @@
   <img src="https://img.shields.io/static/v1?label=|&message=WEBSITE&color=cdf998&style=plastic&logo=wordpress&logo-color=white"/>
 </a>
 	</p>
-    <p>Trey is one of our backend specialists, who is helping connect our authentication and database management features to the website.</p>
+    <p>Trey is our fullstack specialist, who is helping connect our authentication and database management features to the frontend layout.</p>
 <h4 align="center">Languages Used</h4>
 <p align="center">
     <img src="https://img.shields.io/static/v1?label=|&message=NODE.JS&color=cdf998&style=plastic&logo=node.js"/>
     <img src="https://img.shields.io/static/v1?label=|&message=TYPESCRIPT&color=3c7f5d&style=plastic&logo=typescript"/>
     <img src="https://img.shields.io/static/v1?label=|&message=EXPRESS&color=bbb111&style=plastic&logo=express"/>
-    <img src="https://img.shields.io/static/v1?label=|&message=MONGO-DB&color=cdd148&style=plastic&logo=mongodb"/>
 </p>
   </td>
 </tr>
@@ -85,7 +84,6 @@
     <p>Michelle provides backend support and also develops high quality wireframes which help the team visualize serverside layouts.</p>
 <h4 align="center">Languages Used</h4>
 <p align="center">
-    <img src="https://img.shields.io/static/v1?label=|&message=EXCALIDRAW&color=23555f&style=plastic&logo=excalidraw"/>
     <img src="https://img.shields.io/static/v1?label=|&message=TYPESCRIPT&color=98bf53&style=plastic&logo=typescript"/>
     <img src="https://img.shields.io/static/v1?label=|&message=NODE.JS&color=cdf998&style=plastic&logo=node.js"/>
     <img src="https://img.shields.io/static/v1?label=|&message=EXPRESS&color=bbb111&style=plastic&logo=express"/>
