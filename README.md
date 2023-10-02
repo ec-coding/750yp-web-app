@@ -188,7 +188,7 @@ Post-MVP Content:
 
 ## Database Setup:
 
-- MongoDB
+- SQL using Sequelize
 - User Registration
   - E-mail blasts for events and networking opportunities
 - Universal admin e-mail
