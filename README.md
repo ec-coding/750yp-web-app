@@ -1,8 +1,5 @@
 <p align="center">
-<img src="https://i.imgur.com/4Gkq1YS.png" width="30%">
-</p>
-<p align="center">
-<img src="https://github.com/ec-coding/750yp-web-app/blob/main/images/750yp%20Banner.png" width="90%">
+<img src="https://i.imgur.com/4Gkq1YS.png" width="80%">
 </p>
 <h2 align="center">The Long-awaited Portal for the 750 YP Community</h2>
 
