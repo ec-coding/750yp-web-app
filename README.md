@@ -1,11 +1,8 @@
 <p align="center">
-<img src="https://github.com/ec-coding/750yp-web-app/blob/main/images/750yp%20Website%20Logo.png" width="30%">
+<img src="https://i.imgur.com/4Gkq1YS.png" width="80%">
 </p>
-<p align="center">
-<img src="https://github.com/ec-coding/750yp-web-app/blob/main/images/750yp%20Banner.png" width="90%">
-</p>
-<h2 align="center">The Long-awaited Portal for the 750 YP Community</h2>
-
+<h2 align="center">The Long-awaited Web App for the 750 YP Community</h2>
+<br>
 <table bordercolor="#66b2b2"> 
 <h2 align="center">Development Team</h2>
 </table>
@@ -29,7 +26,7 @@
 </a>
 	</p>
     <p>AJ spearheads our frontend and design coordination, along with managing recaps of our weekly SCRUM sessions.</p>
-<h4 align="center">Languages Used</h4>
+<h4 align="center">Languages and Tools Used</h4>
 <p align="center">
     <img src="https://img.shields.io/static/v1?label=|&message=HTML5&color=23555f&style=plastic&logo=html5"/>
     <img src="https://img.shields.io/static/v1?label=|&message=CSS3&color=285f65&style=plastic&logo=css3"/>
@@ -55,7 +52,7 @@
 </a>
 	</p>
     <p>Trey is our fullstack specialist, who is helping connect our authentication and database management features to the frontend layout.</p>
-<h4 align="center">Languages Used</h4>
+<h4 align="center">Languages and Tools Used</h4>
 <p align="center">
     <img src="https://img.shields.io/static/v1?label=|&message=NODE.JS&color=cdf998&style=plastic&logo=node.js"/>
     <img src="https://img.shields.io/static/v1?label=|&message=TYPESCRIPT&color=3c7f5d&style=plastic&logo=typescript"/>
@@ -82,7 +79,7 @@
 </a>
 	</p>
     <p>Michelle provides backend support and also develops high quality wireframes which help the team visualize serverside layouts.</p>
-<h4 align="center">Languages Used</h4>
+<h4 align="center">Languages and Tools Used</h4>
 <p align="center">
     <img src="https://img.shields.io/static/v1?label=|&message=TYPESCRIPT&color=98bf53&style=plastic&logo=typescript"/>
     <img src="https://img.shields.io/static/v1?label=|&message=NODE.JS&color=cdf998&style=plastic&logo=node.js"/>
@@ -107,7 +104,7 @@
 </a>
 	</p>
     <p>Jonathan provides frontend support and provides design innovation via Figma outlines that address mobile compatibility.</p>
-<h4 align="center">Languages Used</h4>
+<h4 align="center">Languages and Tools Used</h4>
 <p align="center">
     <img src="https://img.shields.io/static/v1?label=|&message=HTML5&color=23555f&style=plastic&logo=html5"/>
     <img src="https://img.shields.io/static/v1?label=|&message=CSS3&color=285f65&style=plastic&logo=css3"/>
@@ -135,7 +132,7 @@
 </a>
 </p>
     <p>Edwin is currently acting as the project lead to coordinate site needs between the 750 YP stakeholders and the development team.</p>
-<h4 align="center">Languages Used</h4>
+<h4 align="center">Languages and Tools Used</h4>
 <p align="center">
     <img src="https://img.shields.io/static/v1?label=|&message=JIRA&color=98bf53&style=plastic&logo=jira"/>
     <img src="https://img.shields.io/static/v1?label=|&message=GIT&color=cbb148&style=plastic&logo=git"/>
