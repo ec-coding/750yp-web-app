@@ -3,7 +3,7 @@ import Users from '../models/User.js';
 import { z } from 'zod';
 
 export const userRouter = router({
-  getAll: publicProcedure.query((opts) => {
+  getAll: publicProcedure.query(() => {
     return Users.findAll();
   }),
   byId: publicProcedure
@@ -14,15 +14,12 @@ export const userRouter = router({
   byEmail: publicProcedure.input(z.string()).query((opts) => {
     return Users.findOne({ where: { email: opts.input } });
   }),
-  byAuth: publicProcedure.input(z.string()).query((opts) => {
-    return Users.findOne({ where: { auth_key: opts.input } });
-  }),
   create: publicProcedure
-    .input(z.object({ email: z.string(), firstName: z.string(), lastName:z.string(), auth_key:z.string() }))
+    .input(z.object({ email: z.string(), name: z.string(), profile_icon: z.string()}))
     .mutation((opts) => {
-      const { email, firstName, lastName } = opts.input;
-      const newUser = { email, first_name: firstName, last_name: lastName, auth_key:'test_key' };
+      const { email, name, profile_icon } = opts.input;
+      const newUser = { email, name, profile_icon };
       Users.create(newUser);
-      return Users.findAll();
+      return Users.findOne({where: {email: email}});
     }),
 });

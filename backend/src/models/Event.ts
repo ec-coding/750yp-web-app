@@ -1,8 +1,8 @@
-import { Table, Column, PrimaryKey, Model, AutoIncrement, DataType, AllowNull } from 'sequelize-typescript';
+import { Table, Column, PrimaryKey, Model, AutoIncrement, DataType, AllowNull, Default } from 'sequelize-typescript';
 
-@Table({ tableName: 'events', timestamps: false })
+@Table({ tableName: 'Event', timestamps: false })
 class Events extends Model {
-  static Events(): { name: String; short_description: String; long_description: String; city: String; state: String; country: String; address: String; start_time: Date; end_time: Date; host: number; } {
+  static Events(): { name: String; short_description: String; long_description: String; city: String; state: String; country: String; address: String; start_time: String; end_time: String; } {
     throw new Error('Method not implemented.');
   }
 
@@ -20,11 +20,11 @@ class Events extends Model {
     description!: string | null;
 
   @AllowNull(false)
-  @Column(DataType.DATE)
+  @Column(DataType.STRING(255))
     start_time!: Date;
 
   @AllowNull(false)
-  @Column(DataType.DATE)
+  @Column(DataType.STRING(255))
     end_time!: Date;
 
   @AllowNull(true)
