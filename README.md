@@ -131,8 +131,9 @@
     <p>Chelsea is our UX/UI developer who helps streamline our frontend development process with her high-quality figma designs.</p>
 <h4 align="center">Languages and Tools Used</h4>
 <p align="center">
-    <img src="https://img.shields.io/static/v1?label=|&message=FIGMA&color=cdf998&style=plastic&logo=figma"/>
+    <img src="https://img.shields.io/static/v1?label=|&message=FIGMA&color=color=98bf53&style=plastic&logo=figma"/>
     <img src="https://img.shields.io/static/v1?label=|&message=SKETCH&color=bbb111&style=plastic&logo=sketch"/>
+    <br>
     <img src="https://img.shields.io/static/v1?label=|&message=ILLUSTRATOR&color=23555f&style=plastic&logo=adobe"/>
     <img src="https://img.shields.io/static/v1?label=|&message=PHOTOSHOP&color=23555f&style=plastic&logo=adobe"/>
 </p>
