@@ -119,7 +119,7 @@
 	<br />
 	<p align="center">
 	  <a target="_blank" href="https://www.chelseacho.me/">
-		<img src="https://ibb.co/qWBfbYz" width="192px" height="192px" alt="cgc"/>
+		<img src="https://i.ibb.co/7Rv57tH/03-EA025-A-CAEC-4863-87-B6-26-E0877-BCB84.jpg" width="192px" height="192px" alt="cgc"/>
 	  </a>
 	</p>
 	<br />
