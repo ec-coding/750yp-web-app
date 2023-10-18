@@ -128,7 +128,7 @@
   <img src="https://img.shields.io/static/v1?label=|&message=WEBSITE&color=cdf998&style=plastic&logo=wordpress&logo-color=white"/>
 </a>
 </p>
-    <p>Chelsea is our UX/UI developer who helps streamline our frontend development process with her high-quality figma designs.</p>
+    <p>Chelsea is our UX/UI developer who helps streamline the project's frontend development process with her high-quality figma designs.</p>
 <h4 align="center">Languages and Tools Used</h4>
 <p align="center">
     <img src="https://img.shields.io/static/v1?label=|&message=FIGMA&color=color=98bf53&style=plastic&logo=figma"/>
