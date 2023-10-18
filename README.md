@@ -115,11 +115,34 @@
 </tr>
 <tr>
 <td width="50%" valign="top">
+	<h3 align="center">Chelsea Cho</h3>
+	<br />
+	<p align="center">
+	  <a target="_blank" href="https://www.chelseacho.me/">
+		<img src="https://ibb.co/qWBfbYz" width="192px" height="192px" alt="cgc"/>
+	  </a>
+	</p>
+	<br />
+<p align="center">
+<a href="https://www.chelseacho.me/" target="_blank">
+  <img src="https://img.shields.io/static/v1?label=|&message=WEBSITE&color=cdf998&style=plastic&logo=wordpress&logo-color=white"/>
+</a>
+</p>
+    <p>Chelsea is our UX/UI developer who helps streamline our frontend development process with her high-quality figma designs.</p>
+<h4 align="center">Languages and Tools Used</h4>
+<p align="center">
+    <img src="https://img.shields.io/static/v1?label=|&message=FIGMA&color=cdf998&style=plastic&logo=figma"/>
+    <img src="https://img.shields.io/static/v1?label=|&message=SKETCH&color=bbb111&style=plastic&logo=sketch"/>
+    <img src="https://img.shields.io/static/v1?label=|&message=ILLUSTRATOR&color=23555f&style=plastic&logo=adobe"/>
+    <img src="https://img.shields.io/static/v1?label=|&message=PHOTOSHOP&color=23555f&style=plastic&logo=adobe"/>
+</p>
+</td>
+<td width="50%" valign="top">
 	<h3 align="center">Edwin Choi</h3>
 	<br />
 	<p align="center">
 	  <a target="_blank" href="https://github.com/ec-coding">
-		<img src="https://i.imgur.com/i7cE5Kr.jpg" width="192px" height="192px" alt="PokéDrafts"/>
+		<img src="https://i.imgur.com/i7cE5Kr.jpg" width="192px" height="192px" alt="ec-coding"/>
 	  </a>
 	</p>
 	<br />
