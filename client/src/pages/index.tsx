@@ -70,7 +70,7 @@ export default function Home() {
   <div className="left-[826px] top-[3631px] absolute text-black text-2xl font-bold font-['Inter']">Footer</div>
   <div className="left-[721px] top-[2081px] absolute text-white text-3xl font-bold font-['Inter']">Upcoming Events</div>
   <div className="left-[313px] top-[266px] absolute text-black text-3xl font-bold font-['Inter']">Hero Section</div>
-  <div className="left-[767px] top-[1088px] absolute text-gray-800 text-[31.25px] font-bold font-['Josefin Sans'] uppercase leading-[47.25px]">About Us</div>
+  <section className="left-[767px] top-[1088px] absolute text-gray-800 text-[31.25px] font-bold font-['Josefin Sans'] uppercase leading-[47.25px]">About Us</section>
   <div className="w-[601px] h-[49px] left-[534px] top-[1154px] absolute text-center text-neutral-500 text-base font-normal font-['Josefin Sans'] leading-normal">Insert short description here</div>
   <div className="w-[562px] h-[556px] left-[159px] top-[1284px] absolute bg-stone-300" />
   <div className="w-[570px] h-40 left-[850px] top-[1284px] absolute">
