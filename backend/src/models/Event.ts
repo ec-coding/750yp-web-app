@@ -1,8 +1,8 @@
-import { Table, Column, PrimaryKey, Model, AutoIncrement, DataType, AllowNull } from 'sequelize-typescript';
+import { Table, Column, PrimaryKey, Model, AutoIncrement, DataType, AllowNull, Default } from 'sequelize-typescript';
 
-@Table({ tableName: 'events', timestamps: false })
+@Table({ tableName: 'Event', timestamps: false })
 class Events extends Model {
-  static Events(): { name: String; short_description: String; long_description: String; city: String; state: String; country: String; address: String; start_time: Date; end_time: Date; host: number; } {
+  static Events(): { name: String; short_description: String; long_description: String; city: String; state: String; country: String; address: String; start_time: String; end_time: String; } {
     throw new Error('Method not implemented.');
   }
 
@@ -17,39 +17,20 @@ class Events extends Model {
 
   @AllowNull(true)
   @Column(DataType.STRING(255))
-    short_description!: string | null;
-
-  @AllowNull(true)
-  @Column(DataType.BLOB)
-    long_description!: Buffer | null;
-
-  @AllowNull(true)
-  @Column(DataType.STRING(255))
-    city!: string | null;
-
-  @AllowNull(true)
-  @Column(DataType.STRING(255))
-    state!: string | null;
-
-  @AllowNull(true)
-  @Column(DataType.STRING(255))
-    country!: string | null;
-
-  @AllowNull(true)
-  @Column(DataType.STRING(255))
-    address!: string | null;
+    description!: string | null;
 
   @AllowNull(false)
-  @Column(DataType.DATE)
+  @Column(DataType.STRING(255))
     start_time!: Date;
 
   @AllowNull(false)
-  @Column(DataType.DATE)
+  @Column(DataType.STRING(255))
     end_time!: Date;
-    
+
   @AllowNull(true)
-  @Column(DataType.INTEGER)
-    host!: number | null;
+  @Column(DataType.STRING(255))
+    banner!: string | null;
+  
 }
 
 export default Events;
