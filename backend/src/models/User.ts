@@ -1,6 +1,6 @@
 import { Table, Column, PrimaryKey, Model, Unique, AutoIncrement, DataType, AllowNull } from 'sequelize-typescript';
 
-@Table({ tableName: 'users', timestamps: false })
+@Table({ tableName: 'User', timestamps: false })
 class Users extends Model {
   @PrimaryKey
   @AutoIncrement
