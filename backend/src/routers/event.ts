@@ -20,7 +20,7 @@ export const eventRouter = router({
     });
   }),
   create: publicProcedure
-    .input(z.object({ name: z.string(), description: z.string(), start_time: z.string(), end_time: z.string(), banner: z.string() }))
+    .input(z.object({ name: z.string(), description: z.string(), date: z.string(), start_time: z.string(), end_time: z.string(), banner: z.string() }))
     .mutation(req => {
       const { name, description, start_time, end_time, banner } = req.input;
       const newEvent = { name, description, start_time, end_time, banner }

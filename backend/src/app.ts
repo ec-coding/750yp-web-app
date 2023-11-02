@@ -37,11 +37,13 @@ function getBaseUrl(){
   } return "http://localhost:3000"
 }
 
+
+//Auth Config
 const config = {
   authRequired: false,
   auth0Logout: true,
   secret: process.env.AUTH_SECRET,
-  baseURL: getBaseUrl(),
+  baseURL: "http://localhost:3000",
   clientID: process.env.AUTH_ID,
   issuerBaseURL: process.env.AUTH_URL
 };
