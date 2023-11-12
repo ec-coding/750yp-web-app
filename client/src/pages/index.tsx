@@ -49,7 +49,7 @@ export default function Home() {
         <div className="w-[1728px] h-[169px] left-0 top-0 absolute bg-zinc-100" />
         <div className="left-[937px] top-[74px] absolute text-black text-[22px] font-medium font-['Poppins']">About Us</div>
         <div className="left-[1095px] top-[74px] absolute text-black text-[22px] font-medium font-['Poppins']">Events</div>
-        <img className="w-[200px] h-[133.33px] left-[40px] top-[15px] absolute" src="https://i.imgur.com/SsGkUGC.png" />
+        <img className="w-[200px] h-[133.33px] left-[40px] top-[15px] absolute" src="https://i.imgur.com/ICaBO54.png" />
         <div className="left-[1226px] top-[74px] absolute text-black text-[22px] font-medium font-['Poppins']">Log In</div>
         <div className="w-[250px] h-[50px] left-[1374px] top-[65px] absolute">
           <div className="w-[250px] h-[50px] left-0 top-0 absolute bg-gradient-to-b from-yellow-400 to-yellow-400 rounded-[50px]" />
@@ -134,7 +134,7 @@ export default function Home() {
               <div className="w-[81px] h-7 left-[84px] top-[11px] absolute text-center text-white text-xl font-normal font-['Poppins']">Submit</div>
             </div>
           </div>
-          <img className="w-[214.40px] h-[106.80px] left-[492px] top-[499.40px] absolute origin-top-left rotate-[-29.75deg]" src="https://via.placeholder.com/214x107" />
+          <img className="w-[214.40px] h-[106.80px] left-[492px] top-[499.40px] absolute origin-top-left rotate-[-29.75deg]" src="https://i.imgur.com/HlfrPW0.png" />
         </div>
       </div>
       <div className="w-[1728px] h-[620px] left-0 top-[169px] absolute">
@@ -230,7 +230,7 @@ export default function Home() {
         <div className="left-[775px] top-[90px] absolute text-blue-950 text-sm font-normal font-['Poppins'] leading-tight">Privacy Policy<br /><br />Terms & Conditions<br /><br />Terms of Use</div>
         <div className="left-[543px] top-[47px] absolute text-blue-950 text-base font-semibold font-['Poppins'] leading-[25px]">Company</div>
         <div className="left-[775px] top-[47px] absolute text-blue-950 text-base font-semibold font-['Poppins'] leading-[25px]">Legal</div>
-        <img className="w-[200px] h-[133.33px] left-[124px] top-[57px] absolute" src="https://i.imgur.com/SsGkUGC.png" />
+        <img className="w-[200px] h-[133.33px] left-[124px] top-[57px] absolute" src="https://i.imgur.com/ICaBO54.png" />
       </div>
     </div>
   )
