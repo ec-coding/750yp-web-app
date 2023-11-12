@@ -43,7 +43,7 @@ export default function Home() {
   //   }
   // };
 
-
+console.log(user);
 
   return (
     <div className="w-[1728px] h-[4359px] relative bg-white">
@@ -52,10 +52,11 @@ export default function Home() {
         <div className="left-[937px] top-[74px] absolute text-black text-[22px] font-medium font-['Poppins']">About Us</div>
         <div className="left-[1095px] top-[74px] absolute text-black text-[22px] font-medium font-['Poppins']">Events</div>
         <img className="w-[200px] h-[133.33px] left-[40px] top-[15px] absolute" src="https://i.imgur.com/SsGkUGC.png" />
-        <div className="left-[1226px] top-[74px] absolute text-black text-[22px] font-medium font-['Poppins']">Log In</div>
+        <a href="/api/auth/login" className="left-[1226px] top-[74px] absolute text-black text-[22px] font-medium font-['Poppins']">Log In</a>
+        
         <div className="w-[250px] h-[50px] left-[1374px] top-[65px] absolute">
           <div className="w-[250px] h-[50px] left-0 top-0 absolute bg-gradient-to-b from-yellow-400 to-yellow-400 rounded-[50px]" />
-          <div className="left-[82px] top-[9px] absolute text-slate-800 text-[22px] font-medium font-['Poppins']">Sign Up</div>
+          <a  href="./admin/" className="left-[82px] top-[9px] absolute text-slate-800 text-[22px] font-medium font-['Poppins']">Sign Up</a>
         </div>
       </div>
       <div className="w-[1728px] h-[829px] left-0 top-[1833px] absolute">
