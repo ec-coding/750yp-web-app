@@ -13,6 +13,17 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
     },
+    extend: {
+      height: {
+        '128': '32rem',
+        '156': '40rem'
+      },
+      width: {
+        '128': '32rem',
+        '156': '40rem',
+        '172': '48rem'
+      },
+    }
   },
   plugins: [require("@tailwindcss/forms")],
 };
