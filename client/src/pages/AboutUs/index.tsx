@@ -6,6 +6,7 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ContactUs from '@/components/ContactUs';
+import { Container, Box, CardMedia, Grid, makeStyles } from '@mui/material';
 
 const AboutUs = () => {
 
@@ -14,7 +15,7 @@ const AboutUs = () => {
       <div id="about-us" className='flex justify-center items-center h-4/5'>
         <h2 className='text-5xl text-white text-center font-bold mt-10 z-10'>About Us</h2>
       </div>
-
+      {/* //////////////////////////////////////////////////////////////////////// */}
       <div id='au-top' className="flex justify-center items-center pt-32 h-172">
         <div className="flex-initial h-full w-1/2 bg-gray-200 rounded-md relative">
           <img
@@ -34,6 +35,30 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
+      {/* ///////////////////////////////////////////////////////////////// */}
+      {/* example changes to MUI */}
+      <Container>
+        <Grid container alignItems="center" spacing={2} justifyContent="space-between">
+
+          <Grid item xs={12} sm={5}>
+            <CardMedia component="img" image="https://i.imgur.com/5ZQZQ8u.jpg" alt="750YP" />
+          </Grid>
+
+          <Grid item xs={12} sm={5}>
+            <Box>
+              <Typography variant="h4">
+                Our Vision
+              </Typography>
+            </Box>
+            <Box>
+              <Typography variant="body1">
+                750 YP is a new program of the Lewisville Area Chamber of Commerce that aims to gather young talent while developing the next generation of leaders.
+              </Typography>
+            </Box>
+          </Grid>
+
+        </Grid>
+      </Container>
 
       <div id='au-mid' className="w-full">
         <h2 className='text-4xl text-center font-bold my-20 py-20 bg-sky-200'>
