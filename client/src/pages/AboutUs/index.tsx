@@ -1,22 +1,49 @@
 import React from 'react'
-import styles from './styles.module.scss';
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ContactUs from '@/components/ContactUs';
-import { Container, Box, CardMedia, Grid, makeStyles } from '@mui/material';
+import StaffProfiles from '@/pages/AboutUs/StaffProfiles/StaffProfiles';
+import { Container, Box, CardMedia, Grid, Modal, makeStyles } from '@mui/material';
+import styles from './AboutUs.module.css';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
 const AboutUs = () => {
 
   return (
+    <>
     <div className="h-screen w-screen overflow-x-hidden">
+    <Header />
       <div id="about-us" className='flex justify-center items-center h-4/5'>
-        <h2 className='text-5xl text-white text-center font-bold mt-10 z-10'>About Us</h2>
+        <h2 id="header-test" className='text-5xl text-white text-center font-bold mt-10 z-10'>About Us</h2>
       </div>
-      {/* //////////////////////////////////////////////////////////////////////// */}
-      <div id='au-top' className="flex justify-center items-center pt-32 h-172">
+      <Container maxWidth={false} disableGutters sx={{ marginTop: '5vh' }}>
+        <Grid container alignItems="center" spacing={2} margin={0} padding={0}>
+
+          <Grid xs={12} sm={6} container alignItems="center" justifyContent="space-between" margin={0} padding={5}>
+            <CardMedia component="img" image="https://i.imgur.com/Cpungs1.jpg" alt="750YP" className='hero-image' sx={{ borderRadius: 2 }} />
+          </Grid>
+
+          <Grid xs={12} sm={6} alignItems="center" justifyContent="center" margin={0} padding={8}>
+            <Box marginBottom={3}>
+              <Typography variant="h4" sx={{ fontWeight: 'bold' }}>
+                Our Mission
+              </Typography>
+            </Box>
+            <Box sx={{ border: '2px solid black' }} padding={4}>
+              <Typography variant="body1" sx={{ fontSize: 18 }}>
+                750 YP is a new program of the Lewisville Area Chamber of Commerce that aims to gather young talent while developing the next generation of leaders.
+                This group will offer a wealth of opportunities for young professionals to network, give back to the community, and grow both personally and professionally!
+              </Typography>
+            </Box>
+          </Grid>
+
+        </Grid>
+      </Container>
+      {/* <div id='au-top' className="flex justify-center items-center pt-32 h-172">
         <div className="flex-initial h-full w-1/2 bg-gray-200 rounded-md relative">
           <img
             src="https://i.imgur.com/Cpungs1.jpg"
@@ -34,31 +61,7 @@ const AboutUs = () => {
             </div>
           </div>
         </div>
-      </div>
-      {/* ///////////////////////////////////////////////////////////////// */}
-      {/* example changes to MUI */}
-      <Container>
-        <Grid container alignItems="center" spacing={2} justifyContent="space-between">
-
-          <Grid item xs={12} sm={5}>
-            <CardMedia component="img" image="https://i.imgur.com/5ZQZQ8u.jpg" alt="750YP" />
-          </Grid>
-
-          <Grid item xs={12} sm={5}>
-            <Box>
-              <Typography variant="h4">
-                Our Vision
-              </Typography>
-            </Box>
-            <Box>
-              <Typography variant="body1">
-                750 YP is a new program of the Lewisville Area Chamber of Commerce that aims to gather young talent while developing the next generation of leaders.
-              </Typography>
-            </Box>
-          </Grid>
-
-        </Grid>
-      </Container>
+      </div> */}
 
       <div id='au-mid' className="w-full">
         <h2 className='text-4xl text-center font-bold my-20 py-20 bg-sky-200'>
@@ -67,95 +70,18 @@ const AboutUs = () => {
 
         <div className="space-y-16">
           <div className='bio-panel-container flex items-center justify-center space-x-8 overflow-x-auto'>
-          <div className='flex-initial bio-panel space-y-8'>
-              <div className="w-60 h-60 rounded-full overflow-hidden border-2 border-white">
-                <img src="https://i.imgur.com/jLjxZ3Y.jpg" alt="Your Image" className="w-full h-full object-cover" />
-              </div>
-              <div className="border-2 border-solid border-gray-400 w-60 h-24 mx-auto flex flex-col justify-center items-center">
-                <h4 className='text-xl text-center font-bold'>Lois Kim</h4>
-                <h4 className='text-base text-center font-bold'>Empress of Everything</h4>
-              </div>
-            </div>
-            <div className='flex-initial bio-panel space-y-8'>
-              <div className="w-60 h-60 rounded-full overflow-hidden border-2 border-white">
-                <img src="https://i.imgur.com/H6Hpi4l.jpg" alt="Your Image" className="w-full h-full object-cover" />
-              </div>
-              <div className="border-2 border-solid border-gray-400 w-60 h-24 mx-auto flex flex-col justify-center items-center">
-                <h4 className='text-xl text-center font-bold'>Landon Merigold</h4>
-                <h4 className='text-base text-center font-bold'>Minister of Culture</h4>
-              </div>
-            </div>
-            <div className='flex-initial bio-panel space-y-8'>
-              <div className="w-60 h-60 rounded-full overflow-hidden border-2 border-white">
-                <img src="https://i.imgur.com/MtVek4f.jpg" alt="Your Image" className="w-full h-full object-cover" />
-              </div>
-              <div className="border-2 border-solid border-gray-400 w-60 h-24 mx-auto flex flex-col justify-center items-center">
-                <h4 className='text-xl text-center font-bold'>Nina Hernandez</h4>
-                <h4 className='text-base text-center font-bold'>Tea-EO</h4>
-              </div>
-            </div>
-            <div className='flex-initial bio-panel space-y-8'>
-              <div className="w-60 h-60 rounded-full overflow-hidden border-2 border-white">
-                <img src="https://i.imgur.com/mCLG8BX.png" alt="Your Image" className="w-full h-full object-cover" />
-              </div>
-              <div className="border-2 border-solid border-gray-400 w-60 h-24 mx-auto flex flex-col justify-center items-center">
-                <h4 className='text-xl text-center font-bold'>Justus Carlile</h4>
-                <h4 className='text-base text-center font-bold'>Sheriff of Shindigs</h4>
-              </div>
-            </div>
-            <div className='flex-initial bio-panel space-y-8'>
-              <div className="bg-gray-200 rounded-full w-60 h-60 mx-auto"></div>
-              <div className="border-2 border-solid border-gray-400 w-60 h-24 mx-auto flex flex-col justify-center items-center">
-                <h4 className='text-xl text-center font-bold'>Josh Clark</h4>
-                <h4 className='text-base text-center font-bold'>Sous Chef of Shindigs</h4>
-              </div>
-            </div>
+            <StaffProfiles customProp="lois" />
+            <StaffProfiles customProp="landon" />
+            <StaffProfiles customProp="nina" />
+            <StaffProfiles customProp="justus" />
+            <StaffProfiles customProp="joshua" />
           </div>
-
           <div className='bio-panel-container flex items-center justify-center space-x-8 overflow-x-auto'>
-          <div className='flex-initial bio-panel space-y-8'>
-              <div className="w-60 h-60 rounded-full overflow-hidden border-2 border-white">
-                <img src="https://i.imgur.com/BsPLJX3.jpg" alt="Your Image" className="w-full h-full object-cover" />
-              </div>
-              <div className="border-2 border-solid border-gray-400 w-60 h-24 mx-auto flex flex-col justify-center items-center">
-                <h4 className='text-xl text-center font-bold'>Kayla Baumann</h4>
-                <h4 className='text-base text-center font-bold'>Connection Connoisseur</h4>
-              </div>
-            </div>
-          <div className='flex-initial bio-panel space-y-8'>
-              <div className="w-60 h-60 rounded-full overflow-hidden border-2 border-white">
-                <img src="https://i.imgur.com/Qai4nql.png" alt="Your Image" className="w-full h-full object-cover" />
-              </div>
-              <div className="border-2 border-solid border-gray-400 w-60 h-24 mx-auto flex flex-col justify-center items-center">
-                <h4 className='text-xl text-center font-bold'>Davis Perrone</h4>
-                <h4 className='text-base text-center font-bold'>Digital Dynamo</h4>
-              </div>
-            </div>
-            <div className='flex-initial bio-panel space-y-8'>
-              <div className="w-60 h-60 rounded-full overflow-hidden border-2 border-white">
-                <img src="https://i.imgur.com/rCFOkqV.jpg" alt="Your Image" className="w-full h-full object-cover" />
-              </div>
-              <div className="border-2 border-solid border-gray-400 w-60 h-24 mx-auto flex flex-col justify-center items-center">
-                <h4 className='text-xl text-center font-bold'>David Sublett</h4>
-                <h4 className='text-base text-center font-bold'>N.E.R.D.</h4>
-              </div>
-            </div>
-            <div className='flex-initial bio-panel space-y-8'>
-              <div className="w-60 h-60 rounded-full overflow-hidden border-2 border-white">
-                <img src="https://i.imgur.com/mwBdzuw.jpg" alt="Your Image" className="w-full h-full object-cover" />
-              </div>
-              <div className="border-2 border-solid border-gray-400 w-60 h-24 mx-auto flex flex-col justify-center items-center">
-                <h4 className='text-xl text-center font-bold'>Kassandra Nordhoff</h4>
-                <h4 className='text-base text-center font-bold'>Social Media Sith Lord</h4>
-              </div>
-            </div>
-            <div className='flex-initial bio-panel space-y-8'>
-              <div className="bg-gray-200 rounded-full w-60 h-60 mx-auto"></div>
-              <div className="border-2 border-solid border-gray-400 w-60 h-24 mx-auto flex flex-col justify-center items-center">
-                <h4 className='text-xl text-center font-bold'>Edwin Choi</h4>
-                <h4 className='text-base text-center font-bold'>Software Sovereign</h4>
-              </div>
-            </div>
+            <StaffProfiles customProp="kayla" />
+            <StaffProfiles customProp="davis" />
+            <StaffProfiles customProp="david" />
+            <StaffProfiles customProp="kassandra" />
+            <StaffProfiles customProp="edwin" />
           </div>
         </div>
 
@@ -231,7 +157,9 @@ const AboutUs = () => {
         <ContactUs />
       </div>
       <div id='au-bot' className=""></div>
+      <Footer />
     </div>
+    </>
   )
 }
 

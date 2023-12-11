@@ -1,20 +1,31 @@
 import React from 'react'
+import { Container, Box, CardMedia, Grid, Modal, makeStyles } from '@mui/material';
+import Typography from '@mui/material/Typography';
 
 const ContactUs = () => {
     return (
         <div className='bg-sky-200'>
-            <div id='au-top' className="flex justify-center items-center h-172">
-                <div className="flex-initial h-full w-2/5 items-center justify-center">
-                    <div className='mx-auto h-3/4 w-3/4 flex flex-col py-28 px-10'>
-                        <h2 className='text-4xl font-bold my-1'>Want to learn more?</h2>
-                        <h2 className='text-4xl font-bold my-1'>Get in touch!</h2>
-                        <p className='mt-5 text-lg'>At 750YP, we are here to help you grow and connect with like-minded individuals.</p>
+            <div id='au-top' className="flex justify-center items-center py-20">
+                <Grid container xs={12} sm={5}>
+                    <div className='mx-auto flex flex-col flex-1'>
+                    <Typography variant="h4" sx={{ fontWeight: 'bold' }} className='text-purple-950'>
+                        Want to learn more?
+                    </Typography>
+                    <Typography variant="h4" sx={{ fontWeight: 'bold' }} className='text-purple-950 mt-2'>
+                        Get in touch!
+                    </Typography>
+                    <Typography variant="h6" className='mt-8'>
+                        At 750YP, we are here to help you grow and connect with like-minded individuals.
+                    </Typography>
                     </div>
-                </div>
-                <div className="flex-initial h-full w-3/5 flex items-center justify-center">
-                    <div className='mx-auto h-3/4 w-3/4 space-y-8 flex flex-col'>
-                        <div className='bg-white h-full w-full'>
-                            <form action="" className='flex flex-col md:flex-row md:flex-wrap mx-auto w-1/2 py-20 space-y-8'>
+                    <div className='flex flex-1 flex-col justify-end'>
+                        <img src="https://i.imgur.com/WTSIkhv.png" alt="" className='pt-20' style={{ maxWidth: '80%', height: 'auto' }} />
+                    </div>
+                </Grid>
+                <Grid container xs={12} sm={5}>
+                    <div className='mx-auto space-y-8 flex flex-col'>
+                        <div className='bg-white h-full w-full rounded-xl'>
+                            <form action="" className='flex flex-col md:flex-row md:flex-wrap mx-auto w-1/2 py-16 space-y-8'>
                                 <div className='flex w-full space-x-8'>
                                     <input type="text" placeholder="Name*" className='' />
                                     <input type="text" placeholder="E-mail*" className='' />
@@ -32,7 +43,7 @@ const ContactUs = () => {
                         </div>
 
                     </div>
-                </div>
+                </Grid>
             </div>
         </div>
     )
