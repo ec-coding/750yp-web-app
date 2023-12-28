@@ -15,10 +15,10 @@ export const userRouter = router({
     return Users.findOne({ where: { email: opts.input } });
   }),
   create: publicProcedure
-    .input(z.object({ email: z.string(), name: z.string(), profile_icon: z.string()}))
+    .input(z.object({ email: z.string(), first_name: z.string(), last_name: z.string(), profile_icon: z.string()}))
     .mutation((opts) => {
-      const { email, name, profile_icon } = opts.input;
-      const newUser = { email, name, profile_icon };
+      const { email, first_name, last_name, profile_icon } = opts.input;
+      const newUser = { email, first_name, last_name, profile_icon };
       Users.create(newUser);
       return Users.findOne({where: {email: email}});
     }),

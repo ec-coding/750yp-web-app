@@ -2,6 +2,7 @@ import { useState } from "react";
 import { trpc } from "@/utils/trpc";
 import { TextField, Button, Container, Typography, InputLabel, Input, FormControl } from '@mui/material';
 import { styled } from '@mui/material/styles';
+
 import CloudUploadIcon from '@mui/icons-material/CloudUpload';
 
 const VisuallyHiddenInput = styled('input')({
@@ -16,7 +17,7 @@ const VisuallyHiddenInput = styled('input')({
     width: 1,
   });
   
-
+  
 
 export default function EventForm(){
 
@@ -25,14 +26,16 @@ export default function EventForm(){
     const [date, setDate] = useState("2023-01-01");
     const [start_time, setStart] = useState("00:00");
     const [end_time, setEnd] = useState("00:00");
-    const [banner, setBanner] = useState("");
+    const [banner, setBanner] = useState(null);
+    const [selectedFile, setSelectedFile] = useState(null);
     const [loading, setLoading] = useState(false);
 
    
-
     const mutation = trpc.event.create.useMutation(); // Initialize the mutation
+    const imageMutation = trpc.image.upload.useMutation(); // Initialize the mutation
 
     const handleSubmit = () => {
+        
         const eventData = {
             name: name || '', // Use default value if name is falsy
             description: description || '', // Use default value if description is falsy
@@ -42,12 +45,27 @@ export default function EventForm(){
             banner: banner || '' // Use default value if banner is falsy
         };
 
-        console.log(eventData);
+        const formData = new FormData();
+        formData.append('banner', banner as any);
 
+        console.log(formData);
         // Trigger the mutation
         //mutation.mutate(eventData);
+        //imageMutation.mutate(eventBanner);
         //console.log(mutation.isSuccess)
     }
+
+    // Handle file select
+    const handleFileChange = (e: any) => {
+        console.log(e.target.files[0]);
+        const file = e.target.files[0]; // Get the first file from the list of selected files
+          if (file) {
+           setBanner(file); // Store the File object in the state
+          }
+      };
+   
+  
+      
 
     return(
     <Container style={{textAlign:"center", maxHeight:"inherit"}}>
@@ -97,7 +115,7 @@ export default function EventForm(){
       
                 <Button component="label" variant="contained" startIcon={<CloudUploadIcon />}>
                     Upload file
-                    <VisuallyHiddenInput onChange={(e) => setBanner(e.target.value)} type="file" />
+                    <VisuallyHiddenInput onChange={(e) => handleFileChange(e)} accept=".png, .jpg" type="file" />
                 </Button>
                 <span>{banner}</span>
          

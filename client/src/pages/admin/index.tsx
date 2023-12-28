@@ -5,12 +5,11 @@ import { Container, Paper } from "@mui/material";
 import EventForm from "@/components/adminNav/EventForm";
 import UserTable from "@/components/adminNav/UserTable";
 import Typography from "@mui/material/Typography";
+import AdminHome from "@/components/adminNav/AdminHome";
 
 export default function Admin() {
     const { user, error, isLoading } = useUser();
     const [tile, setTile] = useState("Home");
-
-    const settings = ["Home", "User", "Events", "Some other fourth thing"]
 
     const handleDataChange = (data: string) => {
         setTile(data);
@@ -30,11 +29,10 @@ export default function Admin() {
                     marginTop: '10vh', // Adjust the margin-top as needed
                     padding: '1rem',
                 }}>
-              {tile === "Home" ? <h1>Home</h1> :
+              {tile === "Home" ? <AdminHome /> :
               tile === "User" ?  <>  
                 <Typography variant="h3" gutterBottom>Users </Typography> <UserTable /></> : 
-              tile === "Events" ? <EventForm /> :
-              tile === "Some other fourth thing" ? <a href="/">Some other fourth thing</a> : null}
+              tile === "Events" ? <EventForm /> : <p>Error???</p>}
              </Paper>
         </Container>
     )

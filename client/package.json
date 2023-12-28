@@ -4,16 +4,20 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "cd ../server && npm i && cd ../client && next build",
+    "build": "cd ../backend && npm i && cd ../client && next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
-    "@auth0/nextjs-auth0": "^3.0.0",
+    "@auth0/nextjs-auth0": "^3.2.0",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
     "@fortawesome/fontawesome-svg-core": "^6.4.2",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@headlessui/react": "^1.7.17",
     "@heroicons/react": "^2.0.18",
+    "@mui/icons-material": "^5.14.16",
+    "@mui/material": "^5.14.17",
     "@tailwindcss/forms": "^0.5.4",
     "@tanstack/react-query": "^4.29.25",
     "@trpc/client": "^10.34.0",
@@ -36,6 +40,6 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "tailwindcss": "3.3.2",
-    "typescript": "^5.1.6"
+    "typescript": "^4.8.3"
   }
 }

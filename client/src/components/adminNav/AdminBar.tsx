@@ -1,12 +1,13 @@
 import { useUser } from '@auth0/nextjs-auth0/client';
 import React, {useState} from 'react';
 import { AppBar, Toolbar, Typography, IconButton, Button } from '@mui/material';
+import Link from 'next/link';
 
 export default function AdminBar({ onDataChange } : any){
 
     const { user, error, isLoading } = useUser();
     const [tile, setTile] = useState("Home");
-    const settings = ["Home", "User", "Events", "Some other fourth thing"]
+    const settings = ["Home", "User", "Events"]
 
     return(
         <AppBar position="static">
@@ -24,8 +25,9 @@ export default function AdminBar({ onDataChange } : any){
            Welcome back, {user?.name || "admin"}!
           </Typography>
           {settings.map((setting) => {
-              return <Button color="inherit" onClick={() => onDataChange(setting)}>{setting}</Button>
+              return <Button color="inherit" key={setting} onClick={() => onDataChange(setting)}>{setting}</Button>
           })}
+          <Button color="inherit"><Link href={'/api/auth/logout'}>Logout</Link></Button>
         </Toolbar>
           </AppBar>
     )

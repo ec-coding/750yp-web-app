@@ -36,6 +36,10 @@ type User = {
   last_name: string;
   email: string;
   profile_icon: string;
+  job_title: string;
+  company: string;
+  dob: Date;
+  address: string;
 }
 
 function TablePaginationActions(props: TablePaginationActionsProps) {
@@ -95,6 +99,7 @@ function TablePaginationActions(props: TablePaginationActionsProps) {
 }
 
 const UserCard = ({ user, setUserView }: { user: User, setUserView: any }, ) => {
+
   return (
     <Card sx={{display:"flex", justifyContent:"space-between", flexDirection:"row"}}>
     <Button style={{height: 50, width: 30}} onClick={() => setUserView(false)}>Back</Button>
@@ -103,10 +108,10 @@ const UserCard = ({ user, setUserView }: { user: User, setUserView: any }, ) => 
         {user.profile_icon == null ? <img src={"https://placehold.co/200x200"} style={{width: 200, height: 200, borderRadius:"100%", border:"1px solid black" }} /> :<img src={user.profile_icon} alt="Profile Icon" style={{width: 200, height: 200, borderRadius:"100%", border:"1px solid black" }} />}
         <CardHeader title={`${user.first_name} ${user.last_name}`} />
         <Typography variant="body1" color="textPrimary">
-          Job Title: Software Engineer
+          Job Title: {user.job_title}
         </Typography>
         <Typography variant="body1" color="textPrimary">
-          Company: Probably a Tech Company
+          Company: {user.company}
         </Typography>
         {/* Change once other properties are created */}
         <Typography variant="body1" color="textPrimary">
@@ -119,9 +124,8 @@ const UserCard = ({ user, setUserView }: { user: User, setUserView: any }, ) => 
           DOB: 1/01/1969
         </Typography>
         <Typography variant="body1" color="textPrimary">
-         Address: Living on the Web somewhere. 
+         City: {user.address}
         </Typography>
-  
         <Typography variant="body1" color="textPrimary">
           Current Attendance Count: 2
         </Typography>
@@ -198,6 +202,7 @@ export default function UserTable() {
       try {
         const data = await fetch('http://localhost:5000/trpc/user.getAll')
         const response = await data.json()
+        console.log(response.result.data)
         setUsers(response.result.data);
         } catch (error) {
             console.log('Query not returned. :(')
@@ -206,10 +211,14 @@ export default function UserTable() {
           fetchEvent()
     }, [])  
 
+
+    
     return (
       <>
       {!userView ? <TableContainer component={Paper}>
           <Table sx={{ minWidth: 500,}} >
+          {users.length !== 0 ? 
+          <>
           <TableHead>
               <TableRow>
                 <TableCell>ID</TableCell>
@@ -243,7 +252,10 @@ export default function UserTable() {
                   <TableCell colSpan={6} />
                 </TableRow>
               )}
-            </TableBody>
+            </TableBody> </>
+              : <p>Loading...</p> }
+
+          
             <TableFooter>
               <TableRow>
                 <TablePagination

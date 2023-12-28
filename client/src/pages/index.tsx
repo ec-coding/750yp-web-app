@@ -3,8 +3,7 @@ import { useUser } from '@auth0/nextjs-auth0/client';
 import { trpc } from '../utils/trpc';
 import layout from '../components/layout';
 import { Root } from 'postcss';
-import NavBar from '../components/landing/NavBar';
-import Hero from '@/components/landing/Hero';
+
 
 
 
