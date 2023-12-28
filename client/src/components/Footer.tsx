@@ -4,7 +4,7 @@ import Typography from '@mui/material/Typography';
 
 const Footer = () => {
     return (
-        <Container maxWidth={false} disableGutters sx={{ paddingY: '3vh' }} className="bg-gray-100">
+        <Container maxWidth={false} disableGutters sx={{ paddingY: '2vh' }} className="bg-gray-100">
             <Grid container alignItems="center" spacing={2} marginY={0} paddingY={1} paddingX={0}>
 
                 <Grid xs={12} sm={4} container alignItems="center" justifyContent="center" margin={0}>
@@ -13,7 +13,7 @@ const Footer = () => {
 
                 <Grid xs={12} sm={8} margin={0} container justifyContent="space-evenly">
                     <div className='flex space-x-10' style={{ width: '100%' }}>
-                        <div className='space-y-3' style={{ flex: 1 }}>
+                        <div className='space-y-2' style={{ flex: 1 }}>
                             <Typography variant="h6" sx={{ fontWeight: 'bold' }} className='text-purple-950'>
                                 Company
                             </Typography>
@@ -27,7 +27,7 @@ const Footer = () => {
                                 Contact Us
                             </Typography>
                         </div>
-                        <div className='space-y-3' style={{ flex: 1 }}>
+                        <div className='space-y-2' style={{ flex: 1 }}>
                             <Typography variant="h6" sx={{ fontWeight: 'bold' }} className='text-purple-950'>
                                 Legal
                             </Typography>
@@ -41,7 +41,7 @@ const Footer = () => {
                                 Terms of Use
                             </Typography>
                         </div>
-                        <div className='space-y-3' style={{ flex: 3 }}>
+                        <div className='space-y-2' style={{ flex: 3 }}>
                             <Typography variant="h6" sx={{ fontWeight: 'bold' }} className='text-purple-950'>
                                 Get Connected
                             </Typography>

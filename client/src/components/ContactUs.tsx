@@ -18,8 +18,8 @@ const ContactUs = () => {
                         At 750YP, we are here to help you grow and connect with like-minded individuals.
                     </Typography>
                     </div>
-                    <div className='flex flex-1 flex-col justify-end'>
-                        <img src="https://i.imgur.com/WTSIkhv.png" alt="" className='pt-20' style={{ maxWidth: '80%', height: 'auto' }} />
+                    <div className='flex flex-1 flex-col items-center'>
+                        <img src="https://i.imgur.com/bUVt6Ev.png" alt="" className='pt-20' style={{ maxWidth: '60%', height: 'auto' }} />
                     </div>
                 </Grid>
                 <Grid container xs={12} sm={5}>

@@ -13,6 +13,7 @@ export default function RootLayout({
       {/* <Link href="/AboutUs">
         About Us
       </Link> */}
+      {/* Stick the Header component */}
       {children}
     </div>
   )

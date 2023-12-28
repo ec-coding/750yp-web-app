@@ -15,6 +15,8 @@ const style = {
   p: 4,
 };
 
+// MOVE THIS TO COMPONENTS FOLDER
+
 export default function StaffProfiles({ customProp }) {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);

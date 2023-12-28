@@ -22,24 +22,6 @@
   justify-content: center;
 }
 
-#about-us {
-  background-image: url('https://i.imgur.com/M1bGxGi.jpg');
-  background-position: center;
-  background-size: cover;
-  position: relative;
-}
-
-#about-us::before {
-  background-color: rgba(112, 112, 255, 0.5);
-  content: '';
-  position: absolute;
-  height: 100%;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-
 .hero-image {
   width: 100%;
   height: auto;
