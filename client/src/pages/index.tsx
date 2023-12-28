@@ -1,8 +1,19 @@
-
 import { useUser } from '@auth0/nextjs-auth0/client';
 import { trpc } from '../utils/trpc';
 import layout from '../components/layout';
 import { Root } from 'postcss';
+import React from 'react'
+import Accordion from '@mui/material/Accordion';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import Typography from '@mui/material/Typography';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import ContactUs from '@/components/ContactUs';
+import StaffProfiles from '@/pages/AboutUs/StaffProfiles/StaffProfiles';
+import { Container, Box, CardMedia, Grid, Modal, makeStyles } from '@mui/material';
+import styles from './AboutUs.module.css';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
 
 
@@ -68,172 +79,159 @@ console.log(user);
               </div>
             </div>
           </div>
-          <div className="left-[59px] top-[22px] absolute text-gray-800 text-xl font-semibold font-['Poppins'] uppercase leading-[30px]">Connect</div>
-          <div className="w-[491px] h-[67px] left-[59px] top-[57px] absolute text-neutral-500 text-[13px] font-medium font-['Poppins'] leading-normal">Cultivating connections and forging relationships plays a pivotal role in expanding your professional network, and the Lewisville Area Chamber provides numerous exceptional networking chances for you to explore.</div>
-        </div>
-        <div className="w-[570px] h-40 left-[987px] top-[374px] absolute">
-          <div className="w-[570px] h-40 left-0 top-0 absolute bg-white rounded-[10px] shadow" />
-          <div className="w-6 h-6 left-[18px] top-[26px] absolute justify-center items-center inline-flex">
-            <div className="w-6 h-6 justify-center items-center inline-flex">
-              <div className="w-6 h-6 relative">
-              </div>
-            </div>
-          </div>
-          <div className="left-[59px] top-[23px] absolute text-gray-800 text-xl font-semibold font-['Poppins'] uppercase leading-[30px]">Advocacy</div>
-          <div className="w-[491px] h-[91px] left-[59px] top-[53px] absolute text-neutral-500 text-[13px] font-medium font-['Poppins'] leading-normal">The Lewisville Area Chamber champions a wide range of diverse member businesses, serving as an advocate for the business community. This advocacy fosters an environment conducive to growth and success, benefiting all involved.</div>
-        </div>
-        <div className="w-[570px] h-40 left-[987px] top-[578px] absolute">
-          <div className="w-[570px] h-40 left-0 top-0 absolute bg-white rounded-[10px] shadow" />
-          <div className="w-6 h-6 left-[18px] top-[26px] absolute justify-center items-center inline-flex">
-            <div className="w-6 h-6 justify-center items-center inline-flex">
-              <div className="w-6 h-6 relative">
-              </div>
-            </div>
-          </div>
-          <div className="left-[59px] top-[23px] absolute text-gray-800 text-xl font-semibold font-['Poppins'] uppercase leading-[30px]">Impact</div>
-          <div className="w-[491px] h-[67px] left-[59px] top-[63px] absolute text-neutral-500 text-[13px] font-medium font-['Poppins'] leading-normal">The Lewisville Area Chamber offers distinctive chances for both businesses and individuals to have a positive impact by educating them about significant community matters through its array of events and programs.</div>
-        </div>
-        <div className="w-[321px] h-[50px] left-[971px] top-[91px] absolute text-center text-sky-950 text-[45px] font-semibold font-['Poppins'] leading-normal">About 750YP</div>
-        <img className="w-[800.08px] h-[600px] left-[94px] top-[115px] absolute" src="https://i.imgur.com/BqbiXoO.png" />
-      </div>
-      <div className="w-[1728px] h-[748px] left-0 top-[3333px] absolute">
-        <div className="w-[1728px] h-[748px] left-0 top-0 absolute bg-indigo-300" />
-        <div className="w-[466px] left-[115px] top-[252px] absolute text-black text-2xl font-normal font-['Poppins'] tracking-tight">At 750YP, we are here to help you grow and connect with like-minded individuals.</div>
-        <div className="left-[115px] top-[102px] absolute text-sky-950 text-[40px] font-semibold font-['Poppins'] leading-[60px] tracking-tight">Want to learn more?<br />Get in touch!</div>
-        <img className="w-[339.72px] h-[450px] left-[511px] top-[210px] absolute" src="https://i.imgur.com/WTSIkhv.png" />
-        <div className="w-[765px] h-[592.13px] left-[829px] top-[96px] absolute">
-          <div className="w-[765px] h-[556px] left-0 top-0 absolute">
-            <div className="w-[765px] h-[556px] left-0 top-0 absolute bg-white rounded-[10px] shadow" />
-            <div className="w-[478px] h-[378px] left-[144px] top-[44px] absolute">
-              <div className="w-[220px] h-14 left-0 top-0 absolute flex-col justify-start items-start inline-flex">
-                <div className="self-stretch h-14 px-3 rounded border border-black border-opacity-25 flex-col justify-start items-start flex">
-                  <div className="self-stretch py-4 justify-start items-start gap-2 inline-flex">
-                    <div className="grow shrink basis-0 text-neutral-400 text-base font-normal font-['Roboto'] leading-normal tracking-tight">Name*</div>
+
+          <div className="space-y-16">
+            <div className='bio-panel-container flex items-center justify-center space-x-12 overflow-x-auto'>
+              <Box className="bg-gray-200 rounded-lg">
+                <Grid xs={12} sm={6} container>
+                  <div className='flex-initial bio-panel space-y-4 p-3'>
+                    <div className="w-80 h-80 rounded-lg overflow-hidden">
+                      <img src="https://i.imgur.com/wM07UOj.png" alt="Your Image" className="w-full h-full object-cover" />
+                    </div>
+                    <div className="bg-white mx-auto flex flex-col p-5 rounded-lg">
+                      <Typography variant="h6" sx={{ fontWeight: 'bold' }}>
+                        Event
+                      </Typography>
+                      <Typography>
+                        Event Subtitle
+                      </Typography>
+                      <Typography>
+                        Date & Time
+                      </Typography>
+                      <Grid container className="space-x-10">
+                        <Typography>
+                          Attending
+                        </Typography>
+                        <Typography>
+                          Cost
+                        </Typography>
+                      </Grid>
+                    </div>
                   </div>
-                </div>
-              </div>
-              <div className="w-[220px] h-14 left-0 top-[82px] absolute flex-col justify-start items-start inline-flex">
-                <div className="self-stretch h-14 px-3 rounded border border-black border-opacity-25 flex-col justify-start items-start flex">
-                  <div className="self-stretch py-4 justify-start items-start gap-2 inline-flex">
-                    <div className="grow shrink basis-0 text-neutral-400 text-base font-normal font-['Roboto'] leading-normal tracking-tight">Phone #</div>
+                </Grid>
+              </Box>
+              <Box className="bg-gray-200 rounded-lg">
+                <Grid xs={12} sm={6} container>
+                  <div className='flex-initial bio-panel space-y-4 p-3'>
+                    <div className="w-80 h-80 rounded-lg overflow-hidden">
+                      <img src="https://i.imgur.com/cmsvQqd.png" alt="Your Image" className="w-full h-full object-cover" />
+                    </div>
+                    <div className="bg-white mx-auto flex flex-col p-5 rounded-lg">
+                      <Typography variant="h6" sx={{ fontWeight: 'bold' }}>
+                        Event
+                      </Typography>
+                      <Typography>
+                        Event Subtitle
+                      </Typography>
+                      <Typography>
+                        Date & Time
+                      </Typography>
+                      <Grid container className="space-x-10">
+                        <Typography>
+                          Attending
+                        </Typography>
+                        <Typography>
+                          Cost
+                        </Typography>
+                      </Grid>
+                    </div>
                   </div>
-                </div>
-              </div>
-              <div className="w-[220px] h-14 left-[258px] top-0 absolute flex-col justify-start items-start gap-[3px] inline-flex">
-                <div className="self-stretch h-14 px-3 rounded border border-black border-opacity-25 flex-col justify-start items-start flex">
-                  <div className="self-stretch py-4 justify-start items-start gap-2 inline-flex">
-                    <div className="grow shrink basis-0 text-neutral-400 text-base font-normal font-['Roboto'] leading-normal tracking-tight">Email*</div>
+                </Grid>
+              </Box>
+              <Box className="bg-gray-200 rounded-lg">
+                <Grid xs={12} sm={6} container>
+                  <div className='flex-initial bio-panel space-y-4 p-3'>
+                    <div className="w-80 h-80 rounded-lg overflow-hidden">
+                      <img src="https://i.imgur.com/hD4R252.png" alt="Your Image" className="w-full h-full object-cover" />
+                    </div>
+                    <div className="bg-white mx-auto flex flex-col p-5 rounded-lg">
+
+                      {/* <EventCard /> */}
+
+                      <Typography variant="h6" sx={{ fontWeight: 'bold' }}>
+                        Event
+                      </Typography>
+                      <Typography>
+                        Event Subtitle
+                      </Typography>
+                      <Typography>
+                        Date & Time
+                      </Typography>
+                      <Grid container className="space-x-10">
+                        <Typography>
+                          Attending
+                        </Typography>
+                        <Typography>
+                          Cost
+                        </Typography>
+                      </Grid>
+                    </div>
                   </div>
-                </div>
-              </div>
-              <div className="w-[478px] h-[214px] left-0 top-[164px] absolute">
-                <div className="left-[12px] top-[14px] absolute text-neutral-400 text-base font-normal font-['Roboto'] leading-normal tracking-tight">Message*</div>
-                <div className="w-[478px] h-[214px] left-0 top-0 absolute bg-zinc-300 bg-opacity-0 rounded border border-black border-opacity-25" />
-              </div>
+                </Grid>
+              </Box>
             </div>
-            <div className="w-[250px] h-[50px] left-[258px] top-[455px] absolute">
-              <div className="w-[250px] h-[50px] left-0 top-0 absolute bg-blue-950 rounded-[50px]" />
-              <div className="w-[81px] h-7 left-[84px] top-[11px] absolute text-center text-white text-xl font-normal font-['Poppins']">Submit</div>
-            </div>
-          </div>
-          <img className="w-[214.40px] h-[106.80px] left-[492px] top-[499.40px] absolute origin-top-left rotate-[-29.75deg]" src="https://via.placeholder.com/214x107" />
-        </div>
-      </div>
-      <div className="w-[1728px] h-[620px] left-0 top-[169px] absolute">
-        <div className="w-[1728px] h-[620px] left-0 top-0 absolute bg-gradient-to-b from-indigo-200 to-indigo-300" />
-        <div className="w-[250px] h-[50px] left-[140px] top-[404px] absolute">
-          <div className="w-[250px] h-[50px] left-0 top-0 absolute bg-gradient-to-b from-yellow-400 to-yellow-400 rounded-[50px]" />
-          <div className="left-[82px] top-[9px] absolute text-slate-800 text-[22px] font-medium font-['Poppins']">Sign Up</div>
-        </div>
-        <img className="w-[773.49px] h-[580px] left-[839px] top-[20px] absolute" src="https://i.imgur.com/skU8GLZ.png" />
-        <div className="left-[140px] top-[152px] absolute text-slate-800 text-[40px] font-semibold font-['Poppins']">Welcoming all Young Professionals...</div>
-        <div className="w-[713px] left-[141px] top-[234px] absolute text-black text-2xl font-normal font-['Poppins'] leading-loose">750 YP represents a fresh initiative by the Lewisville Area Chamber of Commerce, focused on bringing together emerging young professionals and nurturing the future leaders of our community.</div>
-      </div>
-      <div className="w-[1647px] h-[410px] left-[111px] top-[2793px] absolute">
-        <img className="w-[546.67px] h-[410px] left-[554px] top-0 absolute rounded-[10px] shadow" src="https://i.imgur.com/PRVTube.jpg" />
-        <img className="w-[496px] h-[370px] left-[1151px] top-[20px] absolute rounded-[10px] shadow" src="https://i.imgur.com/JmIPnvd.jpg" />
-        <div className="left-0 top-[10px] absolute text-blue-950 text-[35px] font-semibold font-['Poppins'] leading-normal tracking-tight">Discover our community</div>
-        <div className="w-[493px] left-[4px] top-[64px] absolute text-sky-950 text-2xl font-normal font-['Poppins'] leading-loose">We are dedicated to fostering business expansion by promoting advocacy, fostering connections, providing education, and encouraging innovation.</div>
-        <div className="w-[300px] h-[50px] left-0 top-[251px] absolute">
-          <div className="w-[300px] h-[50px] left-0 top-0 absolute bg-yellow-400 rounded-[50px]" />
-          <div className="w-[158px] h-7 left-[71px] top-[11px] absolute text-center text-blue-950 text-xl font-normal font-['Poppins']">Join Today</div>
-        </div>
-      </div>
-      <div className="w-[1645px] h-[860px] left-[41px] top-[881px] absolute">
-        <div className="left-[628px] top-0 absolute text-sky-950 text-3xl font-semibold font-['Poppins']">Events in Lewisville, TX</div>
-        <div className="w-[300px] h-[50px] left-[673px] top-[810px] absolute">
-          <div className="w-[300px] h-[50px] left-0 top-0 absolute bg-blue-950 rounded-[50px]" />
-          <div className="w-[158px] h-7 left-[71px] top-[11px] absolute text-center text-white text-xl font-normal font-['Poppins']">Explore Events</div>
-        </div>
-        <div className="left-[271px] top-[62px] absolute text-black text-[22px] font-normal text-center font-['Poppins']">Participate in our community gatherings for the opportunity to network and develop collectively.</div>
-        <div className="w-[60px] h-[60px] left-[1585px] top-[403px] absolute" />
-        <div className="w-[60px] h-[60px] left-0 top-[403px] absolute" />
-        <div className="w-[55px] h-[55px] left-[1391px] top-[170px] absolute" />
-        <div className="w-[407px] h-[575px] left-[1102px] top-[146px] absolute">
-        <div className="w-[407px] h-[575px] left-0 top-0 absolute bg-gray-200 rounded-[10px]" />
-          <div className="w-[371px] h-[226px] left-[18px] top-[331px] absolute bg-white rounded-[10px]" />
-          <img className="w-[371px] h-[294px] left-[18px] top-[18px] absolute bg-black bg-opacity-20 rounded-[10px]" src="https://i.imgur.com/hD4R252.png" />
-          <div className="w-[55px] h-[55px] left-[325px] top-[29px] absolute" />
-          <div className="w-[356px] left-[26px] top-[349px] absolute text-black text-[22px] font-semibold font-['Poppins']">Virtual Meet & Greet</div>
-          <div className="w-[352px] left-[26px] top-[388px] absolute text-zinc-500 text-base font-medium font-['Poppins']">Host: Social Singles Dallas Meetups</div>
-          <div className="w-[314px] h-[75px] left-[26px] top-[432px] absolute">
-            <div className="left-[38px] top-[3px] absolute text-black text-base font-normal font-['Poppins']">SAT, OCT 28 @ 10:00 - 12:00 PM CDT </div>
-            <div className="left-[38px] top-[49px] absolute text-black text-base font-normal font-['Poppins']">20 attending</div>
-            <div className="left-[199px] top-[49px] absolute text-black text-base font-normal font-['Poppins']">Free, Virtual</div>
-            <div className="w-[30px] h-[30px] left-0 top-0 absolute" />
-            <div className="w-[30px] h-[30px] left-0 top-[45px] absolute" />
-            <div className="w-[30px] h-[30px] left-[161px] top-[45px] absolute" />
-          </div>
-          <div className="w-[55px] h-[55px] left-[322px] top-[29px] absolute" />
-        </div>
-        <div className="w-[407px] h-[575px] left-[619px] top-[146px] absolute">
-          <div className="w-[407px] h-[575px] left-0 top-0 absolute bg-gray-200 rounded-[10px]" />
-          <div className="w-[371px] h-[226px] left-[18px] top-[331px] absolute bg-white rounded-[10px]" />
-          <img className="w-[371px] h-[294px] left-[18px] top-[18px] absolute bg-black bg-opacity-20 rounded-[10px]" src="https://i.imgur.com/cmsvQqd.png" />
-          <div className="w-[55px] h-[55px] left-[325px] top-[29px] absolute" />
-          <div className="w-[356px] left-[28px] top-[349px] absolute text-black text-[22px] font-semibold font-['Poppins']">Happy Hour Meet & Greet</div>
-          <div className="w-[352px] left-[28px] top-[388px] absolute text-zinc-500 text-base font-medium font-['Poppins']">Host: Social Singles Dallas Meetups</div>
-          <div className="w-[319px] h-[75px] left-[28px] top-[432px] absolute">
-            <div className="left-[38px] top-[3px] absolute text-black text-base font-normal font-['Poppins']">TUES, OCT 24 @ 4:00 - 6:00 PM CDT </div>
-            <div className="left-[38px] top-[49px] absolute text-black text-base font-normal font-['Poppins']">11 attending</div>
-            <div className="left-[199px] top-[49px] absolute text-black text-base font-normal font-['Poppins']">Free, In-person</div>
-            <div className="w-[30px] h-[30px] left-0 top-0 absolute" />
-            <div className="w-[30px] h-[30px] left-0 top-[45px] absolute" />
-            <div className="w-[30px] h-[30px] left-[161px] top-[45px] absolute" />
+
+            <Typography variant="h6" className='my-10 flex items-center justify-center '>
+              <button className='bg-purple-950 text-white py-1 px-16 rounded-full focus:outline-none focus:ring focus:border-blue-300'>Explore Events</button>
+            </Typography>
           </div>
         </div>
-        <div className="w-[407px] h-[575px] left-[136px] top-[146px] absolute">
-          <div className="w-[407px] h-[575px] left-0 top-0 absolute bg-gray-200 rounded-[10px]" />
-          <img className="w-[371px] h-[294px] left-[18px] top-[18px] absolute bg-black bg-opacity-20 rounded-[10px]" src="https://i.imgur.com/wM07UOj.png" />
-          <div className="w-[55px] h-[55px] left-[325px] top-[29px] absolute" />
-          <div className="w-[371px] h-[226px] left-[18px] top-[331px] absolute bg-white rounded-[10px]" />
-          <div className="w-[356px] h-[186px] left-[27px] top-[349px] absolute">
-            <div className="w-[352px] left-0 top-[71px] absolute text-zinc-500 text-base font-medium font-['Poppins']">Host: Southwest Dallas Networking Group</div>
-            <div className="left-[38px] top-[114px] absolute text-black text-base font-normal font-['Poppins']">MON, OCT 23 @ 7:30 - 11:30 AM CDT </div>
-            <div className="left-[38px] top-[160px] absolute text-black text-base font-normal font-['Poppins']">3 attending</div>
-            <div className="left-[199px] top-[160px] absolute text-black text-base font-normal font-['Poppins']">Free, In-person</div>
-            <div className="w-[30px] h-[30px] left-0 top-[111px] absolute" />
-            <div className="w-[30px] h-[30px] left-0 top-[156px] absolute" />
-            <div className="w-[356px] left-0 top-0 absolute text-black text-[22px] font-semibold font-['Poppins']">Southwest Dallas Networkers Power Networking</div>
-            <div className="w-[30px] h-[30px] left-[161px] top-[156px] absolute" />
+        <div id='au-bot' className="">
+          <div className=''>
+
+            <Container maxWidth={false} disableGutters sx={{ marginTop: '2vh' }}>
+              <Grid container alignItems="center" spacing={2} margin={0} padding={0} className="bg-orange-50">
+
+                <Grid xs={12} sm={6} container alignItems="center" justifyContent="space-between" margin={0} padding={5}>
+                  <CardMedia component="img" image="https://i.imgur.com/KVEk6LU.jpg" alt="750YP" className='hero-image' sx={{ border: '4px solid white', borderRadius: '8px' }} />
+                </Grid>
+
+                <Grid xs={12} sm={6} alignItems="center" justifyContent="center" margin={0} padding={8}>
+                  <Box marginBottom={4}>
+                    <Typography variant="h4" sx={{ fontWeight: 'bold', fontSize: 40 }} className="text-purple-950">
+                      About 750YP
+                    </Typography>
+                  </Box>
+                  <div className="space-y-10">
+                    <Box sx={{ backgroundColor: 'white', borderRadius: 4, padding: 4, boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)' }} padding={4}>
+                      <Typography variant="h4" sx={{ fontWeight: 'bold', fontSize: 22, marginBottom: 2 }} className="text-purple-950">
+                        CONNECT
+                      </Typography>
+                      <Typography variant="body1" sx={{ fontSize: 18 }}>
+                        Cultivating connections and forging relationships plays a pivotal role in expanding your professional network,
+                        and the Lewisville Area Chamber provides numerous exceptional networking chances for you to explore.
+                      </Typography>
+                    </Box>
+                    <Box sx={{ backgroundColor: 'white', borderRadius: 4, padding: 4, boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)' }} padding={4}>
+                    <Typography variant="h4" sx={{ fontWeight: 'bold', fontSize: 22, marginBottom: 2 }} className="text-purple-950">
+                        ADVOCACY
+                      </Typography>
+                      <Typography variant="body1" sx={{ fontSize: 18 }}>
+                      The Lewisville Area Chamber champions a wide range of diverse member businesses, serving as an advocate for the business community. 
+                      This advocacy fosters an environment conducive to growth and success, benefiting all involved.
+                      </Typography>
+                    </Box>
+                    <Box sx={{ backgroundColor: 'white', borderRadius: 4, padding: 4, boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)' }} padding={4}>
+                    <Typography variant="h4" sx={{ fontWeight: 'bold', fontSize: 22, marginBottom: 2 }} className="text-purple-950">
+                        IMPACT
+                      </Typography>
+                      <Typography variant="body1" sx={{ fontSize: 18 }}>
+                      The Lewisville Area Chamber offers distinctive chances for both businesses and individuals to have a positive impact by educating them 
+                      about significant community matters through its array of events and programs.
+                      </Typography>
+                    </Box>
+                  </div>
+                </Grid>
+
+              </Grid>
+            </Container>
           </div>
         </div>
+        <ContactUs />
+        <Footer />
       </div>
-      <div className="w-[1728px] h-[278px] left-0 top-[4081px] absolute">
-        <div className="w-[1728px] h-[278px] left-0 top-0 absolute bg-zinc-100" />
-        <div className="w-28 h-[149px] left-[543px] top-[90px] absolute"><span className="text-blue-950 text-sm font-normal font-['Poppins'] leading-tight">About Us<br /><br />Events<br /><br />Contact Us<br /><br />Careers<br /></span><span className="text-blue-950 text-sm font-normal font-['Poppins'] leading-[25px]"><br /></span></div>
-        <div className="w-[212px] h-[87px] left-[1032px] top-[47px] absolute">
-          <div className="left-0 top-0 absolute text-blue-950 text-base font-semibold font-['Poppins'] leading-[25px]">Get Connected </div>
-          <div className="w-[35px] h-[35px] left-0 top-[51px] absolute" />
-          <div className="w-[35px] h-[35px] left-[59px] top-[52px] absolute" />
-          <div className="w-[35px] h-[35px] left-[177px] top-[52px] absolute" />
-          <div className="w-[35px] h-[35px] left-[118px] top-[51px] absolute" />
-        </div>
-        <div className="left-[775px] top-[90px] absolute text-blue-950 text-sm font-normal font-['Poppins'] leading-tight">Privacy Policy<br /><br />Terms & Conditions<br /><br />Terms of Use</div>
-        <div className="left-[543px] top-[47px] absolute text-blue-950 text-base font-semibold font-['Poppins'] leading-[25px]">Company</div>
-        <div className="left-[775px] top-[47px] absolute text-blue-950 text-base font-semibold font-['Poppins'] leading-[25px]">Legal</div>
-        <img className="w-[200px] h-[133.33px] left-[124px] top-[57px] absolute" src="https://i.imgur.com/SsGkUGC.png" />
-      </div>
-    </div>
+    </>
   )
-};
+}
+
+export default Home

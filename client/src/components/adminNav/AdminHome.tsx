@@ -78,7 +78,7 @@ const highestAttendence = () => {
 
     return (
       <div className="flex items-start justify-center bg-white rounded-lg p-4 shadow-l">
-        <highestAttendence />
+        {/* <highestAttendence /> */}
         <StatsTile title="Total Users" value={users.data?.length}  />
         <StatsTile title="Total Events" value={events.data?.length} />
         <StatsTile title="Total Attendence" value="50"/>
