@@ -9,8 +9,21 @@ import { Container, Box, CardMedia, Grid, Modal, makeStyles, Divider } from '@mu
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import EventPanel from '@/components/EventPanel';
+import { trpc } from '@/utils/trpc';
+
+
+
 
 const Events = () => {
+
+const response = trpc.event.getAll.useQuery();
+const [events, setEvents] = React.useState(response.data);
+
+
+React.useEffect(() => {
+  setEvents(response.data);
+}, [response.data]);
+
 
   return (
     <>
@@ -34,7 +47,7 @@ const Events = () => {
             <div className='flex items-center w-3/5 bg-cyan-400 mx-auto py-4 px-7 rounded-md'>
               <div className='flex-1'>
                 <Typography sx={{ fontWeight: 'bold' }}>
-                  Events (21 Results)
+                  Events ({events? events.length : "error"} Results)
                 </Typography>
               </div>
               <div className='flex flex-1 justify-end'>
@@ -42,15 +55,15 @@ const Events = () => {
               </div>
             </div>
             <div className='bio-panel-container flex items-center justify-center space-x-12 overflow-x-auto'>
-              <EventPanel />
-              <EventPanel />
-              <EventPanel />
+              {events?.map((event) => (
+                <EventPanel event={event} />
+              ))}
             </div>
-            <div className='bio-panel-container flex items-center justify-center space-x-12 overflow-x-auto'>
+            {/* <div className='bio-panel-container flex items-center justify-center space-x-12 overflow-x-auto'>
               <EventPanel />
               <EventPanel />
               <EventPanel />
-            </div>
+            </div> */}
             <Typography variant="h6" className='my-10 flex items-center justify-center '>
               <button className='bg-purple-950 text-white py-1 px-16 rounded-full focus:outline-none focus:ring focus:border-blue-300'>Load More</button>
             </Typography>

@@ -15,69 +15,45 @@ import styles from './AboutUs.module.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
-
-
-
-
-export default function Home() {
-
-  //User information.
-  const { user, error, isLoading } = useUser();
-
-
-  //Gives an example call
-  // const AllUsers = () => {
-  //  try {`
-  //   const response = trpc.user.getAll.useQuery();
-  //   const data = response.data
-  //   if(data){
-  //     console.log(data)
-  //     return
-  //   } console.log('Query not returned. :(')
-  //  } catch (error) {
-  //   console.error(error)
-  //  }
-  // }
-
-  // //Gives example call with args
-  // const oneEvent = () => {
-  //   try {
-  //     const response = trpc.event.byId.useQuery("1")
-  //     const data = response.data
-  //     if(data){
-  //       console.log(data)
-  //       return
-  //     } console.log("Query not returned. :(")
-  //   } catch (error) {
-  //     console.error(error)
-  //   }
-  // };
-
-console.log(user);
+const Home = () => {
 
   return (
-    <div className="w-[1728px] h-[4359px] relative bg-white">
-      <div className="w-[1728px] h-[169px] left-0 top-0 absolute">
-        <div className="w-[1728px] h-[169px] left-0 top-0 absolute bg-zinc-100" />
-        <div className="left-[937px] top-[74px] absolute text-black text-[22px] font-medium font-['Poppins']">About Us</div>
-        <div className="left-[1095px] top-[74px] absolute text-black text-[22px] font-medium font-['Poppins']">Events</div>
-        <img className="w-[200px] h-[133.33px] left-[40px] top-[15px] absolute" src="https://i.imgur.com/SsGkUGC.png" />
-        <a href="/api/auth/login" className="left-[1226px] top-[74px] absolute text-black text-[22px] font-medium font-['Poppins']">Log In</a>
-        
-        <div className="w-[250px] h-[50px] left-[1374px] top-[65px] absolute">
-          <div className="w-[250px] h-[50px] left-0 top-0 absolute bg-gradient-to-b from-yellow-400 to-yellow-400 rounded-[50px]" />
-          <a  href="./admin/" className="left-[82px] top-[9px] absolute text-slate-800 text-[22px] font-medium font-['Poppins']">Sign Up</a>
-        </div>
-      </div>
-      <div className="w-[1728px] h-[829px] left-0 top-[1833px] absolute">
-        <div className="w-[1728px] h-[829px] left-0 top-0 absolute bg-stone-100" />
-        <div className="w-[570px] h-40 left-[987px] top-[170px] absolute">
-          <div className="w-[570px] h-40 left-0 top-0 absolute bg-white rounded-[10px] shadow" />
-          <div className="w-6 h-6 left-[18px] top-[25px] absolute justify-center items-center inline-flex">
-            <div className="w-6 h-6 justify-center items-center inline-flex">
-              <div className="w-6 h-6 relative">
-              </div>
-            </div>
+    <>
+      <div className="h-screen w-screen overflow-x-hidden">
+        <Header />
+        <Container maxWidth={false} disableGutters>
+          <Grid container alignItems="center" spacing={2} margin={0} padding={0} className='bg-sky-200'>
+
+            <Grid xs={12} sm={7} margin={0} paddingLeft={24}>
+              <Typography variant="h3" sx={{ fontWeight: 'bold', fontSize: 40 }} className='text-purple-950 mb-10'>
+                Welcoming all Young Professionals!
+              </Typography>
+              <Typography variant="subtitle2" sx={{ fontSize: 24 }} paddingRight={24}>
+                750 YP represents a fresh initiative by the Lewisville Area Chamber of Commerce,
+                focused on bringing together emerging young professionals and nurturing the future leaders of our community.
+              </Typography>
+              <Typography variant="h6" sx={{ fontWeight: 'bold' }} className='my-10'>
+                <button className='bg-yellow-400 py-1 px-16 rounded-full focus:outline-none focus:ring focus:border-blue-300'>
+                  <a href='/api/auth/login'>Sign Up</a></button>
+              </Typography>
+            </Grid>
+
+            <Grid xs={12} sm={5} container alignItems="center" justifyContent="space-between" margin={0} paddingY={5} paddingRight={12}>
+              <CardMedia component="img" image="https://i.imgur.com/VzXciUc.jpg" alt="750YP" className='hero-image' sx={{ border: '4px solid white', borderRadius: '8px' }}/>
+            </Grid>
+
+          </Grid>
+        </Container>
+
+
+        <div id='au-mid' className="w-full my-20">
+          <div className='text-4xl text-center font-bold my-10'>
+            <Typography variant="h4" sx={{ fontWeight: 'bold' }} className='text-purple-950 mb-3'>
+              Our Upcoming Events
+            </Typography>
+            <Typography sx={{ fontSize: 20 }}>
+              Participate in our community gatherings for the opportunity to network and develop collectively.
+            </Typography>
           </div>
 
           <div className="space-y-16">
