@@ -2,6 +2,7 @@ import { router, publicProcedure } from '../trpc.js';
 import sequelize from '../config/connection.js';
 import Events from '../models/Event.js';
 import { z } from 'zod';
+
 import { randomUUID } from 'crypto';
 
 
@@ -19,8 +20,9 @@ export const eventRouter = router({
       }
     });
   }),
+
   create: publicProcedure
-    .input(z.object({ name: z.string(), description: z.string(), start_time: z.string(), end_time: z.string(), banner: z.string() }))
+    .input(z.object({ name: z.string(), description: z.string(), date: z.string(), start_time: z.string(), end_time: z.string(), banner: z.string() }))
     .mutation(req => {
       const { name, description, start_time, end_time, banner } = req.input;
       const newEvent = { name, description, start_time, end_time, banner }
