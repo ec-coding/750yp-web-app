@@ -24,7 +24,7 @@ const Home = () => {
         <Container maxWidth={false} disableGutters>
           <Grid container alignItems="center" spacing={2} margin={0} padding={0} className='bg-sky-200'>
 
-            <Grid xs={12} sm={7} margin={0} paddingLeft={24}>
+            <Grid xs={12} item sm={7} margin={0} paddingLeft={24}>
               <Typography variant="h3" sx={{ fontWeight: 'bold', fontSize: 40 }} className='text-purple-950 mb-10'>
                 Welcoming all Young Professionals!
               </Typography>
@@ -38,7 +38,7 @@ const Home = () => {
               </Typography>
             </Grid>
 
-            <Grid xs={12} sm={5} container alignItems="center" justifyContent="space-between" margin={0} paddingY={5} paddingRight={12}>
+            <Grid item xs={12} sm={5} container alignItems="center" justifyContent="space-between" margin={0} paddingY={5} paddingRight={12}>
               <CardMedia component="img" image="https://i.imgur.com/VzXciUc.jpg" alt="750YP" className='hero-image' sx={{ border: '4px solid white', borderRadius: '8px' }}/>
             </Grid>
 
@@ -59,7 +59,7 @@ const Home = () => {
           <div className="space-y-16">
             <div className='bio-panel-container flex items-center justify-center space-x-12 overflow-x-auto'>
               <Box className="bg-gray-200 rounded-lg">
-                <Grid xs={12} sm={6} container>
+                <Grid item xs={12} sm={6} container>
                   <div className='flex-initial bio-panel space-y-4 p-3'>
                     <div className="w-80 h-80 rounded-lg overflow-hidden">
                       <img src="https://i.imgur.com/wM07UOj.png" alt="Your Image" className="w-full h-full object-cover" />
@@ -87,7 +87,7 @@ const Home = () => {
                 </Grid>
               </Box>
               <Box className="bg-gray-200 rounded-lg">
-                <Grid xs={12} sm={6} container>
+                <Grid item xs={12} sm={6} container>
                   <div className='flex-initial bio-panel space-y-4 p-3'>
                     <div className="w-80 h-80 rounded-lg overflow-hidden">
                       <img src="https://i.imgur.com/cmsvQqd.png" alt="Your Image" className="w-full h-full object-cover" />
@@ -115,7 +115,7 @@ const Home = () => {
                 </Grid>
               </Box>
               <Box className="bg-gray-200 rounded-lg">
-                <Grid xs={12} sm={6} container>
+                <Grid item xs={12} sm={6} container>
                   <div className='flex-initial bio-panel space-y-4 p-3'>
                     <div className="w-80 h-80 rounded-lg overflow-hidden">
                       <img src="https://i.imgur.com/hD4R252.png" alt="Your Image" className="w-full h-full object-cover" />
@@ -158,11 +158,11 @@ const Home = () => {
             <Container maxWidth={false} disableGutters sx={{ marginTop: '2vh' }}>
               <Grid container alignItems="center" spacing={2} margin={0} padding={0} className="bg-orange-50">
 
-                <Grid xs={12} sm={6} container alignItems="center" justifyContent="space-between" margin={0} padding={5}>
+                <Grid item xs={12} sm={6} container alignItems="center" justifyContent="space-between" margin={0} padding={5}>
                   <CardMedia component="img" image="https://i.imgur.com/KVEk6LU.jpg" alt="750YP" className='hero-image' sx={{ border: '4px solid white', borderRadius: '8px' }} />
                 </Grid>
 
-                <Grid xs={12} sm={6} alignItems="center" justifyContent="center" margin={0} padding={8}>
+                <Grid item xs={12} sm={6} alignItems="center" justifyContent="center" margin={0} padding={8}>
                   <Box marginBottom={4}>
                     <Typography variant="h4" sx={{ fontWeight: 'bold', fontSize: 40 }} className="text-purple-950">
                       About 750YP

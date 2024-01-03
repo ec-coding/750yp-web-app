@@ -6,7 +6,7 @@ const ContactUs = () => {
     return (
         <div className='bg-sky-200'>
             <div id='au-top' className="flex justify-center items-center py-20">
-                <Grid container xs={12} sm={5}>
+                <Grid item container xs={12} sm={5}>
                     <div className='mx-auto flex flex-col flex-1'>
                     <Typography variant="h4" sx={{ fontWeight: 'bold' }} className='text-purple-950'>
                         Want to learn more?
@@ -22,7 +22,7 @@ const ContactUs = () => {
                         <img src="https://i.imgur.com/bUVt6Ev.png" alt="" className='pt-20' style={{ maxWidth: '60%', height: 'auto' }} />
                     </div>
                 </Grid>
-                <Grid container xs={12} sm={5}>
+                <Grid item container xs={12} sm={5}>
                     <div className='mx-auto space-y-8 flex flex-col'>
                         <div className='bg-white h-full w-full rounded-xl'>
                             <form action="" className='flex flex-col md:flex-row md:flex-wrap mx-auto w-1/2 py-16 space-y-8'>

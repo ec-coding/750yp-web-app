@@ -18,11 +18,11 @@ const Header = () => {
         <Container maxWidth={false} disableGutters sx={{}} className="bg-gray-100">
             <Grid container alignItems="center" spacing={2} marginY={0} paddingY={1} paddingX={10}>
 
-                <Grid xs={12} sm={6} container alignItems="center" justifyContent="space-between" margin={0}>
+                <Grid item xs={12} sm={6} container alignItems="center" justifyContent="space-between" margin={0}>
                     <CardMedia component="img" image="https://i.imgur.com/ICaBO54.png" alt="750YP" className='hero-image' sx={{ borderRadius: 2 }} style={{ width: '15%'}} />
                 </Grid>
 
-                <Grid xs={12} sm={6} margin={0}>
+                <Grid item xs={12} sm={6} margin={0}>
                     <div className='flex space-x-10 justify-end items-center'>
                         <Typography variant="h6" sx={{ fontWeight: 'bold' }}>
                             <a href='/'>Home</a>

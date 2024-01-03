@@ -73,7 +73,6 @@ const highestAttendence = () => {
       
     const users = trpc.user.getAll.useQuery();
     const events = trpc.event.getAll.useQuery();
-    console.log(events);
 
 
     return (
