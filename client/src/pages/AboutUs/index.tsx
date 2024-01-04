@@ -130,7 +130,7 @@ const AboutUs = () => {
         </h2>
 
         <div className="space-y-16 flex items-center justify-center">
-          <div className="grid grid-cols-5 grid-rows-2 gap-24">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-8">
             {people.map((person, index) => (
               <div key={index} className="col-span-1 row-span-1">
                 <StaffProfiles person={person} />
@@ -138,6 +138,7 @@ const AboutUs = () => {
             ))}
           </div>
         </div>
+
 
 
         <hr className='m-28' />
@@ -148,13 +149,13 @@ const AboutUs = () => {
 
        
               {faqs.map((faq) => (
-                   <Accordion style={{ width: '50%', margin: '0 auto', padding: '0 0 20px 0' }}>
+                   <Accordion style={{ width: '70dvw', margin: '0 auto', padding: '0 0 20px 0' }}>
                    <AccordionSummary
                      expandIcon={<ExpandMoreIcon />}
                      aria-controls="panel1a-content"
                      id="panel1a-header"
                    >
-                  <Typography sx={{fontWeight:"bold"}}>{faq.question}</Typography>
+                  <Typography sx={{fontWeight:"bold", fontSize:"1.2rem"}}>{faq.question}</Typography>
                   </AccordionSummary>
                   <AccordionDetails>
                     <Typography sx={{color:"#787878"}}>

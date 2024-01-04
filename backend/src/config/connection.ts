@@ -7,11 +7,11 @@ import Attendee from '../models/Attendee.js';
 dotenv.config();
 
 const sequelize = new Sequelize(
-  process.env.DB_NAME! || 'railway',
-  process.env.DB_USER! || 'root',
-  process.env.DB_PASSWORD || '40DzYw3LRIfUjT0jg4Ox',
+  process.env.DB_NAME!,
+  process.env.DB_USER!,
+  process.env.DB_PASSWORD,
   {
-    host: process.env.HOST || "containers-us-west-163.railway.app",
+    host: process.env.HOST,
     dialect: 'mysql',
     dialectOptions: {
       ssl: {
