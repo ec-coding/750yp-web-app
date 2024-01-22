@@ -5,14 +5,14 @@ import Typography from '@mui/material/Typography';
 const Footer = () => {
     return (
         <Container maxWidth={false} disableGutters sx={{ paddingY: '2vh' }} className="bg-gray-100">
-            <Grid container alignItems="center" spacing={2} marginY={0} paddingY={1} paddingX={0}>
+            <Grid container alignItems="center" sx={{ maxWidth: 1280 }} spacing={2} paddingY={2} className='mx-auto'>
 
                 <Grid xs={12} sm={4} container alignItems="center" justifyContent="center" margin={0}>
-                    <CardMedia component="img" image="https://i.imgur.com/ICaBO54.png" alt="750YP" className='hero-image' style={{ width: '25%' }} />
+                    <CardMedia component="img" image="https://i.imgur.com/ICaBO54.png" alt="750YP" className='hero-image' style={{ width: '40%' }} />
                 </Grid>
 
-                <Grid xs={12} sm={8} margin={0} container justifyContent="space-evenly">
-                    <div className='flex space-x-10' style={{ width: '100%' }}>
+                <Grid xs={12} sm={8} margin={0} container>
+                    <div className='flex space-x-12' style={{ width: '100%' }}>
                         <div className='space-y-2' style={{ flex: 1 }}>
                             <Typography variant="h6" sx={{ fontWeight: 'bold' }} className='text-purple-950'>
                                 Company

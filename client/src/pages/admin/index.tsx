@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useUser } from '@auth0/nextjs-auth0/client';
 import AdminBar from "@/components/adminNav/AdminBar";
-import { Container, Paper } from "@mui/material";
+import { Container, Paper, Grid } from "@mui/material";
 import EventForm from "@/components/adminNav/EventForm";
 import UserTable from "@/components/adminNav/UserTable";
 import Typography from "@mui/material/Typography";
@@ -17,9 +17,9 @@ export default function Admin() {
     }
 
     return (
-        <Container style={{maxWidth:"100vw", background: "gray", height: "100vh", width: "100vw", padding: 0, margin: 0 }}>
-             <AdminBar onDataChange={handleDataChange} />
-             <Paper
+        <Container style={{ maxWidth: "100vw", background: "gray", height: "100vh", width: "100vw", padding: 0, margin: 0 }}>
+            <AdminBar onDataChange={handleDataChange} />
+            <Paper
                 style={{
                     border: '1px solid black',
                     borderRadius: '16px',
@@ -29,11 +29,16 @@ export default function Admin() {
                     marginTop: '10vh', // Adjust the margin-top as needed
                     padding: '1rem',
                 }}>
-              {tile === "Home" ? <AdminHome /> :
-              tile === "User" ?  <>  
-                <Typography variant="h3" gutterBottom>Users </Typography> <UserTable /></> : 
-              tile === "Events" ? <EventForm /> : <p>Error???</p>}
-             </Paper>
+                {tile === "Home" ? <AdminHome /> :
+                    tile === "User" ? <>
+                        <Grid className="bg-sky-200 text-center my-2 py-2">
+                            <Typography variant="h5" sx={{ fontWeight: 'bold' }}>
+                                Registered Users
+                            </Typography>
+                        </Grid>
+                        <UserTable /></> :
+                        tile === "Events" ? <EventForm /> : <p>Error???</p>}
+            </Paper>
         </Container>
     )
 }
