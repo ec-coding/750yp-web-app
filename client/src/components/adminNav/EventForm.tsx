@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { trpc } from "@/utils/trpc";
-import { TextField, Button, Container, Typography, InputLabel, Input, FormControl } from '@mui/material';
+import { TextField, Button, Container, Grid, Typography, InputLabel, Input, FormControl } from '@mui/material';
 import { styled } from '@mui/material/styles';
 
 import CloudUploadIcon from '@mui/icons-material/CloudUpload';
@@ -15,11 +15,11 @@ const VisuallyHiddenInput = styled('input')({
     left: 0,
     whiteSpace: 'nowrap',
     width: 1,
-  });
-  
-  
+});
 
-export default function EventForm(){
+
+
+export default function EventForm() {
 
     const [name, setName] = useState("hi");
     const [description, setDescription] = useState("");
@@ -30,12 +30,12 @@ export default function EventForm(){
     const [selectedFile, setSelectedFile] = useState(null);
     const [loading, setLoading] = useState(false);
 
-   
+
     const mutation = trpc.event.create.useMutation(); // Initialize the mutation
     const imageMutation = trpc.image.upload.useMutation(); // Initialize the mutation
 
     const handleSubmit = () => {
-        
+
         const eventData = {
             name: name || '', // Use default value if name is falsy
             description: description || '', // Use default value if description is falsy
@@ -63,83 +63,91 @@ export default function EventForm(){
     const handleFileChange = (e: any) => {
         console.log(e.target.files[0]);
         const file = e.target.files[0]; // Get the first file from the list of selected files
-          if (file) {
-           setBanner(file); // Store the File object in the state
-          }
-      };
-   
-  
-      
+        if (file) {
+            setBanner(file); // Store the File object in the state
+        }
+    };
 
-    return(
-    <Container style={{textAlign:"center", maxHeight:"inherit"}}>
-        <Typography variant="h5" component="div" gutterBottom>
-            Create an Event
-        </Typography>
-        <FormControl style={{marginTop: "16px"}}>
-            <TextField
-                variant="outlined"
-                fullWidth
-                name="name"
-                margin="normal" 
-                label="Event Name" 
-                placeholder="Event Name"
-                />
-            <TextField 
-                variant="outlined"
-                fullWidth
-                type="date"
-                name="date"
-                margin="normal" 
-                label="Date"
-                defaultValue={date}
-                onChange={(e) => setDate(e.target.value)}
-                />
-             
-            <TextField
-                label="Start Time"
-                type="time"
-                variant="outlined"
-                fullWidth
-                name="startTime"
-                margin="normal"
-                defaultValue={start_time}
-                onChange={(e) => setStart(e.target.value)}
-                />
-            <TextField
-                label="End Time"
-                type="time"
-                variant="outlined"
-                fullWidth
-                name="endTime"
-                margin="normal"
-                defaultValue={end_time}
-                onChange={(e) => setEnd(e.target.value)}
-                />
-      
-                <Button component="label" variant="contained" startIcon={<CloudUploadIcon />}>
+
+
+
+    return (
+        <Container style={{ textAlign: "center", maxHeight: "inherit" }} className="px-0">
+            <Grid className="bg-sky-200 text-center my-2 py-2">
+                <Typography variant="h5" sx={{ fontWeight: 'bold' }}>
+                    Create an Event
+                </Typography>
+            </Grid>
+            <Grid style={{ marginTop: "16px" }} className="w-1/2 mx-auto">
+                        <TextField
+                            variant="outlined"
+                            fullWidth
+                            name="name"
+                            margin="normal"
+                            label="Event Name"
+                            placeholder="Event Name"
+                        />
+
+                        <TextField
+                            variant="outlined"
+                            fullWidth
+                            type="date"
+                            name="date"
+                            margin="normal"
+                            label="Date"
+                            defaultValue={date}
+                            onChange={(e) => setDate(e.target.value)}
+                        />
+                <Grid container>
+                    <Grid xs={12} sm={6}>
+                        <TextField
+                            label="Start Time"
+                            type="time"
+                            variant="outlined"
+                            fullWidth
+                            name="startTime"
+                            margin="normal"
+                            defaultValue={start_time}
+                            onChange={(e) => setStart(e.target.value)}
+                        />
+                    </Grid>
+                    <Grid xs={12} sm={6}>
+                        <TextField
+                            label="End Time"
+                            type="time"
+                            variant="outlined"
+                            fullWidth
+                            name="endTime"
+                            margin="normal"
+                            defaultValue={end_time}
+                            onChange={(e) => setEnd(e.target.value)}
+                        />
+                    </Grid>
+                </Grid>
+
+                <Button className="my-5" component="label" variant="contained" startIcon={<CloudUploadIcon />}>
                     Upload file
                     <VisuallyHiddenInput onChange={(e) => handleFileChange(e)} accept=".png, .jpg" type="file" />
                 </Button>
                 <span>{banner}</span>
-         
-            <TextField  
-            id="description"
-            label="Description"
-            multiline
-            fullWidth
-            rows={4}
-            margin="normal"
-            />
-            {loading == false ? 
-            <Button component="label" variant="contained" >
-                Submit
-                <VisuallyHiddenInput  type="submit" onClick={() => handleSubmit()} />
-            </Button> : 
-            <Button disabled variant="outlined">
-                Submit
-          </Button>}
-        </FormControl>
-      </Container>
+
+                <TextField
+                    id="description"
+                    label="Description"
+                    multiline
+                    fullWidth
+                    rows={8}
+                    margin="normal"
+                />
+                {loading == false ?
+                    <Button className="my-5" component="label" variant="contained" >
+                        Submit
+                        <VisuallyHiddenInput type="submit" onClick={() => handleSubmit()} />
+                    </Button> :
+                    <Button className="my-5" disabled variant="outlined">
+                        Submit
+                    </Button>}
+            </Grid>
+        </Container>
     )
 }

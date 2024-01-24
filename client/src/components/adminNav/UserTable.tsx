@@ -253,7 +253,7 @@ export default function UserTable() {
                 </TableRow>
               )}
             </TableBody> </>
-              : <p>Loading...</p> }
+              : <p className="px-5">Loading...</p> }
 
           
             <TableFooter>

@@ -97,80 +97,114 @@ const AboutUs = () => {
 
   return (
     <>
-    <div className="h-screen w-screen overflow-x-hidden">
-    <Header />
+      <div className="h-screen w-screen overflow-x-hidden">
+        <Header />
+        <Container maxWidth={false} disableGutters className='space-y-16'>
+          <Grid className='bg-sky-200'>
+            <Grid container alignItems="center" padding={0} sx={{ maxWidth: 1280 }} marginX={'auto'} paddingY={5}>
 
-      <Container maxWidth={false} disableGutters sx={{ marginTop: '2vh' }}>
-        <Grid container alignItems="center" spacing={2} margin={0} padding={0}>
-
-          <Grid item xs={12} sm={6} container alignItems="center" justifyContent="space-between" margin={0} padding={5}>
-            <CardMedia component="img" image="https://i.imgur.com/Cpungs1.jpg" alt="750YP" className='hero-image' sx={{ borderRadius: 2 }} />
+              <Grid xs={12} sm={6} container alignItems="center" justifyContent="space-between" margin={0} paddingY={3}>
+                <CardMedia component="img" image="https://i.imgur.com/Cpungs1.jpg" alt="750YP" className='hero-image' sx={{ border: '4px solid white', borderRadius: '8px' }} />
+              </Grid>
+              <Grid xs={12} sm={6} alignItems="center" justifyContent="center" margin={0} padding={8}>
+                <Box marginBottom={3}>
+                  <Typography variant="h4" sx={{ fontWeight: 'bold' }} className="text-purple-950">
+                    Our Mission
+                  </Typography>
+                </Box>
+                <Box padding={0}>
+                  <Typography variant="subtitle2" sx={{ fontSize: 24 }}>
+                    750 YP is a new program of the Lewisville Area Chamber of Commerce that aims to gather young talent while developing the next generation of leaders.
+                    We offer a dynamic hub for young professionals dedicated to nurturing holistic development, bridging professional milestones and
+                    personal aspirations through meaningful connections and shared experiences.
+                  </Typography>
+                </Box>
+              </Grid>
+            </Grid>
           </Grid>
 
-          <Grid item xs={12} sm={6} alignItems="center" justifyContent="center" margin={0} padding={8}>
-            <Box marginBottom={3}>
-              <Typography variant="h4" sx={{ fontWeight: 'bold' }}>
-                Our Mission
+          <Grid sx={{ maxWidth: 1280 }} marginX={'auto'}>
+            <Box marginBottom={4}>
+              <Typography variant="h4" sx={{ fontWeight: 'bold' }} className="text-purple-950">
+                Our Team
               </Typography>
             </Box>
-            <Box sx={{ border: '2px solid black' }} padding={4}>
-              <Typography variant="body1" sx={{ fontSize: 18 }}>
-                750 YP is a new program of the Lewisville Area Chamber of Commerce that aims to gather young talent while developing the next generation of leaders.
-                This group will offer a wealth of opportunities for young professionals to network, give back to the community, and grow both personally and professionally!
-              </Typography>
-            </Box>
+            <Grid className="space-y-12">
+              <Grid className='bio-panel-container flex items-center justify-center overflow-x-auto'>
+                <StaffProfiles customProp="lois" />
+                <StaffProfiles customProp="landon" />
+                <StaffProfiles customProp="nina" />
+                <StaffProfiles customProp="justus" />
+                <StaffProfiles customProp="joshua" />
+              </Grid>
+              <Grid className='bio-panel-container flex items-center justify-center overflow-x-auto'>
+                <StaffProfiles customProp="kayla" />
+                <StaffProfiles customProp="davis" />
+                <StaffProfiles customProp="david" />
+                <StaffProfiles customProp="kassandra" />
+                <StaffProfiles customProp="edwin" />
+              </Grid>
+            </Grid>
           </Grid>
-
-        </Grid>
-      </Container>
-
-      <div id='au-mid' className="w-full">
-        <h2 className='text-4xl text-center font-bold my-16 py-16 bg-sky-200'>
-          Our Team
-        </h2>
-
-        <div className="space-y-16 flex items-center justify-center">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-8">
-            {people.map((person, index) => (
-              <div key={index} className="col-span-1 row-span-1">
-                <StaffProfiles person={person} />
+          <hr />
+          <Grid sx={{ maxWidth: 1280 }} marginX={'auto'}>
+            <Box marginBottom={5}>
+              <Typography variant="h4" sx={{ fontWeight: 'bold' }} className='text-purple-950'>
+                Frequently Asked Questions
+              </Typography>
+            </Box>
+            <Grid marginBottom={8} className='space-y-6 px-8'>
+              <div>
+                <Typography variant="h6" sx={{ fontWeight: 'bold' }}>
+                  Can anyone join?
+                </Typography>
+                <Typography>
+                  Right now, it’s open to anyone regardless of their membership with the Lewisville chamber.
+                </Typography>
               </div>
-            ))}
-          </div>
-        </div>
-
-
-
-        <hr className='m-28' />
-
-        <div id="faqs" className='mb-24'>
-
-          <h2 className='text-4xl text-center font-bold mb-10'>Frequently Asked Questions</h2>
-
-       
-              {faqs.map((faq) => (
-                   <Accordion style={{ width: '70dvw', margin: '0 auto', padding: '0 0 20px 0' }}>
-                   <AccordionSummary
-                     expandIcon={<ExpandMoreIcon />}
-                     aria-controls="panel1a-content"
-                     id="panel1a-header"
-                   >
-                  <Typography sx={{fontWeight:"bold", fontSize:"1.2rem"}}>{faq.question}</Typography>
-                  </AccordionSummary>
-                  <AccordionDetails>
-                    <Typography sx={{color:"#787878"}}>
-                      {faq.response}
-                    </Typography>
-                  </AccordionDetails>
-                </Accordion>
-                )
-              )}
-        </div>
+              <hr />
+              <div>
+                <Typography variant="h6" sx={{ fontWeight: 'bold' }}>
+                  Is there a cost to join?
+                </Typography>
+                <Typography>
+                  It is FREE to join so come check us out! We also highly encourage membership with the chamber to really get the best ROI for your time.
+                </Typography>
+              </div>
+              <hr />
+              <div>
+                <Typography variant="h6" sx={{ fontWeight: 'bold' }}>
+                  Who is considered a “young professional”?
+                </Typography>
+                <Typography>
+                  We wish we could host everyone, but the age cap for our group is 43 and under.
+                </Typography>
+              </div>
+              <hr />
+              <div>
+                <Typography variant="h6" sx={{ fontWeight: 'bold' }}>
+                  Do I have to live in Lewisville to join?
+                </Typography>
+                <Typography>
+                  Absolutely not. You can join us regardless of your location but most of our events will be held in the Lewisville, Flower Mound, and The Colony area.
+                </Typography>
+              </div>
+              <hr />
+              <div>
+                <Typography variant="h6" sx={{ fontWeight: 'bold' }}>
+                  How often will 750YP meet?
+                </Typography>
+                <Typography>
+                  We will host one mixer a month, one professional development event a quarter, and volunteer events once a quarter.
+                </Typography>
+              </div>
+              <hr />
+            </Grid>
+          </Grid>
+        </Container>
         <ContactUs />
+        <Footer />
       </div>
-      <div id='au-bot' className=""></div>
-      <Footer />
-    </div>
     </>
   )
 }

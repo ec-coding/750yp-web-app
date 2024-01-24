@@ -10,20 +10,18 @@ const hover = {
 }
 
 const Header = () => {
-
     const { user, error, isLoading } = useUser();
-
-
     return (
         <Container maxWidth={false} disableGutters sx={{}} className="bg-gray-100">
-            <Grid container alignItems="center" spacing={2} marginY={0} paddingY={1} paddingX={10}>
+            <Grid container alignItems="center" sx={{ maxWidth: 1280 }} spacing={2} marginY={0} paddingY={1} className="mx-auto">
 
-                <Grid item xs={12} sm={6} container alignItems="center" justifyContent="space-between" margin={0}>
-                    <CardMedia component="img" image="https://i.imgur.com/ICaBO54.png" alt="750YP" className='hero-image' sx={{ borderRadius: 2 }} style={{ width: '15%'}} />
+                <Grid xs={12} sm={4} container alignItems="center" justifyContent="space-between" margin={0}>
+                    <CardMedia component="img" image="https://i.imgur.com/ICaBO54.png" alt="750YP" className='hero-image' sx={{ borderRadius: 2 }} style={{ width: '25%'}} />
                 </Grid>
 
-                <Grid item xs={12} sm={6} margin={0}>
-                    <div className='flex space-x-10 justify-end items-center'>
+                <Grid xs={12} sm={8} margin={0}>
+                    <div className='flex space-x-8 justify-end items-center'>
+
                         <Typography variant="h6" sx={{ fontWeight: 'bold' }}>
                             <a href='/'>Home</a>
                         </Typography>

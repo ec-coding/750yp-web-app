@@ -21,14 +21,14 @@ const Home = () => {
     <>
       <div className="h-screen w-screen overflow-x-hidden">
         <Header />
-        <Container maxWidth={false} disableGutters>
-          <Grid container alignItems="center" spacing={2} margin={0} padding={0} className='bg-sky-200'>
+        <Container maxWidth={false} disableGutters className='bg-sky-200'>
+          <Grid container sx={{ maxWidth: 1280 }} alignItems="center" spacing={2} marginX={'auto'} marginY={0} paddingY={5}>
 
-            <Grid xs={12} item sm={7} margin={0} paddingLeft={24}>
+            <Grid xs={12} sm={6} margin={0}>
               <Typography variant="h3" sx={{ fontWeight: 'bold', fontSize: 40 }} className='text-purple-950 mb-10'>
                 Welcoming all Young Professionals!
               </Typography>
-              <Typography variant="subtitle2" sx={{ fontSize: 24 }} paddingRight={24}>
+              <Typography variant="subtitle2" sx={{ fontSize: 24 }} paddingRight={8}>
                 750 YP represents a fresh initiative by the Lewisville Area Chamber of Commerce,
                 focused on bringing together emerging young professionals and nurturing the future leaders of our community.
               </Typography>
@@ -38,23 +38,22 @@ const Home = () => {
               </Typography>
             </Grid>
 
-            <Grid item xs={12} sm={5} container alignItems="center" justifyContent="space-between" margin={0} paddingY={5} paddingRight={12}>
-              <CardMedia component="img" image="https://i.imgur.com/VzXciUc.jpg" alt="750YP" className='hero-image' sx={{ border: '4px solid white', borderRadius: '8px' }}/>
+            <Grid xs={12} sm={6} container alignItems="center" margin={0} paddingY={3}>
+              <CardMedia component="img" image="https://i.imgur.com/VzXciUc.jpg" alt="750YP" className='hero-image' sx={{ border: '4px solid white', borderRadius: '8px' }} />
             </Grid>
-
           </Grid>
         </Container>
 
 
-        <div id='au-mid' className="w-full my-20">
-          <div className='text-4xl text-center font-bold my-10'>
+        <Grid className="w-full my-20 mx-auto" sx={{ maxWidth: 1280 }}>
+          <Grid className='text-4xl text-center font-bold my-10'>
             <Typography variant="h4" sx={{ fontWeight: 'bold' }} className='text-purple-950 mb-3'>
               Our Upcoming Events
             </Typography>
             <Typography sx={{ fontSize: 20 }}>
               Participate in our community gatherings for the opportunity to network and develop collectively.
             </Typography>
-          </div>
+          </Grid>
 
           <div className="space-y-16">
             <div className='bio-panel-container flex items-center justify-center space-x-12 overflow-x-auto'>
@@ -151,15 +150,17 @@ const Home = () => {
               <button className='bg-purple-950 text-white py-1 px-16 rounded-full focus:outline-none focus:ring focus:border-blue-300'>Explore Events</button>
             </Typography>
           </div>
-        </div>
-        <div id='au-bot' className="">
-          <div className=''>
+        </Grid>
 
-            <Container maxWidth={false} disableGutters sx={{ marginTop: '2vh' }}>
+        <Grid>
+          <Grid className="bg-orange-50">
+
+            <Container maxWidth={false} disableGutters sx={{ marginTop: '2vh', maxWidth: 1280 }}>
               <Grid container alignItems="center" spacing={2} margin={0} padding={0} className="bg-orange-50">
 
-                <Grid item xs={12} sm={6} container alignItems="center" justifyContent="space-between" margin={0} padding={5}>
-                  <CardMedia component="img" image="https://i.imgur.com/KVEk6LU.jpg" alt="750YP" className='hero-image' sx={{ border: '4px solid white', borderRadius: '8px' }} />
+                <Grid xs={12} sm={6} container alignItems="center" justifyContent="space-between" margin={0} padding={5}>
+                  <CardMedia component="img" image="https://i.imgur.com/8YiFgwj.jpg" alt="750YP" sx={{ border: '4px solid white', borderRadius: '8px', height: '600px' }} />
+                  <CardMedia component="img" image="https://i.imgur.com/9sny6hU.jpg" alt="750YP" sx={{ border: '4px solid white', borderRadius: '8px', height: '500px' }} />
                 </Grid>
 
                 <Grid item xs={12} sm={6} alignItems="center" justifyContent="center" margin={0} padding={8}>
@@ -171,29 +172,31 @@ const Home = () => {
                   <div className="space-y-10">
                     <Box sx={{ backgroundColor: 'white', borderRadius: 4, padding: 4, boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)' }} padding={4}>
                       <Typography variant="h4" sx={{ fontWeight: 'bold', fontSize: 22, marginBottom: 2 }} className="text-purple-950">
-                        CONNECT
+                        Sip & Strive (Mixers)
                       </Typography>
                       <Typography variant="body1" sx={{ fontSize: 18 }}>
-                        Cultivating connections and forging relationships plays a pivotal role in expanding your professional network,
-                        and the Lewisville Area Chamber provides numerous exceptional networking chances for you to explore.
+                        Join us for an exhilarating evening of connections and collaborations at our vibrant networking mixer! Unwind in a laid-back atmosphere designed for
+                        young professionals eager to expand their networks. Elevate your business game, make meaningful connections, and enjoy the dynamic energy of like-minded
+                        individuals. Let's mix, mingle, and make things happen – your next big opportunity might just be a handshake away!
                       </Typography>
                     </Box>
                     <Box sx={{ backgroundColor: 'white', borderRadius: 4, padding: 4, boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)' }} padding={4}>
-                    <Typography variant="h4" sx={{ fontWeight: 'bold', fontSize: 22, marginBottom: 2 }} className="text-purple-950">
-                        ADVOCACY
+                      <Typography variant="h4" sx={{ fontWeight: 'bold', fontSize: 22, marginBottom: 2 }} className="text-purple-950">
+                        Rise & Thrive (Professional Development)
                       </Typography>
                       <Typography variant="body1" sx={{ fontSize: 18 }}>
-                      The Lewisville Area Chamber champions a wide range of diverse member businesses, serving as an advocate for the business community. 
-                      This advocacy fosters an environment conducive to growth and success, benefiting all involved.
+                        Dive into an engaging professional development experience crafted for young professionals. Join us for interactive sessions, forward-thinking speakers,
+                        and hands-on workshops. Walk away not just inspired, but armed with real-world skills and tools to conquer your career goals!
                       </Typography>
                     </Box>
                     <Box sx={{ backgroundColor: 'white', borderRadius: 4, padding: 4, boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)' }} padding={4}>
-                    <Typography variant="h4" sx={{ fontWeight: 'bold', fontSize: 22, marginBottom: 2 }} className="text-purple-950">
-                        IMPACT
+                      <Typography variant="h4" sx={{ fontWeight: 'bold', fontSize: 22, marginBottom: 2 }} className="text-purple-950">
+                        Soar & Serve (Volunteerism)
                       </Typography>
                       <Typography variant="body1" sx={{ fontSize: 18 }}>
-                      The Lewisville Area Chamber offers distinctive chances for both businesses and individuals to have a positive impact by educating them 
-                      about significant community matters through its array of events and programs.
+                        Come collaborate with us for meaningful engagements where you can make a difference while forging new friendships. Discover the immense benefits of giving back,
+                        fostering personal growth, and contributing to the greater good. Let's come together, have fun, and create positive change in our community – because making a
+                        difference has never been this exciting!
                       </Typography>
                     </Box>
                   </div>
@@ -201,8 +204,8 @@ const Home = () => {
 
               </Grid>
             </Container>
-          </div>
-        </div>
+          </Grid>
+        </Grid>
         <ContactUs />
         <Footer />
       </div>
