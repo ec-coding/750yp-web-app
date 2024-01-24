@@ -7,14 +7,23 @@ const style = {
   position: 'absolute' as 'absolute',
   top: '50%',
   left: '50%',
-  width: '100vh',
+  width: '90%', // Adjust the width based on your design
   transform: 'translate(-50%, -50%)',
   boxShadow: 24
+
+//   bgcolor: 'background.paper',
+//   border: '2px solid #000',
+//   boxShadow: 24,
+//   p: 4,
+//   overflow: 'auto', // Enable scrolling
+//   maxHeight: '90dvh', // Set a maximum height if needed
+
 };
+
 
 // MOVE THIS TO COMPONENTS FOLDER
 
-export default function StaffProfiles({ customProp }) {
+export default function StaffProfiles({person}: any) {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
@@ -95,11 +104,11 @@ export default function StaffProfiles({ customProp }) {
         <Button onClick={handleOpen} style={{ color: 'inherit', textDecoration: 'none', textTransform: 'none' }}>
           <div className='flex-initial bio-panel space-y-8'>
             <div className="w-60 h-60 rounded-full overflow-hidden border-2 border-white">
-              <img src="https://i.imgur.com/H6Hpi4l.jpg" alt="Your Image" className="w-full h-full object-cover" />
+              <img src={person.picture} alt={person.name} className="w-full h-full object-cover" />
             </div>
             <div className="border-2 border-solid border-gray-400 w-60 h-24 mx-auto flex flex-col justify-center items-center">
-              <h4 className='text-xl text-center font-bold'>Landon Merigold</h4>
-              <h4 className='text-base text-center font-bold'>Minister of Culture</h4>
+              <h4 className='text-xl text-center font-bold'>{person.name}</h4>
+              <h4 className='text-base text-center font-bold'>{person.title}</h4>
             </div>
           </div>
         </Button>
@@ -717,5 +726,4 @@ export default function StaffProfiles({ customProp }) {
         </Modal>
       </div>
     );
-  }
 }

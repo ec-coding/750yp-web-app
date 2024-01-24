@@ -3,10 +3,7 @@ import { Container, Box, CardMedia, Grid, Modal, makeStyles, Divider } from '@mu
 import Typography from '@mui/material/Typography';
 
 const EventPanel = (event:{event:any}) => {
-    console.log(event);
     const date = event.event.start_time.split(" ");
-
-
  
     return (
         <>

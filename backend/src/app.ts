@@ -53,9 +53,9 @@ import {v2 as cloudinary} from 'cloudinary';
  
 //Cloudinary Config
 cloudinary.config({ 
-  cloud_name: 'dqto2hnao', 
-  api_key: '852161599575291', 
-  api_secret: 'xAJjw4dklneftiNcLBfCpaoQsKU',
+  cloud_name: process.env.CLOUD_NAME, 
+  api_key: process.env.CLOUD_KEY, 
+  api_secret: process.env.CLOUD_SECRET,
   secure: true
 });
 
