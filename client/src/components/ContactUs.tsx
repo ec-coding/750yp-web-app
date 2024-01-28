@@ -1,6 +1,5 @@
-import React from 'react'
-import { Container, Box, CardMedia, Grid, Modal, makeStyles } from '@mui/material';
-import Typography from '@mui/material/Typography';
+import React from 'react';
+import { Grid, Typography, Container, TextField, TextareaAutosize, Button, Modal, Box } from '@mui/material';
 
 const ContactUs = () => {
     return (
@@ -44,4 +43,4 @@ const ContactUs = () => {
     )
 }
 
-export default ContactUs
+export default ContactUs;

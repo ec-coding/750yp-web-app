@@ -50,9 +50,13 @@ export default function EventForm() {
 
         console.log(formData);
         // Trigger the mutation
-        //mutation.mutate(eventData);
-        //imageMutation.mutate(eventBanner);
-        //console.log(mutation.isSuccess)
+        mutation.mutate(eventData);
+        if(mutation.isSuccess){
+            console.log("success");
+        } else {
+            console.log("fail");
+        }
+        //imageMutation.mutate(banner);
     }
 
     // Handle file select

@@ -69,7 +69,10 @@ const highestAttendence = () => {
   )
 }
 
-export default function AdminHome() {
+  export default function AdminHome() {
+      
+    const users = trpc.user.getAll.useQuery();
+    const events = trpc.event.getAll.useQuery();
 
   const users = trpc.user.getAll.useQuery();
   const events = trpc.event.getAll.useQuery();

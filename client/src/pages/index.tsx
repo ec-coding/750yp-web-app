@@ -41,7 +41,6 @@ const Home = () => {
             <Grid xs={12} sm={6} container alignItems="center" margin={0} paddingY={3}>
               <CardMedia component="img" image="https://i.imgur.com/VzXciUc.jpg" alt="750YP" className='hero-image' sx={{ border: '4px solid white', borderRadius: '8px' }} />
             </Grid>
-
           </Grid>
         </Container>
 
@@ -59,7 +58,7 @@ const Home = () => {
           <div className="space-y-16">
             <div className='bio-panel-container flex items-center justify-center space-x-12 overflow-x-auto'>
               <Box className="bg-gray-200 rounded-lg">
-                <Grid xs={12} sm={6} container>
+                <Grid item xs={12} sm={6} container>
                   <div className='flex-initial bio-panel space-y-4 p-3'>
                     <div className="w-80 h-80 rounded-lg overflow-hidden">
                       <img src="https://i.imgur.com/wM07UOj.png" alt="Your Image" className="w-full h-full object-cover" />
@@ -87,7 +86,7 @@ const Home = () => {
                 </Grid>
               </Box>
               <Box className="bg-gray-200 rounded-lg">
-                <Grid xs={12} sm={6} container>
+                <Grid item xs={12} sm={6} container>
                   <div className='flex-initial bio-panel space-y-4 p-3'>
                     <div className="w-80 h-80 rounded-lg overflow-hidden">
                       <img src="https://i.imgur.com/cmsvQqd.png" alt="Your Image" className="w-full h-full object-cover" />
@@ -115,7 +114,7 @@ const Home = () => {
                 </Grid>
               </Box>
               <Box className="bg-gray-200 rounded-lg">
-                <Grid xs={12} sm={6} container>
+                <Grid item xs={12} sm={6} container>
                   <div className='flex-initial bio-panel space-y-4 p-3'>
                     <div className="w-80 h-80 rounded-lg overflow-hidden">
                       <img src="https://i.imgur.com/hD4R252.png" alt="Your Image" className="w-full h-full object-cover" />
@@ -164,7 +163,7 @@ const Home = () => {
                   <CardMedia component="img" image="https://i.imgur.com/9sny6hU.jpg" alt="750YP" sx={{ border: '4px solid white', borderRadius: '8px', height: '500px' }} />
                 </Grid>
 
-                <Grid xs={12} sm={6} alignItems="center" justifyContent="center" margin={0} padding={8}>
+                <Grid item xs={12} sm={6} alignItems="center" justifyContent="center" margin={0} padding={8}>
                   <Box marginBottom={4}>
                     <Typography variant="h4" sx={{ fontWeight: 'bold', fontSize: 40 }} className="text-purple-950">
                       About 750YP

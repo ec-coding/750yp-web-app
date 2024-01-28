@@ -21,6 +21,7 @@ const Header = () => {
 
                 <Grid xs={12} sm={8} margin={0}>
                     <div className='flex space-x-8 justify-end items-center'>
+
                         <Typography variant="h6" sx={{ fontWeight: 'bold' }}>
                             <a href='/'>Home</a>
                         </Typography>

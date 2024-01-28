@@ -7,7 +7,7 @@ import { randomUUID } from 'crypto';
 
 
 export const eventRouter = router({
-  getAll: publicProcedure.query((req) => {
+  getAll: publicProcedure.query(() => {
     return Events.findAll();
   }),
   byId: publicProcedure.input(z.string()).query(req =>{
