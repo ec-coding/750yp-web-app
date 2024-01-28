@@ -9,7 +9,7 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ContactUs from '@/components/ContactUs';
-import StaffProfiles from '@/pages/AboutUs/StaffProfiles/StaffProfiles';
+import StaffProfiles from '@/pages/AboutUs/StaffProfiles';
 import { Container, Box, CardMedia, Grid, Modal, makeStyles } from '@mui/material';
 import styles from './AboutUs.module.css';
 import Header from '@/components/Header';
