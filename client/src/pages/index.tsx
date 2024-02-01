@@ -1,28 +1,20 @@
-import { useUser } from "@auth0/nextjs-auth0/client";
-import { trpc } from "../utils/trpc";
-import layout from "../components/layout";
-import { Root } from "postcss";
-import React from "react";
-import Accordion from "@mui/material/Accordion";
-import AccordionSummary from "@mui/material/AccordionSummary";
-import AccordionDetails from "@mui/material/AccordionDetails";
-import Typography from "@mui/material/Typography";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import ContactUs from "@/components/ContactUs";
-import StaffProfiles from "@/pages/AboutUs/StaffProfiles/StaffProfiles";
-import {
-  Container,
-  Box,
-  CardMedia,
-  Grid,
-  Modal,
-  makeStyles,
-} from "@mui/material";
-import styles from "./AboutUs.module.css";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-import Link from "next/link";
-import Image from "next/image";
+
+import { useUser } from '@auth0/nextjs-auth0/client';
+import { trpc } from '../utils/trpc';
+import layout from '../components/layout';
+import { Root } from 'postcss';
+import React from 'react'
+import Accordion from '@mui/material/Accordion';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import Typography from '@mui/material/Typography';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import ContactUs from '@/components/ContactUs';
+import StaffProfiles from '@/pages/AboutUs/StaffProfiles';
+import { Container, Box, CardMedia, Grid, Modal, makeStyles } from '@mui/material';
+import styles from './AboutUs.module.css';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
 const Home = () => {
   return (

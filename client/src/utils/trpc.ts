@@ -7,7 +7,7 @@ dotenv.config();
 
 function getBaseUrl() {
   if(process.env.NODE_ENV === 'production'){
-    return 'http://localhost:5000'
+    return '750yp.com'
   }
   return `http://localhost:5000`;
 }

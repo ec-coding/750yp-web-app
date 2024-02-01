@@ -6,7 +6,7 @@ import EventForm from "@/components/adminNav/EventForm";
 import UserTable from "@/components/adminNav/UserTable";
 import Typography from "@mui/material/Typography";
 import AdminHome from "@/components/adminNav/AdminHome";
-import withAuth from "../_middleware";
+import withAuth from "../../_middleware";
 import { router } from "../../../../backend/src/trpc";
 import { useRouter } from "next/router";
 import { get } from "http";
