@@ -110,6 +110,8 @@ const Home = () => {
                       <Image
                         src='https://i.imgur.com/wM07UOj.png'
                         alt='Your Image'
+                        width={500}
+                        height={500}
                         className='w-full h-full object-cover'
                       />
                     </div>
