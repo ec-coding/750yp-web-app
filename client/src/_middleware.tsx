@@ -48,11 +48,11 @@ const withAuth = (WrappedComponent: any, allowedRoles: any) => {
       return <p></p>;
     }
 
-    if (!user || !allowedRoles.includes(role)) {
-     router.push('/');
-     return
+    // if (!user || !allowedRoles.includes(role)) {
+    //  router.push('/');
+    //  return
      
-    }
+    // }
 
     return <WrappedComponent {...props} />;
   };
