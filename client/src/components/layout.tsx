@@ -1,4 +1,3 @@
-// Assuming Header and Footer are located in the components folder
 import Header from './Header';
 import Footer from './Footer';
 import { Inter } from 'next/font/google';
@@ -23,9 +22,9 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
 					href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
 				/>
 			</Head>
-			<Header /> {/* Include Header */}
+			<Header />
 			<main style={{ fontFamily: inter }}>{children}</main>
-			<Footer /> {/* Include Footer */}
+			<Footer />
 		</UserProvider>
 	);
 };

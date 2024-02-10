@@ -1,4 +1,3 @@
-import React from 'react';
 import { Container, Grid, Typography, Button, Link } from '@mui/material';
 
 const Footer = () => {
@@ -14,7 +13,6 @@ const Footer = () => {
 				spacing={2}
 				sx={{ maxWidth: 1280, mx: 'auto', py: 2 }}
 			>
-				{/* Logo Section */}
 				<Grid item xs={12} sm={4} display="flex" justifyContent="center">
 					<Button component="a" href="/" sx={{ p: 0 }}>
 						<img
@@ -25,10 +23,8 @@ const Footer = () => {
 					</Button>
 				</Grid>
 
-				{/* Links Section */}
 				<Grid item xs={12} sm={8}>
 					<Grid container spacing={2}>
-						{/* Company Section */}
 						<Grid item xs={6} sm={3}>
 							<Typography
 								variant="h6"
@@ -56,7 +52,6 @@ const Footer = () => {
 							</Button>
 						</Grid>
 
-						{/* Legal Section */}
 						<Grid item xs={6} sm={3}>
 							<Typography
 								variant="h6"
@@ -84,7 +79,6 @@ const Footer = () => {
 							</Button>
 						</Grid>
 
-						{/* Social Media Section */}
 						<Grid item xs={12} sm={6}>
 							<Typography
 								variant="h6"
