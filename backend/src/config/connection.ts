@@ -21,7 +21,7 @@ const sequelize = new Sequelize(
       },
       port: process.env.DB_PORT || 6104,
     },
-    models: [Users, Events, Attendee]
+    models: [Users, Events, Attendee],
   },
 );
 

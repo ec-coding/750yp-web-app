@@ -31,10 +31,10 @@ app.get<{}, MessageResponse>('/', (req, res) => {
   });
 });
 
-function getBaseUrl(){
-  if(process.env.NODE_ENV === 'development'){
-    return "http://localhost:3000"
-  } return "http://localhost:3000"
+function getBaseUrl() {
+  if (process.env.NODE_ENV === 'development') {
+    return 'http://localhost:3000';
+  } return 'http://localhost:3000';
 }
 
 
@@ -45,18 +45,18 @@ const config = {
   secret: process.env.AUTH0_SECRET,
   baseURL: getBaseUrl(),
   clientID: process.env.AUTH0_CLIENT_ID,
-  issuerBaseURL: process.env.AUTH0_ISSUER_BASE_URL
+  issuerBaseURL: process.env.AUTH0_ISSUER_BASE_URL,
 };
 
 //Cloudinary duh
-import {v2 as cloudinary} from 'cloudinary';
+import { v2 as cloudinary } from 'cloudinary';
  
 //Cloudinary Config
 cloudinary.config({ 
   cloud_name: process.env.CLOUD_NAME, 
   api_key: process.env.CLOUD_KEY, 
   api_secret: process.env.CLOUD_SECRET,
-  secure: true
+  secure: true,
 });
 
 

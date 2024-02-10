@@ -16,8 +16,8 @@ export const eventRouter = router({
   byName: publicProcedure.input(z.string()).query(req => {
     return Events.findOne({
       where: {
-        name: req.input
-      }
+        name: req.input,
+      },
     });
   }),
 
@@ -25,7 +25,7 @@ export const eventRouter = router({
     .input(z.object({ name: z.string(), description: z.string(), date: z.string(), start_time: z.string(), end_time: z.string(), banner: z.string() }))
     .mutation(req => {
       const { name, description, start_time, end_time, banner } = req.input;
-      const newEvent = { name, description, start_time, end_time, banner }
+      const newEvent = { name, description, start_time, end_time, banner };
       Events.create(newEvent);
       return newEvent;
     }),
