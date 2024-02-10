@@ -16,6 +16,7 @@ import styles from './AboutUs.module.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const Home = () => {
   return (
@@ -100,11 +101,11 @@ const Home = () => {
                 <Grid item xs={12} sm={6} container>
                   <div className='flex-initial bio-panel space-y-4 p-3'>
                     <div className='w-80 h-80 rounded-lg overflow-hidden'>
-                      {/* <Image
+                      <Image
                         src='https://i.imgur.com/wM07UOj.png'
                         alt='Your Image'
                         className='w-full h-full object-cover'
-                      /> */}
+                      />
                     </div>
                     <div className='bg-white mx-auto flex flex-col p-5 rounded-lg'>
                       <Typography variant='h6' sx={{ fontWeight: "bold" }}>
@@ -124,11 +125,11 @@ const Home = () => {
                 <Grid item xs={12} sm={6} container>
                   <div className='flex-initial bio-panel space-y-4 p-3'>
                     <div className='w-80 h-80 rounded-lg overflow-hidden'>
-                      {/* <Image
+                      <Image
                         src='https://i.imgur.com/cmsvQqd.png'
                         alt='Your Image'
                         className='w-full h-full object-cover'
-                      /> */}
+                      />
                     </div>
                     <div className='bg-white mx-auto flex flex-col p-5 rounded-lg'>
                       <Typography variant='h6' sx={{ fontWeight: "bold" }}>
@@ -148,11 +149,11 @@ const Home = () => {
                 <Grid item xs={12} sm={6} container>
                   <div className='flex-initial bio-panel space-y-4 p-3'>
                     <div className='w-80 h-80 rounded-lg overflow-hidden'>
-                      {/* <Image
+                      <Image
                         src='https://i.imgur.com/hD4R252.png'
                         alt='Your Image'
                         className='w-full h-full object-cover'
-                      /> */}
+                      />
                     </div>
                     <div className='bg-white mx-auto flex flex-col p-5 rounded-lg'>
                       {/* <EventCard /> */}
