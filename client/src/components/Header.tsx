@@ -1,3 +1,4 @@
+// Libraries & Frameworks ///////////////////////////////////////////////
 import {
 	AppBar,
 	Toolbar,
@@ -10,11 +11,14 @@ import {
 import { useUser } from '@auth0/nextjs-auth0/client';
 import Link from 'next/link';
 
+// Main Component ///////////////////////////////////////////////
 const Header = () => {
+	// Hooks ///////////////////////////////////////////////////////////////
 	const { user } = useUser();
 	const theme = useTheme();
 	const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 
+	// Render ///////////////////////////////////////////////////////////////
 	return (
 		<AppBar
 			position="static"
