@@ -36,7 +36,7 @@ const style = {
 
 // MOVE THIS TO COMPONENTS FOLDER
 
-export default function StaffProfiles({ customProp }) {
+export default function StaffProfiles({ customProp }: { customProp: any }) {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
