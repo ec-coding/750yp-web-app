@@ -1,62 +1,144 @@
-import React from 'react'
-import { Container, Box, CardMedia, Grid, Modal, makeStyles } from '@mui/material';
-import Typography from '@mui/material/Typography';
+import React from 'react';
+import { Container, Grid, Typography, Button, Link } from '@mui/material';
 
 const Footer = () => {
-    return (
-        <Container maxWidth={false} disableGutters sx={{ paddingY: '2vh' }} className="bg-gray-100">
-            <Grid container alignItems="center" sx={{ maxWidth: 1280 }} spacing={2} paddingY={2} className='mx-auto'>
+	return (
+		<Container
+			maxWidth={false}
+			disableGutters
+			sx={{ py: 2, backgroundColor: 'grey.100' }}
+		>
+			<Grid
+				container
+				alignItems="center"
+				spacing={2}
+				sx={{ maxWidth: 1280, mx: 'auto', py: 2 }}
+			>
+				{/* Logo Section */}
+				<Grid item xs={12} sm={4} display="flex" justifyContent="center">
+					<Button component="a" href="/" sx={{ p: 0 }}>
+						<img
+							src="https://i.imgur.com/ICaBO54.png"
+							alt="750YP"
+							style={{ width: '40%' }}
+						/>
+					</Button>
+				</Grid>
 
-                <Grid xs={12} sm={4} container alignItems="center" justifyContent="center" margin={0}>
-                    <CardMedia component="img" image="https://i.imgur.com/ICaBO54.png" alt="750YP" className='hero-image' style={{ width: '40%' }} />
-                </Grid>
+				{/* Links Section */}
+				<Grid item xs={12} sm={8}>
+					<Grid container spacing={2}>
+						{/* Company Section */}
+						<Grid item xs={6} sm={3}>
+							<Typography
+								variant="h6"
+								sx={{ fontWeight: 'bold', color: 'primary.main' }}
+							>
+								Company
+							</Typography>
+							<Button
+								href="/AboutUs"
+								sx={{ textTransform: 'none', color: 'black', display: 'block' }}
+							>
+								About Us
+							</Button>
+							<Button
+								href="/Events"
+								sx={{ textTransform: 'none', color: 'black', display: 'block' }}
+							>
+								Events
+							</Button>
+							<Button
+								href="/ContactUs"
+								sx={{ textTransform: 'none', color: 'black', display: 'block' }}
+							>
+								Contact Us
+							</Button>
+						</Grid>
 
-                <Grid xs={12} sm={8} margin={0} container>
-                    <div className='flex space-x-12' style={{ width: '100%' }}>
-                        <div className='space-y-2' style={{ flex: 1 }}>
-                            <Typography variant="h6" sx={{ fontWeight: 'bold' }} className='text-purple-950'>
-                                Company
-                            </Typography>
-                            <Typography variant="subtitle1" className='text-purple-950'>
-                                About Us
-                            </Typography>
-                            <Typography variant="subtitle1" className='text-purple-950'>
-                                Events
-                            </Typography>
-                            <Typography variant="subtitle1" className='text-purple-950'>
-                                Contact Us
-                            </Typography>
-                        </div>
-                        <div className='space-y-2' style={{ flex: 1 }}>
-                            <Typography variant="h6" sx={{ fontWeight: 'bold' }} className='text-purple-950'>
-                                Legal
-                            </Typography>
-                            <Typography variant="subtitle1" className='text-purple-950'>
-                                Privacy Policy
-                            </Typography>
-                            <Typography variant="subtitle1" className='text-purple-950'>
-                                Terms & Conditions
-                            </Typography>
-                            <Typography variant="subtitle1" className='text-purple-950'>
-                                Terms of Use
-                            </Typography>
-                        </div>
-                        <div className='space-y-2' style={{ flex: 3 }}>
-                            <Typography variant="h6" sx={{ fontWeight: 'bold' }} className='text-purple-950'>
-                                Get Connected
-                            </Typography>
-                            <div className='flex space-x-5'>
-                                <CardMedia component="img" image="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/1024px-2021_Facebook_icon.svg.png" alt="750YP" className='hero-image' style={{ width: '35px' }} />
-                                <CardMedia component="img" image="https://static-00.iconduck.com/assets.00/social-instagram-icon-1024x1024-qshv5qmi.png" alt="750YP" className='hero-image' style={{ width: '35px' }} />
-                                <CardMedia component="img" image="https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-linkedin-512.png" alt="750YP" className='hero-image' style={{ width: '35px' }} />
-                            </div>
-                        </div>
-                    </div>
-                </Grid>
+						{/* Legal Section */}
+						<Grid item xs={6} sm={3}>
+							<Typography
+								variant="h6"
+								sx={{ fontWeight: 'bold', color: 'primary.main' }}
+							>
+								Legal
+							</Typography>
+							<Button
+								href="/PrivacyPolicy"
+								sx={{ textTransform: 'none', color: 'black', display: 'block' }}
+							>
+								Privacy Policy
+							</Button>
+							<Button
+								href="/TermsAndConditions"
+								sx={{ textTransform: 'none', color: 'black', display: 'block' }}
+							>
+								Terms & Conditions
+							</Button>
+							<Button
+								href="/TermsOfUse"
+								sx={{ textTransform: 'none', color: 'black', display: 'block' }}
+							>
+								Terms of Use
+							</Button>
+						</Grid>
 
-            </Grid>
-        </Container>
-    )
-}
+						{/* Social Media Section */}
+						<Grid item xs={12} sm={6}>
+							<Typography
+								variant="h6"
+								sx={{ fontWeight: 'bold', color: 'primary.main' }}
+							>
+								Get Connected
+							</Typography>
+							<Grid container spacing={1}>
+								<Grid item>
+									<Button
+										component="a"
+										href="https://www.facebook.com"
+										target="_blank"
+									>
+										<img
+											src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/1024px-2021_Facebook_icon.svg.png"
+											alt="Facebook"
+											style={{ width: 35 }}
+										/>
+									</Button>
+								</Grid>
+								<Grid item>
+									<Button
+										component="a"
+										href="https://www.instagram.com"
+										target="_blank"
+									>
+										<img
+											src="https://static-00.iconduck.com/assets.00/social-instagram-icon-1024x1024-qshv5qmi.png"
+											alt="Instagram"
+											style={{ width: 35 }}
+										/>
+									</Button>
+								</Grid>
+								<Grid item>
+									<Button
+										component="a"
+										href="https://www.linkedin.com"
+										target="_blank"
+									>
+										<img
+											src="https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-linkedin-512.png"
+											alt="LinkedIn"
+											style={{ width: 35 }}
+										/>
+									</Button>
+								</Grid>
+							</Grid>
+						</Grid>
+					</Grid>
+				</Grid>
+			</Grid>
+		</Container>
+	);
+};
 
-export default Footer
+export default Footer;
