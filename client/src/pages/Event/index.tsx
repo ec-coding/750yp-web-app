@@ -47,11 +47,11 @@ const SingleEvent = () => {
             <div className='flex items-center w-3/5 mx-auto rounded-md'>
               <Typography variant="h6" sx={{ fontWeight: 'bold' }} >More Events in Lewisville</Typography>
             </div>
-            <div className='bio-panel-container flex items-center justify-center space-x-12 overflow-x-auto'>
+            {/* <div className='bio-panel-container flex items-center justify-center space-x-12 overflow-x-auto'>
               <EventPanel />
               <EventPanel />
               <EventPanel />
-            </div>
+            </div> */}
             <Typography variant="h6" className='my-10 flex items-center justify-center '>
               <button className='bg-purple-950 text-white py-1 px-16 rounded-full focus:outline-none focus:ring focus:border-blue-300'>View All Events</button>
             </Typography>

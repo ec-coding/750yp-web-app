@@ -119,9 +119,9 @@ const Events = () => {
               </div>
             </div>
             <div className='bio-panel-container flex items-center justify-center space-x-12 overflow-x-auto'>
-              {/* {events?.map((event, index) => (
+              {events?.map((event, index) => (
                 <EventPanel event={event} key={index} />
-              ))} */}
+              ))}
             </div>
             {/* <div className='bio-panel-container flex items-center justify-center space-x-12 overflow-x-auto'>
               <EventPanel />
