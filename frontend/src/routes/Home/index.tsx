@@ -1,5 +1,4 @@
 // Libraries & Frameworks ///////////////////////////////////////////////
-// import { useUser } from '@auth0/nextjs-auth0/client';
 import {
 	Container,
 	Box,
@@ -8,10 +7,9 @@ import {
 	Button,
 	Card,
 	CardMedia,
-	// CardContent,
-	// CardActions,
+	styled,
+	Paper,
 } from '@mui/material';
-// import Link from 'next/link';
 import { useAuth0 } from '@auth0/auth0-react';
 
 // Components, Hooks, & Utils ///////////////////////////////////////////////
@@ -21,7 +19,18 @@ import ContactUs from '../../components/ContactUs';
 const Home = () => {
 	// Hooks ///////////////////////////////////////////////////////////////
 	// const { user } = useUser();
-  const { user } = useAuth0();
+	const { user } = useAuth0();
+
+	// Styles ///////////////////////////////////////////////////////////////
+	const Img = styled('img')({
+		margin: 'auto',
+		display: 'block',
+		width: '100%',
+		height: '100%',
+		borderRadius: '4px',
+		objectFit: 'cover',
+		objectPosition: 'center',
+	});
 
 	// Render ///////////////////////////////////////////////////////////////
 	return (
@@ -30,47 +39,53 @@ const Home = () => {
 				{/* intro */}
 				<Grid
 					container
-					spacing={2}
-					sx={{ backgroundColor: '#E0F7FA', padding: 5 }}
+					alignContent={'center'}
+					alignItems={'center'}
+					justifyContent={'space-between'}
+					sx={{ flexGrow: 1, backgroundColor: '#bae6fd', padding: 10 }}
 				>
 					<Grid item xs={12} sm={6}>
-						<Typography
-							variant="h3"
-							sx={{ fontWeight: 'bold', marginBottom: 2 }}
-						>
-							Welcoming all Young Professionals!
-						</Typography>
-						<Typography variant="subtitle1" sx={{ marginBottom: 2 }}>
-							750 YP represents a fresh initiative by the Lewisville Area
-							Chamber of Commerce, focused on bringing together emerging young
-							professionals and nurturing the future leaders of our community.
-						</Typography>
-						{user ? (
-							<></>
-						) : (
-							<Button
-								variant="contained"
-								color="primary"
-								sx={{
-									textTransform: 'none',
-									color: 'black',
-									fontWeight: 'bold',
-									borderRadius: '60px',
-									paddingX: 8,
-									bgcolor: '#f5f5f5',
-								}}
+						<Box p={16}>
+							<Typography
+								variant="h4"
+								color={'#3b0764'}
+								sx={{ fontWeight: 'bold', marginBottom: 2 }}
 							>
-								Sign Up
-							</Button>
-						)}
+								Welcoming all Young Professionals!
+							</Typography>
+							<Typography variant="subtitle1" sx={{ marginBottom: 2 }}>
+								750 YP represents a fresh initiative by the Lewisville Area
+								Chamber of Commerce, focused on bringing together emerging young
+								professionals and nurturing the future leaders of our community.
+							</Typography>
+							{user ? (
+								<></>
+							) : (
+								<Button
+									variant="contained"
+									color="primary"
+									sx={{
+										textTransform: 'none',
+										color: 'black',
+										fontWeight: 'bold',
+										borderRadius: '60px',
+										paddingX: 8,
+										bgcolor: '#f3ce49',
+									}}
+								>
+									Sign Up
+								</Button>
+							)}
+						</Box>
 					</Grid>
 					<Grid item xs={12} sm={6}>
-						<CardMedia
-							component="img"
-							image="https://i.imgur.com/VzXciUc.jpg"
-							alt="750YP"
-							sx={{ width: '100%', borderRadius: '8px' }}
-						/>
+						<Paper
+							square={false}
+							elevation={3}
+							sx={{ width: '100%', height: '500px' }}
+						>
+							<Img src="https://i.imgur.com/VzXciUc.jpg" alt="750YP" />
+						</Paper>
 					</Grid>
 				</Grid>
 
@@ -83,7 +98,7 @@ const Home = () => {
 						Participate in our community gatherings for the opportunity to
 						network and develop collectively.
 					</Typography>
-					{/* events component */}
+					{/* events component goes here */}
 				</Box>
 
 				{/* about section */}
