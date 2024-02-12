@@ -36,7 +36,6 @@ const Header = () => {
 			>
 				<Link href="/" passHref>
 					<IconButton
-						component="a"
 						size="large"
 						edge="start"
 						color="inherit"
