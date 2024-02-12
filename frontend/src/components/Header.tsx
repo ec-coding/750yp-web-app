@@ -4,124 +4,128 @@ import {
 	Toolbar,
 	Box,
 	Button,
-	IconButton,
 	useTheme,
 	useMediaQuery,
+	Container,
 } from '@mui/material';
-import { Link } from 'react-router-dom';
-// cant be using the nextjs-auth0 now can we?
-// this is the react version, the methods and whatnot are different
-// read the docs and implement the correct methods
+import { Link, useLocation } from 'react-router-dom';
 import { useAuth0 } from '@auth0/auth0-react';
-// import { useUser } from '@auth0/nextjs-auth0/client';
-// import Link from 'next/link';
 
 // Main Component ///////////////////////////////////////////////
 const Header = () => {
 	// Hooks ///////////////////////////////////////////////////////////////
-	// replace with auth0-react
-	// const { user } = useUser();
-	// this should replace it?
-	const { user } = useAuth0();
+	const { user, loginWithRedirect, logout } = useAuth0();
 	const theme = useTheme();
 	const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+	const location = useLocation();
+
+	const isActiveLink = (path) => location.pathname === path;
+
+	// Styles ///////////////////////////////////////////////////////////////
+	const activeLinkStyle = {
+		textTransform: 'none',
+		color: 'black',
+		fontWeight: 'bold',
+		transition: 'color 0.3s ease',
+		mx: 0.5,
+		py: 0.5,
+		px: 1.5,
+		minWidth: 0,
+	};
+
+	// Default link style
+	const linkStyle = {
+		textTransform: 'none',
+		color: 'grey',
+		fontWeight: 'normal',
+		transition: 'color 0.3s ease',
+		mx: 0.5,
+		py: 0.5,
+		px: 1.5,
+		minWidth: 0,
+	};
+
+	// Handlers ///////////////////////////////////////////////////////////////
+	const handleLogin = () => {
+		loginWithRedirect();
+	};
+
+	const handleLogout = () => {
+		logout({ logoutParams: { returnTo: window.location.origin } });
+	};
 
 	// Render ///////////////////////////////////////////////////////////////
 	return (
-		<AppBar
-			position="static"
-			color="default"
-			elevation={1}
-			// sx={{ backgroundColor: '#f5f5f5' }}
-		>
-			<Toolbar
-				sx={{
-					justifyContent: 'space-between',
-					maxWidth: 1280,
-					width: '100%',
-					mx: 'auto',
-				}}
-			>
-				<Link to="/">
-					{/* make this not an IconButton */}
-					<IconButton
-						size="large"
-						edge="start"
-						color="inherit"
-						aria-label="logo"
-					>
-						{/* replace with something better */}
+		<AppBar position="static" color="default">
+			<Container maxWidth={false}>
+				<Toolbar
+					sx={{
+						justifyContent: 'space-between',
+						width: '100%',
+					}}
+				>
+					<Link to="/">
 						<img
 							src="https://i.imgur.com/ICaBO54.png"
 							alt="750YP"
 							style={{ width: isMobile ? 100 : 150 }}
 						/>
-					</IconButton>
-				</Link>
-				<Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
-					<Link to="/">
-						<Button
-							color="inherit"
-							sx={{ textTransform: 'none', color: 'black' }}
-						>
-							Home
-						</Button>
 					</Link>
-					<Link to="/AboutUs">
-						<Button
-							color="inherit"
-							sx={{ textTransform: 'none', color: 'black' }}
-						>
-							About Us
-						</Button>
-					</Link>
-					<Link to="/Events">
-						<Button
-							color="inherit"
-							sx={{ textTransform: 'none', color: 'black' }}
-						>
-							Events
-						</Button>
-					</Link>
-					{user ? (
-						<Link to="/api/auth/logout">
-							<Button
-								color="inherit"
-								sx={{ textTransform: 'none', color: 'black' }}
-							>
-								Log Out
+					<Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
+						{/* Dynamically apply styles based on active link */}
+						<Link to="/">
+							<Button style={isActiveLink('/') ? activeLinkStyle : linkStyle}>
+								Home
 							</Button>
 						</Link>
-					) : (
-						<>
-							<Link to="/api/auth/login">
-								<Button
-									color="inherit"
-									sx={{ textTransform: 'none', color: 'black' }}
-								>
-									Log In
+						<Link to="/AboutUs">
+							<Button
+								style={isActiveLink('/AboutUs') ? activeLinkStyle : linkStyle}
+							>
+								About Us
+							</Button>
+						</Link>
+						<Link to="/Events">
+							<Button
+								style={isActiveLink('/Events') ? activeLinkStyle : linkStyle}
+							>
+								Events
+							</Button>
+						</Link>
+						{/* needs functionality */}
+						{user ? (
+							<Link to="/api/auth/logout">
+								<Button style={linkStyle} onClick={handleLogout}>
+									Log Out
 								</Button>
 							</Link>
-							<Link to="/api/auth/login">
-								<Button
-									variant="contained"
-									color="primary"
-									sx={{
-										textTransform: 'none',
-										color: 'black',
-										fontWeight: 'bold',
-										borderRadius: '60px',
-										paddingX: 8,
-										bgcolor: '#f5f5f5',
-									}}
-								>
-									Sign Up
-								</Button>
-							</Link>
-						</>
-					)}
-				</Box>
-			</Toolbar>
+						) : (
+							<>
+								<Link to="/api/auth/login">
+									<Button style={linkStyle} onClick={handleLogin}>
+										Log In
+									</Button>
+								</Link>
+								<Link to="/api/auth/login">
+									<Button
+										variant="contained"
+										sx={{
+											textTransform: 'none',
+											color: 'black',
+											fontWeight: 'bold',
+											borderRadius: '60px',
+											paddingX: 8,
+											bgcolor: '#f3ce49',
+										}}
+									>
+										Sign Up
+									</Button>
+								</Link>
+							</>
+						)}
+					</Box>
+				</Toolbar>
+			</Container>
 		</AppBar>
 	);
 };

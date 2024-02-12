@@ -1,70 +1,104 @@
-// Needs refactioring
+// Libraries & Frameworks ///////////////////////////////////////////////
+import { Grid, Typography, Container, TextField, Button } from '@mui/material';
 
-import { Grid, Typography, Container } from '@mui/material';
-
+// Main Component ///////////////////////////////////////////////
 const ContactUs = () => {
+	// Render ///////////////////////////////////////////////////////////////
 	return (
-		<Container maxWidth={false} disableGutters className="bg-sky-200">
-			<Grid sx={{ maxWidth: 1280 }} paddingY={10} className="mx-auto">
-				<Grid className="mx-auto mb-2">
-					<div className="mx-auto flex flex-col flex-1">
-						<Typography
-							variant="h4"
-							sx={{ fontWeight: 'bold' }}
-							className="text-purple-950"
-						>
-							Want to learn more? Get in touch!
-						</Typography>
-						<Typography variant="h6" className="mt-8">
-							At 750YP, we are here to help you grow and connect with
-							like-minded individuals.
-						</Typography>
-					</div>
+		<Container
+			maxWidth={false}
+			disableGutters
+			sx={{ backgroundColor: '#bae6fd' }}
+		>
+			<Grid container px={10} py={4}>
+				<Grid item xs={12} sx={{ marginBotton: 1 }}>
+					<Typography
+						variant="h4"
+						color={'#3b0764'}
+						sx={{
+							fontWeight: 'bold',
+						}}
+					>
+						Want to learn more? Get in touch!
+					</Typography>
+					<Typography variant="h6" sx={{ marginTop: 2, marginBottom: 4 }}>
+						At 750YP, we are here to help you grow and connect with like-minded
+						individuals.
+					</Typography>
 				</Grid>
-				<Grid className="mx-auto">
-					<div className="mx-auto space-y-8 flex flex-col">
-						<div className=" h-full w-full mx-auto rounded-xl">
-							<form
-								action=""
-								className="flex flex-col md:flex-row md:flex-wrap mx-auto p-8 space-y-8"
+				<Grid item xs={12}>
+					<Typography
+						variant="h5"
+						color={'#3b0764'}
+						sx={{
+							fontWeight: 'bold',
+							marginBottom: 2,
+						}}
+					>
+						Contact Info
+					</Typography>
+					<Grid container spacing={2}>
+						<Grid item xs={12} md={6}>
+							<TextField
+								fullWidth
+								label="First Name*"
+								variant="outlined"
+								sx={{ backgroundColor: 'white', borderRadius: 1 }}
+							/>
+						</Grid>
+						<Grid item xs={12} md={6}>
+							<TextField
+								fullWidth
+								label="Last Name*"
+								variant="outlined"
+								sx={{ backgroundColor: 'white', borderRadius: 1 }}
+							/>
+						</Grid>
+						<Grid item xs={12} md={6}>
+							<TextField
+								fullWidth
+								label="E-mail*"
+								variant="outlined"
+								sx={{ backgroundColor: 'white', borderRadius: 1 }}
+							/>
+						</Grid>
+						<Grid item xs={12} md={6}>
+							<TextField
+								fullWidth
+								label="Phone #"
+								variant="outlined"
+								sx={{ backgroundColor: 'white', borderRadius: 1 }}
+							/>
+						</Grid>
+						<Grid item xs={12}>
+							<TextField
+								fullWidth
+								label="Message*"
+								variant="outlined"
+								multiline
+								rows={4}
+								sx={{ backgroundColor: 'white', borderRadius: 1 }}
+							/>
+						</Grid>
+						<Grid
+							item
+							xs={12}
+							sx={{ display: 'flex', justifyContent: 'center' }}
+						>
+							<Button
+								variant="contained"
+								sx={{
+									backgroundColor: 'blue[900]',
+									color: 'white',
+									fontWeight: 'bold',
+									padding: '10px 40px',
+									borderRadius: '9999px',
+								}}
 							>
-								<Typography
-									variant="h5"
-									sx={{ fontWeight: 'bold' }}
-									className="text-purple-950"
-								>
-									Contact Info
-								</Typography>
-								<div className="flex w-full space-x-8">
-									<input
-										type="text"
-										placeholder="First Name*"
-										className="w-1/2"
-									/>
-									<input
-										type="text"
-										placeholder="Last Name*"
-										className="w-1/2"
-									/>
-								</div>
-								<div className="flex w-full space-x-8">
-									<input type="text" placeholder="E-mail*" className="w-1/2" />
-									<input type="text" placeholder="Phone #" className="w-1/2" />
-								</div>
-								<div className="flex w-full h-40">
-									<textarea
-										placeholder="Message*"
-										className="w-full"
-									></textarea>
-								</div>
-								<div className="flex w-full justify-center">
-									<button className="bg-blue-900 text-white font-bold py-2 px-20 rounded-full focus:outline-none focus:ring focus:border-blue-300">
-										Submit
-									</button>
-								</div>
-							</form>
-						</div>
-					</div>
+								Submit
+							</Button>
+						</Grid>
+					</Grid>
 				</Grid>
 			</Grid>
 		</Container>
