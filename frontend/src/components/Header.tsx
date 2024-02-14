@@ -19,7 +19,7 @@ const Header = () => {
 	const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 	const location = useLocation();
 
-	const isActiveLink = (path) => location.pathname === path;
+	const isActiveLink = (path: string) => location.pathname === path;
 
 	// Styles ///////////////////////////////////////////////////////////////
 	const activeLinkStyle = {
@@ -27,9 +27,14 @@ const Header = () => {
 		color: 'black',
 		fontWeight: 'bold',
 		transition: 'color 0.3s ease',
-		mx: 0.5,
-		py: 0.5,
-		px: 1.5,
+		// being implicit just in case
+		// mx: 0.5,
+		marginLeft: 0.5,
+		marginRight: 0.5,
+		paddingY: 0.5,
+		paddingX: 1.5,
+		// py: 0.5,
+		// px: 1.5,
 		minWidth: 0,
 	};
 
@@ -39,9 +44,14 @@ const Header = () => {
 		color: 'grey',
 		fontWeight: 'normal',
 		transition: 'color 0.3s ease',
-		mx: 0.5,
-		py: 0.5,
-		px: 1.5,
+		// being implicit just in case
+		// mx: 0.5,
+		marginLeft: 0.5,
+		marginRight: 0.5,
+		paddingY: 0.5,
+		paddingX: 1.5,
+		// py: 0.5,
+		// px: 1.5,
 		minWidth: 0,
 	};
 
@@ -74,20 +84,20 @@ const Header = () => {
 					<Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
 						{/* Dynamically apply styles based on active link */}
 						<Link to="/">
-							<Button style={isActiveLink('/') ? activeLinkStyle : linkStyle}>
+							<Button sx={isActiveLink('/') ? activeLinkStyle : linkStyle}>
 								Home
 							</Button>
 						</Link>
 						<Link to="/AboutUs">
 							<Button
-								style={isActiveLink('/AboutUs') ? activeLinkStyle : linkStyle}
+								sx={isActiveLink('/AboutUs') ? activeLinkStyle : linkStyle}
 							>
 								About Us
 							</Button>
 						</Link>
 						<Link to="/Events">
 							<Button
-								style={isActiveLink('/Events') ? activeLinkStyle : linkStyle}
+								sx={isActiveLink('/Events') ? activeLinkStyle : linkStyle}
 							>
 								Events
 							</Button>
@@ -95,14 +105,14 @@ const Header = () => {
 						{/* needs functionality */}
 						{user ? (
 							<Link to="/api/auth/logout">
-								<Button style={linkStyle} onClick={handleLogout}>
+								<Button sx={linkStyle} onClick={handleLogout}>
 									Log Out
 								</Button>
 							</Link>
 						) : (
 							<>
 								<Link to="/api/auth/login">
-									<Button style={linkStyle} onClick={handleLogin}>
+									<Button sx={linkStyle} onClick={handleLogin}>
 										Log In
 									</Button>
 								</Link>
