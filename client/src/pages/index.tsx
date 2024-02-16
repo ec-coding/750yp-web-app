@@ -11,7 +11,7 @@ import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ContactUs from '@/components/ContactUs';
 import StaffProfiles from '@/pages/AboutUs/StaffProfiles';
-import { Container, Box, CardMedia, Grid, Modal, makeStyles } from '@mui/material';
+import { Container, Box, CardMedia, Grid, Link, Modal, makeStyles } from '@mui/material';
 import styles from './AboutUs.module.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -99,7 +99,7 @@ const Home = () => {
                 <Grid item xs={12} sm={6} container>
                   <div className='flex-initial bio-panel space-y-4 p-3'>
                     <div className='w-80 h-80 rounded-lg overflow-hidden'>
-                      <Image
+                      <img
                         src='https://i.imgur.com/wM07UOj.png'
                         alt='Your Image'
                         className='w-full h-full object-cover'
@@ -123,7 +123,7 @@ const Home = () => {
                 <Grid item xs={12} sm={6} container>
                   <div className='flex-initial bio-panel space-y-4 p-3'>
                     <div className='w-80 h-80 rounded-lg overflow-hidden'>
-                      <Image
+                      <img
                         src='https://i.imgur.com/cmsvQqd.png'
                         alt='Your Image'
                         className='w-full h-full object-cover'
@@ -147,7 +147,7 @@ const Home = () => {
                 <Grid item xs={12} sm={6} container>
                   <div className='flex-initial bio-panel space-y-4 p-3'>
                     <div className='w-80 h-80 rounded-lg overflow-hidden'>
-                      <Image
+                      <img
                         src='https://i.imgur.com/hD4R252.png'
                         alt='Your Image'
                         className='w-full h-full object-cover'
