@@ -43,7 +43,7 @@ const Events = () => {
 									image="https://i.imgur.com/ZVLTYe8.jpg"
 									alt="750YP"
 									className="hero-image"
-									sx={{ border: '4px solid white', borderRadius: '8px' }}
+									sx={{ boxShadow: '2px 4px 8px black' }}
 								/>
 							</Grid>
 
@@ -54,6 +54,9 @@ const Events = () => {
 								justifyContent="center"
 								margin={0}
 								padding={8}
+								sx={{
+									padding: { xs: 4, sm: 4, md: 8 }
+								}}
 							>
 								<Box marginBottom={3}>
 									<Typography
@@ -65,7 +68,7 @@ const Events = () => {
 									</Typography>
 								</Box>
 								<Box padding={0}>
-									<Typography variant="body1" sx={{ fontSize: 18 }}>
+									<Typography variant="body1" sx={{ fontSize: 22, marginY: 4 }}>
 										Our events are designed to connect you with industry
 										leaders, foster meaningful conversations, and provide
 										insights that propel your career forward. Don&apos;t miss

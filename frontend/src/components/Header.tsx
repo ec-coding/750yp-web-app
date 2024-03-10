@@ -26,6 +26,7 @@ const Header = () => {
 		textTransform: 'none',
 		color: 'black',
 		fontWeight: 'bold',
+		fontSize: 20,
 		transition: 'color 0.3s ease',
 		// being implicit just in case
 		// mx: 0.5,
@@ -43,6 +44,7 @@ const Header = () => {
 		textTransform: 'none',
 		color: 'grey',
 		fontWeight: 'normal',
+		fontSize: 20,
 		transition: 'color 0.3s ease',
 		// being implicit just in case
 		// mx: 0.5,
@@ -71,7 +73,14 @@ const Header = () => {
 				<Toolbar
 					sx={{
 						justifyContent: 'space-between',
-						width: '100%',
+						width: {
+							xs: '100%',
+							sm: '640px',
+							md: '768px',
+							lg: '1024px',
+							xl: '1280px'
+						},
+						margin: 'auto'
 					}}
 				>
 					<Link to="/">

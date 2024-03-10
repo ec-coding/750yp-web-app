@@ -33,14 +33,18 @@ const AboutUs = () => {
 								alignItems="center"
 								justifyContent="space-between"
 								margin={0}
-								paddingY={3}
+								sx={{
+									paddingY: { xs: 0, sm: 0, md: 3 }
+								}}
 							>
 								<CardMedia
 									component="img"
 									image="https://i.imgur.com/Cpungs1.jpg"
 									alt="750YP"
 									className="hero-image"
-									sx={{ border: '4px solid white', borderRadius: '8px' }}
+									sx={{
+										boxShadow: '2px 4px 12px black'
+									}}
 								/>
 							</Grid>
 							<Grid
@@ -49,9 +53,11 @@ const AboutUs = () => {
 								alignItems="center"
 								justifyContent="center"
 								margin={0}
-								padding={8}
+								sx={{
+									padding: { xs: 4, sm: 4, md: 6, lg: 8 }
+								}}
 							>
-								<Box marginBottom={3}>
+								<Box marginY={2}>
 									<Typography
 										variant="h4"
 										sx={{ fontWeight: 'bold' }}
@@ -61,7 +67,7 @@ const AboutUs = () => {
 									</Typography>
 								</Box>
 								<Box padding={0}>
-									<Typography variant="subtitle2" sx={{ fontSize: 24 }}>
+									<Typography variant="body1" sx={{ fontSize: 22 }}>
 										750 YP is a new program of the Lewisville Area Chamber of
 										Commerce that aims to gather young talent while developing
 										the next generation of leaders. We offer a dynamic hub for
@@ -75,45 +81,158 @@ const AboutUs = () => {
 						</Grid>
 					</Grid>
 
-					<Grid sx={{ maxWidth: 1280 }} marginX={'auto'}>
+					<Grid sx={{ backgroundColor: '#FFECB3' }} marginX={'auto'}>
 						<Box marginBottom={4}>
 							<Typography
 								variant="h4"
 								sx={{ fontWeight: 'bold' }}
-								className="text-purple-950"
+								textAlign='center'
+								paddingTop={5}
 							>
 								Our Team
 							</Typography>
 						</Box>
-						<Grid className="space-y-12">
-							<Grid className="bio-panel-container flex items-center justify-center overflow-x-auto">
-								<StaffProfiles customProp="lois" />
-								<StaffProfiles customProp="landon" />
-								<StaffProfiles customProp="nina" />
-								<StaffProfiles customProp="justus" />
-								<StaffProfiles customProp="joshua" />
+						<Grid marginTop={4} marginBottom={6} paddingBottom={5}
+						>
+							<Grid
+								sx={{
+									display: 'flex',
+									alignItems: 'center',
+									justifyContent: 'center',
+									maxWidth: '1280px'
+								}}
+								container
+								marginX="auto"
+							>
+								<Grid xs={12}
+									sm={2.4}
+									sx={{
+										display: 'flex',
+										alignItems: 'center',
+										justifyContent: 'center',
+									}}>
+									<StaffProfiles customProp="lois" />
+								</Grid>
+								<Grid xs={12}
+									sm={2.4}
+									sx={{
+										display: 'flex',
+										alignItems: 'center',
+										justifyContent: 'center',
+									}}>
+									<StaffProfiles customProp="landon" />
+								</Grid>
+								<Grid xs={12}
+									sm={2.4}
+									sx={{
+										display: 'flex',
+										alignItems: 'center',
+										justifyContent: 'center',
+									}}>
+									<StaffProfiles customProp="nina" />
+								</Grid>
+								<Grid xs={12}
+									sm={2.4}
+									sx={{
+										display: 'flex',
+										alignItems: 'center',
+										justifyContent: 'center',
+									}}>
+									<StaffProfiles customProp="justus" />
+								</Grid>
+								<Grid xs={12}
+									sm={2.4}
+									sx={{
+										display: 'flex',
+										alignItems: 'center',
+										justifyContent: 'center',
+									}}>
+									<StaffProfiles customProp="joshua" />
+								</Grid>
 							</Grid>
-							<Grid className="bio-panel-container flex items-center justify-center overflow-x-auto">
-								<StaffProfiles customProp="kayla" />
-								<StaffProfiles customProp="davis" />
-								<StaffProfiles customProp="david" />
-								<StaffProfiles customProp="kassandra" />
-								<StaffProfiles customProp="edwin" />
+							<Grid
+								sx={{
+									display: 'flex',
+									alignItems: 'center',
+									justifyContent: 'center',
+								}}
+								container
+								marginX="auto"
+							>
+								<Grid xs={12}
+									sm={1.65}
+									sx={{
+										display: 'flex',
+										alignItems: 'center',
+										justifyContent: 'center',
+									}}>
+									<StaffProfiles customProp="kayla" />
+								</Grid>
+								<Grid xs={12}
+									sm={1.65}
+									sx={{
+										display: 'flex',
+										alignItems: 'center',
+										justifyContent: 'center',
+									}}>
+									<StaffProfiles customProp="davis" />
+								</Grid>
+								<Grid xs={12}
+									sm={1.65}
+									sx={{
+										display: 'flex',
+										alignItems: 'center',
+										justifyContent: 'center',
+									}}>
+									<StaffProfiles customProp="david" />
+								</Grid>
+								<Grid xs={12}
+									sm={1.65}
+									sx={{
+										display: 'flex',
+										alignItems: 'center',
+										justifyContent: 'center',
+									}}>
+									<StaffProfiles customProp="kassandra" />
+								</Grid>
+
 							</Grid>
 						</Grid>
 					</Grid>
-					<hr />
-					<Grid sx={{ maxWidth: 1280 }} marginX={'auto'}>
-						<Box marginBottom={5}>
+					{/* <hr /> */}
+					<Grid
+						sx={{
+							justifyContent: 'space-between',
+							width: {
+								xs: '100%',
+								sm: '640px',
+								md: '768px',
+								lg: '1024px',
+								xl: '1280px'
+							},
+							marginX: 'auto'
+						}}
+					>
+						<Box marginY={5}>
 							<Typography
 								variant="h4"
-								sx={{ fontWeight: 'bold' }}
-								className="text-purple-950"
+								sx={{
+									fontWeight: 'bold',
+									color: 'purple',
+									paddingX: { xs: 4, sm: 4, md: 8 }
+								}}
 							>
 								Frequently Asked Questions
 							</Typography>
 						</Box>
-						<Grid marginBottom={8} className="space-y-6 px-8">
+						<Grid marginBottom={8}
+							sx={{
+								'& > :not(style) + :not(style)': {
+									marginTop: '1.5rem', // Adjust as needed for space between child elements
+								},
+								paddingX: { xs: 5, sm: 5, md: 8 }
+							}}
+						>
 							<div>
 								<Typography variant="h6" sx={{ fontWeight: 'bold' }}>
 									Can anyone join?
