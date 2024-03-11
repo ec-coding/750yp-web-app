@@ -98,7 +98,7 @@ const Home = () => {
 										boxShadow: '2px 4px 8px black'
 									}}
 								>
-									<Img src="https://i.imgur.com/VzXciUc.jpg" alt="750YP" />
+									<Img src='https://i.imgur.com/VzXciUc.jpg' alt="750YP" />
 								</Paper>
 							</Grid>
 						)}

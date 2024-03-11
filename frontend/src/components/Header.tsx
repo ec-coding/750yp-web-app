@@ -20,7 +20,9 @@ const Header = () => {
 	const location = useLocation();
 
 	const isActiveLink = (path: string) => location.pathname === path;
-
+	const { isAuthenticated } = useAuth0();
+	console.log(isAuthenticated);
+	console.log(user);
 	// Styles ///////////////////////////////////////////////////////////////
 	const activeLinkStyle = {
 		textTransform: 'none',
@@ -112,20 +114,19 @@ const Header = () => {
 							</Button>
 						</Link>
 						{/* needs functionality */}
-						{user ? (
-							<Link to="/api/auth/logout">
+						{isAuthenticated ? (
+					
 								<Button sx={linkStyle} onClick={handleLogout}>
 									Log Out
 								</Button>
-							</Link>
+						
 						) : (
 							<>
-								<Link to="/api/auth/login">
+								
 									<Button sx={linkStyle} onClick={handleLogin}>
 										Log In
 									</Button>
-								</Link>
-								<Link to="/api/auth/login">
+								
 									<Button
 										variant="contained"
 										sx={{
@@ -136,10 +137,11 @@ const Header = () => {
 											paddingX: 8,
 											bgcolor: '#f3ce49',
 										}}
+										onClick={handleLogin}
 									>
 										Sign Up
 									</Button>
-								</Link>
+								
 							</>
 						)}
 					</Box>
