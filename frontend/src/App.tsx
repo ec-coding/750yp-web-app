@@ -11,20 +11,22 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 const theme = createTheme({
 	typography: {
-		fontFamily: 'Fira Sans, sans-serif'
+		fontFamily: 'Fira Sans, sans-serif',
 	},
 });
 
-function App() {
+const auth0Domain = import.meta.env.VITE_AUTH0_DOMAIN;
+const clientId = import.meta.env.VITE_AUTH0_CLIENT_ID;
+const redirectUri = import.meta.env.VITE_AUTH0_REDIRECT_URI;
 
-	
+function App() {
 	return (
 		<>
 			<Auth0Provider
-				domain={import.meta.env.VITE_DOMAIN}
-				clientId={import.meta.env.VITE_CLIENT_ID}
+				domain={auth0Domain}
+				clientId={clientId}
 				authorizationParams={{
-					redirectUri: window.location.origin,
+					redirect_uri: redirectUri,
 				}}
 			>
 				<Router>
