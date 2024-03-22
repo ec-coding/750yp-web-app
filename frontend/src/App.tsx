@@ -17,10 +17,11 @@ import { useState } from 'react';
 
 const theme = createTheme({
 	typography: {
-		fontFamily: 'Fira Sans, sans-serif'
+		fontFamily: 'Fira Sans, sans-serif',
 	},
 });
 
+<<<<<<< HEAD
 function getAuthCookie(): string | string[] | undefined {
 	// Implement the logic to retrieve the authentication cookie here
 	// For example, you can use document.cookie to get the cookie value
@@ -55,13 +56,20 @@ function App() {
 	// );
 
 	
+=======
+const auth0Domain = import.meta.env.VITE_AUTH0_DOMAIN;
+const clientId = import.meta.env.VITE_AUTH0_CLIENT_ID;
+const redirectUri = import.meta.env.VITE_AUTH0_REDIRECT_URI;
+
+function App() {
+>>>>>>> 33f81dedb81fe5092e79f68f4ae42f697b0c2eea
 	return (
 		<>
 			<Auth0Provider
-				domain={import.meta.env.VITE_DOMAIN}
-				clientId={import.meta.env.VITE_CLIENT_ID}
+				domain={auth0Domain}
+				clientId={clientId}
 				authorizationParams={{
-					redirectUri: window.location.origin,
+					redirect_uri: redirectUri,
 				}}
 			>
 				
