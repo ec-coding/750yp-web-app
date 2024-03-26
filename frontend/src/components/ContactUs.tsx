@@ -147,7 +147,7 @@ const ContactUs = () => {
 										borderRadius: '9999px',
 									}}
 								>
-									Submissions Temporarily Disabled
+									Submissions Currently Disabled
 								</Button>
 							</Grid>
 						</Grid>
