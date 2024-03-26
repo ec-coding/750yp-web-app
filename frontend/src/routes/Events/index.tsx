@@ -4,7 +4,7 @@
 import Typography from '@mui/material/Typography';
 // import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 // import ContactUs from "../../components/ContactUs";
-import { Container, Box, CardMedia, Grid, Divider } from '@mui/material';
+import { Container, Box, CardMedia, Paper, Button, styled, Link, Grid, Divider } from '@mui/material';
 // import EventPanel from "@/components/EventPanel";
 // import { trpc } from "@/utils/trpc";
 
@@ -15,19 +15,29 @@ const Events = () => {
 	// React.useEffect(() => {
 	//   setEvents(response.data);
 	// }, [response.data]);
+	const Img = styled('img')({
+		margin: 'auto',
+		display: 'block',
+		width: '100%',
+		height: '100%',
+		borderRadius: '4px',
+		objectFit: 'cover',
+		objectPosition: 'center',
+	});
 
 	return (
 		<>
 			<div className="h-screen w-screen overflow-x-hidden">
 				<Container maxWidth={false} disableGutters>
-					<Grid className="bg-sky-200">
+					<Grid
+						sx={{ flexGrow: 1, backgroundColor: '#bae6fd', paddingY: 8, paddingX: 4 }}
+					>
 						<Grid
 							container
 							alignItems="center"
 							padding={0}
 							sx={{ maxWidth: 1280 }}
 							marginX={'auto'}
-							paddingY={5}
 						>
 							<Grid
 								xs={12}
@@ -62,7 +72,7 @@ const Events = () => {
 									<Typography
 										variant="h4"
 										sx={{ fontWeight: 'bold' }}
-										className="text-purple-950"
+										color={'#3b0764'}
 									>
 										Professional Mixers
 									</Typography>
@@ -85,10 +95,6 @@ const Events = () => {
 						marginX={'auto'}
 					>
 						<Typography sx={{ fontSize: 18 }}></Typography>
-						<Divider
-							variant="middle"
-							sx={{ height: '3px', width: '200px', my: 4, mx: 'auto' }}
-						/>
 					</Grid>
 
 					<Grid
@@ -98,35 +104,76 @@ const Events = () => {
 						marginBottom={5}
 					>
 						<div className="flex items-center w-3/4 bg-cyan-400 mx-auto py-4 px-7 rounded-md">
+							<Box sx={{
+								my: 8, textAlign: 'center',
+								paddingX: { xs: 2 }
+							}}>
+								<Typography variant="h4" sx={{
+									fontWeight: 'bold',
+									mb: 3,
+								}}>
+									Our Upcoming Events
+								</Typography>
+								{/* <Typography sx={{ fontSize: 20, mb: 4 }}>
+									Participate in our community gatherings for the opportunity to
+									network and develop collectively.
+								</Typography> */}
+								<Paper
+									sx={{
+										width: { xs: '100%', sm: '100%', md: '500px' },
+										height: { xs: '100%', sm: '100%', md: '400px' },
+										boxShadow: '2px 4px 8px black',
+										marginX: 'auto'
+									}}
+								>
+									<Img src="https://chambermaster.blob.core.windows.net/userfiles/UserFiles/chambers/437/Image/2024/750YPMarchMixer2024.png" />
+								</Paper>
+								<Button
+									variant="contained"
+									color="primary"
+									sx={{
+										textTransform: 'none',
+										color: 'black',
+										fontWeight: 'bold',
+										fontSize: '20px',
+										borderRadius: '60px',
+										paddingX: 8,
+										marginTop: 5,
+										bgcolor: '#f3ce49',
+									}}
+								>
+									<Link href="https://business.lewisvillechamber.org/events/details/750yp-mixer-03-28-2024-29929" sx={{ textDecoration: 'none', color: 'black' }}>
+										Register Here
+									</Link>
+								</Button>
+							</Box>
+
 							{/* <div className='flex-1'>
                 <Typography sx={{ fontWeight: "bold" }}>
                   Events ({events ? events.length : "error"} Results)
                 </Typography>
               </div> */}
 							<div className="flex flex-1 justify-end">
-								<button className="bg-purple-950 text-white py-1 px-16 rounded-full focus:outline-none focus:ring focus:border-blue-300">
+								{/* <button className="bg-purple-950 text-white py-1 px-16 rounded-full focus:outline-none focus:ring focus:border-blue-300">
 									Filter
-								</button>
+								</button> */}
 							</div>
 						</div>
 						<div className="bio-panel-container flex items-center justify-center space-x-12 overflow-x-auto">
-							{/* {events?.map((event, index) => (
-                <EventPanel event={event} key={index} />
-              ))} */}
 						</div>
 						{/* <div className='bio-panel-container flex items-center justify-center space-x-12 overflow-x-auto'>
               <EventPanel />
               <EventPanel />
               <EventPanel />
             </div> */}
-						<Typography
+						{/* <Typography
 							variant="h6"
 							className="my-10 flex items-center justify-center "
 						>
 							<button className="bg-purple-950 text-white py-1 px-16 rounded-full focus:outline-none focus:ring focus:border-blue-300">
 								Load More
 							</button>
-						</Typography>
+						</Typography> */}
 					</Grid>
 				</Container>
 			</div>
