@@ -11,7 +11,7 @@ function MobileMenu() {
     const [anchorEl, setAnchorEl] = React.useState(null);
 
     // Open menu function
-    const handleClick = (event) => {
+    const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
         setAnchorEl(event.currentTarget);
     };
 
