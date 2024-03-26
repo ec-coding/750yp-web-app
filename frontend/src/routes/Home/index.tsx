@@ -141,6 +141,7 @@ const Home = () => {
 							paddingX: 8,
 							marginTop: 5,
 							bgcolor: '#f3ce49',
+							boxShadow: '2px 4px 6px black',
 						}}
 					>
 						<Link href="https://business.lewisvillechamber.org/events/details/750yp-mixer-03-28-2024-29929" sx={{ textDecoration: 'none', color: 'black' }}>
