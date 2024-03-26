@@ -2,7 +2,7 @@ import { Table, Column, PrimaryKey, Model, AutoIncrement, DataType, AllowNull, D
 
 @Table({ tableName: 'Event', timestamps: false })
 class Events extends Model {
-  static Events(): { name: String; short_description: String; long_description: String; city: String; state: String; country: String; address: String; start_time: String; end_time: String; } {
+  static Events(): { name: String; description: String; date: String; start_time: String; end_time: String; banner: String } {
     throw new Error('Method not implemented.');
   }
 
@@ -18,14 +18,18 @@ class Events extends Model {
   @AllowNull(true)
   @Column(DataType.STRING(255))
     description!: string | null;
+ 
+  @AllowNull(true)
+  @Column(DataType.STRING(255))
+    date!: string | null;
 
   @AllowNull(false)
   @Column(DataType.STRING(255))
-    start_time!: Date;
+    start_time!: String;
 
   @AllowNull(false)
   @Column(DataType.STRING(255))
-    end_time!: Date;
+    end_time!: String;
 
   @AllowNull(true)
   @Column(DataType.STRING(255))

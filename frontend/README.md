@@ -1,34 +1,16 @@
-# React JS Landing Page Template
+# Things that need to be done
 
-**
-
-# 🛎️🛎️ Good news! New & improved [V2](https://github.com/issaafalkattan/react-landing-page-template-2021) is out  
-
-**
-
-
-### <a href="https://react-landing-page-template-93ne.vercel.app/">LIVE DEMO</a> 
-
-## Description
-This is a ReactJS based landing page template, fit for a startup company/service with a one page view. The design is inspired by a template from <a href="https://www.free-css.com/assets/files/free-css-templates/preview/page234/interact/">Free-CSS.com </a>
-All 'visual' data can be easily modified by changing the data.json file.
-
-## Make it Yours!
-### 1. Preps
-You will need to have <a href="https://nodejs.org/">Node JS</a> installed on your pc. 
-
-### 2. Clone Files
-After cloning the files, you will have to run ```yarn``` followed by ```yarn start``` in the CLI
-### 3. Add your own data 
-Change the data in the ```data.json``` file as well as add any images to ```public/img/```
-You can also change styles by modifying the ```public/css``` files.
-
-
-## Like this project?
-<a href="https://www.buymeacoffee.com/issaaf">Buy my a coffee ☕️</a>
-
-## Credits
-##### Free CSS 
-<a href="https://www.free-css.com/assets/files/free-css-templates/preview/page234/interact/">Free-CSS.com </a>
-
-##### Issaaf kattan
+- check every component and piece for refactoring
+- wire in the auth0 login
+- wire in admin functionality
+- wire in the backend with API calls
+  - I would look into tanstack react-query for this
+- update all styling to remove tailwind
+- add a protected routes that checks for admin access
+- you can add the users page to it as well if there is a users page
+- everything is done with react-router-dom now, so be sure to look into that as well
+- ive implemented the useAuth0 hook in parts that were using it, but you need to make sure it works correctly, because I just threw code in there to save time
+- Ive commented out alot of code that was not functioning as intended, so be sure to check that as well
+- you can probably remove the parent .gitignore, or put everything in it, you just dont need 3 .gitignores in my opinion
+- put the images your using in the public folder, and reference them from there
+  - this is a good practice for SEO and performance

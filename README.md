@@ -56,7 +56,23 @@ Post-MVP Content:
 - 08-27-2023 - Established team discord server
 - 09-01-2023 - Developed project repository on Github
 - 09-15-2023 - React template for the web app has been chosen
+- 09-22-2023 - Figma wireframes have been completed
+- 09-29-2023 - Database has been established
+- 10-06-2023 - Authentication has been established
+- 10-21-2023 - Admin Panel has been established
+- 11-12-2023 - WireFrame begins conversion using Material UI
+- 12-28-2023 - Home, About, and Events pages have been completed and connected to the database
 
 ## Bugs:
 
 - Coming soon!
+
+## Screenshots:
+
+<img src="https://i.imgur.com/Jbk9eoa.jpeg" width="50%" alt="Mission Statement">
+<img src="https://i.imgur.com/5313BFb.jpeg" width="50%" alt="About Us">
+<img src="https://i.imgur.com/k07zJ82.jpeg" width="50%" alt="Auth0 Login Page">
+<img src="https://i.imgur.com/6T7Vfi4.png" width="50%" alt="User Table">
+<img src="https://i.imgur.com/zlqgXr9.png" width="50%" alt="User Full View">
+<img src="https://i.imgur.com/aygYJ3M.png" width="50%" alt="Event Creation">
+

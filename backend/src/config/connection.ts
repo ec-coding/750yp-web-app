@@ -11,17 +11,17 @@ const sequelize = new Sequelize(
   process.env.DB_USER!,
   process.env.DB_PASSWORD,
   {
-    host: process.env.HOST,
+    host: process.env.DB_HOST,
     dialect: 'mysql',
     dialectOptions: {
       ssl: {
-        require: false,
+        require: true,
         // Set the SSL certificate options as needed
         rejectUnauthorized: false, // Set this to false if you're using a self-signed certificate
       },
-      port: process.env.DB_PORT,
+      port: process.env.DB_PORT || 6104,
     },
-    models: [Users, Events, Attendee]
+    models: [Users, Events, Attendee],
   },
 );
 
