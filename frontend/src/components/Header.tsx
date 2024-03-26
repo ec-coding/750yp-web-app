@@ -10,6 +10,7 @@ import {
 } from '@mui/material';
 import { Link, useLocation } from 'react-router-dom';
 import { useAuth0 } from '@auth0/auth0-react';
+import MobileMenu from './MobileMenu';
 
 // Main Component ///////////////////////////////////////////////
 const Header = () => {
@@ -20,12 +21,15 @@ const Header = () => {
 	const location = useLocation();
 
 	const isActiveLink = (path: string) => location.pathname === path;
-
+	const { isAuthenticated } = useAuth0();
+	console.log(isAuthenticated);
+	console.log(user);
 	// Styles ///////////////////////////////////////////////////////////////
 	const activeLinkStyle = {
 		textTransform: 'none',
 		color: 'black',
 		fontWeight: 'bold',
+		fontSize: 20,
 		transition: 'color 0.3s ease',
 		// being implicit just in case
 		// mx: 0.5,
@@ -43,6 +47,7 @@ const Header = () => {
 		textTransform: 'none',
 		color: 'grey',
 		fontWeight: 'normal',
+		fontSize: 20,
 		transition: 'color 0.3s ease',
 		// being implicit just in case
 		// mx: 0.5,
@@ -56,13 +61,13 @@ const Header = () => {
 	};
 
 	// Handlers ///////////////////////////////////////////////////////////////
-	const handleLogin = () => {
-		loginWithRedirect();
-	};
+	// const handleLogin = () => {
+	// 	loginWithRedirect();
+	// };
 
-	const handleLogout = () => {
-		logout({ logoutParams: { returnTo: window.location.origin } });
-	};
+	// const handleLogout = () => {
+	// 	logout({ logoutParams: { returnTo: window.location.origin } });
+	// };
 
 	// Render ///////////////////////////////////////////////////////////////
 	return (
@@ -71,7 +76,14 @@ const Header = () => {
 				<Toolbar
 					sx={{
 						justifyContent: 'space-between',
-						width: '100%',
+						width: {
+							xs: '100%',
+							sm: '640px',
+							md: '768px',
+							lg: '1024px',
+							xl: '1280px'
+						},
+						margin: 'auto'
 					}}
 				>
 					<Link to="/">
@@ -81,59 +93,62 @@ const Header = () => {
 							style={{ width: isMobile ? 100 : 150 }}
 						/>
 					</Link>
-					<Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
-						{/* Dynamically apply styles based on active link */}
-						<Link to="/">
-							<Button sx={isActiveLink('/') ? activeLinkStyle : linkStyle}>
-								Home
-							</Button>
-						</Link>
-						<Link to="/AboutUs">
-							<Button
-								sx={isActiveLink('/AboutUs') ? activeLinkStyle : linkStyle}
-							>
-								About Us
-							</Button>
-						</Link>
-						<Link to="/Events">
-							<Button
-								sx={isActiveLink('/Events') ? activeLinkStyle : linkStyle}
-							>
-								Events
-							</Button>
-						</Link>
-						{/* needs functionality */}
-						{user ? (
-							<Link to="/api/auth/logout">
-								<Button sx={linkStyle} onClick={handleLogout}>
-									Log Out
+					<MobileMenu />
+					{!isMobile && ( // Render the following elements if viewport is not below 'sm' breakpoint
+						<Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
+							{/* Dynamically apply styles based on active link */}
+							<Link to="/">
+								<Button sx={isActiveLink('/') ? activeLinkStyle : linkStyle}>
+									Home
 								</Button>
 							</Link>
-						) : (
-							<>
-								<Link to="/api/auth/login">
-									<Button sx={linkStyle} onClick={handleLogin}>
-										Log In
-									</Button>
-								</Link>
-								<Link to="/api/auth/login">
-									<Button
-										variant="contained"
-										sx={{
-											textTransform: 'none',
-											color: 'black',
-											fontWeight: 'bold',
-											borderRadius: '60px',
-											paddingX: 8,
-											bgcolor: '#f3ce49',
-										}}
-									>
-										Sign Up
-									</Button>
-								</Link>
-							</>
-						)}
-					</Box>
+							<Link to="/AboutUs">
+								<Button
+									sx={isActiveLink('/AboutUs') ? activeLinkStyle : linkStyle}
+								>
+									About Us
+								</Button>
+							</Link>
+							<Link to="/Events">
+								<Button
+									sx={isActiveLink('/Events') ? activeLinkStyle : linkStyle}
+								>
+									Events
+								</Button>
+							</Link>
+							{/* needs functionality */}
+							{/* {isAuthenticated ? (
+				
+							<Button sx={linkStyle} onClick={handleLogout}>
+								Log Out
+							</Button>
+					
+					) : (
+						<>
+							
+								<Button sx={linkStyle} onClick={handleLogin}>
+									Log In
+								</Button>
+							
+								<Button
+									variant="contained"
+									sx={{
+										textTransform: 'none',
+										color: 'black',
+										fontWeight: 'bold',
+										borderRadius: '60px',
+										paddingX: 8,
+										bgcolor: '#f3ce49',
+									}}
+									onClick={handleLogin}
+								>
+									Sign Up
+								</Button>
+							
+						</>
+					)} */}
+						</Box>
+					)}
 				</Toolbar>
 			</Container>
 		</AppBar>

@@ -3,6 +3,9 @@ import Users from '../models/User.js';
 import { z } from 'zod';
 
 export const userRouter = router({
+  test: publicProcedure.query(() => {
+    return 'Hello, World!';
+  }),
   getAll: publicProcedure.query(() => {
     return Users.findAll();
   }),
