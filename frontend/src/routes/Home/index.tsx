@@ -5,12 +5,13 @@ import {
 	Grid,
 	Typography,
 	Button,
+	Link,
 	CardMedia,
 	styled,
 	Paper,
 	useMediaQuery
 } from '@mui/material';
-import { useAuth0 } from '@auth0/auth0-react';
+// import { useAuth0 } from '@auth0/auth0-react';
 // Components, Hooks, & Utils ///////////////////////////////////////////////
 import ContactUs from '../../components/ContactUs';
 
@@ -19,7 +20,7 @@ import ContactUs from '../../components/ContactUs';
 const Home = () => {
 	// Hooks ///////////////////////////////////////////////////////////////
 	// const { user } = useUser();
-	const { user } = useAuth0();
+	// const { user } = useAuth0();
 	const MobileWidthBreakpoint = useMediaQuery('(max-width: 600px)');
 
 	// Styles ///////////////////////////////////////////////////////////////
@@ -66,7 +67,7 @@ const Home = () => {
 									Chamber of Commerce, focused on bringing together emerging young
 									professionals and nurturing the future leaders of our community.
 								</Typography>
-								{user ? (
+								{/* {user ? (
 									<></>
 								) : (
 									<Button
@@ -84,25 +85,22 @@ const Home = () => {
 									>
 										Sign Up
 									</Button>
-								)}
+								)} */}
 							</Box>
 						</Grid>
-
-						{MobileWidthBreakpoint ? null : (
-							<Grid item xs={12} sm={6}>
-								<Paper
-									square={false}
-									elevation={3}
-									sx={{
-										width: '100%', height: '500px',
-										boxShadow: '2px 4px 8px black'
-									}}
-								>
-									<Img src='https://i.imgur.com/VzXciUc.jpg' alt="750YP" />
-								</Paper>
-							</Grid>
-						)}
-
+						<Grid item xs={12} sm={6}>
+							<Paper
+								square={false}
+								elevation={3}
+								sx={{
+									width: { xs: '100%', sm: '100%', md: '100%' },
+									height: { xs: '100%', sm: '100%', md: '500px' },
+									boxShadow: '2px 4px 8px black'
+								}}
+							>
+								<Img src='https://i.imgur.com/VzXciUc.jpg' alt="750YP" />
+							</Paper>
+						</Grid>
 					</Grid>
 				</Grid>
 
@@ -121,7 +119,34 @@ const Home = () => {
 						Participate in our community gatherings for the opportunity to
 						network and develop collectively.
 					</Typography>
-					{/* events component goes here */}
+					<Paper
+						sx={{
+							width: { xs: '100%', sm: '100%', md: '500px' },
+							height: { xs: '100%', sm: '100%', md: '400px' },
+							boxShadow: '2px 4px 8px black',
+							marginX: 'auto'
+						}}
+					>
+						<Img src="https://chambermaster.blob.core.windows.net/userfiles/UserFiles/chambers/437/Image/2024/750YPMarchMixer2024.png" />
+					</Paper>
+					<Button
+						variant="contained"
+						color="primary"
+						sx={{
+							textTransform: 'none',
+							color: 'black',
+							fontWeight: 'bold',
+							fontSize: '20px',
+							borderRadius: '60px',
+							paddingX: 8,
+							marginTop: 5,
+							bgcolor: '#f3ce49',
+						}}
+					>
+						<Link href="https://business.lewisvillechamber.org/events/details/750yp-mixer-03-28-2024-29929" sx={{ textDecoration: 'none', color: 'black' }}>
+							Register Here
+						</Link>
+					</Button>
 				</Box>
 
 				{/* about section */}

@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Auth0Provider } from '@auth0/auth0-react';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+
 // create a theme in the themes folder and import it here
 // call it something like 'theme' or defaultTheme
 
@@ -25,14 +26,17 @@ function App() {
 					redirectUri: window.location.origin,
 				}}
 			>
+				
 				<Router>
 					<ThemeProvider theme={theme}>
 						<CssBaseline />
 						<Header />
 						<AppRoutes />
+						
 						<Footer />
 					</ThemeProvider>
 				</Router>
+			
 			</Auth0Provider>
 		</>
 	);

@@ -10,11 +10,12 @@ import {
 } from '@mui/material';
 import { Link, useLocation } from 'react-router-dom';
 import { useAuth0 } from '@auth0/auth0-react';
+import MobileMenu from './MobileMenu';
 
 // Main Component ///////////////////////////////////////////////
 const Header = () => {
 	// Hooks ///////////////////////////////////////////////////////////////
-	const { user, loginWithRedirect, logout } = useAuth0();
+	// const { user, loginWithRedirect, logout } = useAuth0();
 	const theme = useTheme();
 	const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 	const location = useLocation();
@@ -22,7 +23,7 @@ const Header = () => {
 	const isActiveLink = (path: string) => location.pathname === path;
 	const { isAuthenticated } = useAuth0();
 	console.log(isAuthenticated);
-	console.log(user);
+
 	// Styles ///////////////////////////////////////////////////////////////
 	const activeLinkStyle = {
 		textTransform: 'none',
@@ -60,13 +61,13 @@ const Header = () => {
 	};
 
 	// Handlers ///////////////////////////////////////////////////////////////
-	const handleLogin = () => {
-		loginWithRedirect();
-	};
+	// const handleLogin = () => {
+	// 	loginWithRedirect();
+	// };
 
-	const handleLogout = () => {
-		logout({ logoutParams: { returnTo: window.location.origin } });
-	};
+	// const handleLogout = () => {
+	// 	logout({ logoutParams: { returnTo: window.location.origin } });
+	// };
 
 	// Render ///////////////////////////////////////////////////////////////
 	return (
@@ -92,59 +93,62 @@ const Header = () => {
 							style={{ width: isMobile ? 100 : 150 }}
 						/>
 					</Link>
-					<Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
-						{/* Dynamically apply styles based on active link */}
-						<Link to="/">
-							<Button sx={isActiveLink('/') ? activeLinkStyle : linkStyle}>
-								Home
-							</Button>
-						</Link>
-						<Link to="/AboutUs">
-							<Button
-								sx={isActiveLink('/AboutUs') ? activeLinkStyle : linkStyle}
-							>
-								About Us
-							</Button>
-						</Link>
-						<Link to="/Events">
-							<Button
-								sx={isActiveLink('/Events') ? activeLinkStyle : linkStyle}
-							>
-								Events
-							</Button>
-						</Link>
-						{/* needs functionality */}
-						{isAuthenticated ? (
-					
-								<Button sx={linkStyle} onClick={handleLogout}>
-									Log Out
+					<MobileMenu />
+					{!isMobile && ( // Render the following elements if viewport is not below 'sm' breakpoint
+						<Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
+							{/* Dynamically apply styles based on active link */}
+							<Link to="/">
+								<Button sx={isActiveLink('/') ? activeLinkStyle : linkStyle}>
+									Home
 								</Button>
-						
-						) : (
-							<>
-								
-									<Button sx={linkStyle} onClick={handleLogin}>
-										Log In
-									</Button>
-								
-									<Button
-										variant="contained"
-										sx={{
-											textTransform: 'none',
-											color: 'black',
-											fontWeight: 'bold',
-											borderRadius: '60px',
-											paddingX: 8,
-											bgcolor: '#f3ce49',
-										}}
-										onClick={handleLogin}
-									>
-										Sign Up
-									</Button>
-								
-							</>
-						)}
-					</Box>
+							</Link>
+							<Link to="/AboutUs">
+								<Button
+									sx={isActiveLink('/AboutUs') ? activeLinkStyle : linkStyle}
+								>
+									About Us
+								</Button>
+							</Link>
+							<Link to="/Events">
+								<Button
+									sx={isActiveLink('/Events') ? activeLinkStyle : linkStyle}
+								>
+									Events
+								</Button>
+							</Link>
+							{/* needs functionality */}
+							{/* {isAuthenticated ? (
+				
+							<Button sx={linkStyle} onClick={handleLogout}>
+								Log Out
+							</Button>
+					
+					) : (
+						<>
+							
+								<Button sx={linkStyle} onClick={handleLogin}>
+									Log In
+								</Button>
+							
+								<Button
+									variant="contained"
+									sx={{
+										textTransform: 'none',
+										color: 'black',
+										fontWeight: 'bold',
+										borderRadius: '60px',
+										paddingX: 8,
+										bgcolor: '#f3ce49',
+									}}
+									onClick={handleLogin}
+								>
+									Sign Up
+								</Button>
+							
+						</>
+					)} */}
+						</Box>
+					)}
 				</Toolbar>
 			</Container>
 		</AppBar>
