@@ -5,8 +5,6 @@ import { userRouter } from './user.js';
 import { eventRouter } from './event.js';
 import { imageRouter } from './image.js';
 
-
-
 export const appRouter = router({
   user: userRouter, // put procedures under "user" namespace
   event: eventRouter,
