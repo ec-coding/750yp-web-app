@@ -55,10 +55,13 @@ const Footer = () => {
 							},
 						}}>
 							<Paper sx={{ backgroundColor: 'transparent', boxShadow: 'none' }}>
-								<Img
-									src="https://i.imgur.com/ICaBO54.png"
+								<Img src="https://i.imgur.com/ICaBO54.png"
 									alt="750YP"
-
+									sx={{
+										width: { xs: '70%', sm: '70%', md: '100%' },
+										height: { xs: '70%', sm: '70%', md: '100%' },
+										margin: { xs: 'left', sm: 'left', md: 'auto'}
+									}}
 								/>
 							</Paper>
 
@@ -81,15 +84,13 @@ const Footer = () => {
 									<Button href="https://www.facebook.com" target="_blank"
 										sx={{ padding: '0' }}
 									>
-										<Paper>
-											<Img
+										<Button href="https://www.instagram.com" target="_blank">
+											<img
 												src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/1024px-2021_Facebook_icon.svg.png"
-												alt="Facebook"
+												alt="Instagram"
 												style={{ width: 35 }}
-												sx={{ backgroundColor: 'transparent', boxShadow: 'none' }}
 											/>
-										</Paper>
-
+										</Button>
 									</Button>
 								</Grid>
 								<Grid item

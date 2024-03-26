@@ -236,6 +236,7 @@ export default function StaffProfiles({ customProp }: { customProp: string }) {
 							variant="h5"
 							sx={{ fontWeight: 'bold' }}
 							marginTop={2}
+							color={'#3b0764'}
 							className="text-xl text-center font-bold">{staff.name}
 						</Typography>
 						<Typography

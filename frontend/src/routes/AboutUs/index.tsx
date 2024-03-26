@@ -61,7 +61,7 @@ const AboutUs = () => {
 									<Typography
 										variant="h4"
 										sx={{ fontWeight: 'bold' }}
-										className="text-purple-950"
+										color={'#3b0764'}
 									>
 										Our Mission
 									</Typography>
