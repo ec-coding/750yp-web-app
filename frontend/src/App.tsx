@@ -15,18 +15,14 @@ const theme = createTheme({
 	},
 });
 
-const auth0Domain = import.meta.env.VITE_AUTH0_DOMAIN;
-const clientId = import.meta.env.VITE_AUTH0_CLIENT_ID;
-const redirectUri = import.meta.env.VITE_AUTH0_REDIRECT_URI;
-
 function App() {
 	return (
 		<>
 			<Auth0Provider
-				domain={auth0Domain}
-				clientId={clientId}
+				domain={import.meta.env.VITE_DOMAIN}
+				clientId={import.meta.env.VITE_CLIENT_ID}
 				authorizationParams={{
-					redirect_uri: redirectUri,
+					redirectUri: window.location.origin,
 				}}
 			>
 				<Router>
