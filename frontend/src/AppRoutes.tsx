@@ -5,6 +5,7 @@ import { Routes, Route, Navigate } from 'react-router-dom';
 import AboutUs from './routes/AboutUs';
 import Home from './routes/Home';
 import Events from './routes/Events';
+import Admin from './routes/admin';
 
 function AppRoutes() {
 	// route list is an array of objects that contain the path and the component
@@ -22,6 +23,7 @@ function AppRoutes() {
 			))}
 			{/* if the user tries to navigate to a page that isnt in this file, than they navigate to '/' */}
 			<Route path="*" element={<Navigate to="/" />} />
+			<Route path="admin" element={<Admin />} />
 		</Routes>
 	);
 }
