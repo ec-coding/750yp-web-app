@@ -1,6 +1,6 @@
 import React from 'react';
-import { AppBar, Toolbar, IconButton, Typography, Button, Menu, MenuItem, useMediaQuery, useTheme } from '@mui/material';
-import { Link, useLocation } from 'react-router-dom';
+import { IconButton, Button, Menu, MenuItem, useMediaQuery, useTheme } from '@mui/material';
+import { Link } from 'react-router-dom';
 import MenuIcon from '@mui/icons-material/Menu';
 
 function MobileMenu() {

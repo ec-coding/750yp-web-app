@@ -4,7 +4,7 @@
 import Typography from '@mui/material/Typography';
 // import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 // import ContactUs from "../../components/ContactUs";
-import { Container, Box, CardMedia, Paper, Button, styled, Link, Grid, Divider } from '@mui/material';
+import { Container, Box, CardMedia, Paper, Button, styled, Link, Grid } from '@mui/material';
 // import EventPanel from "@/components/EventPanel";
 // import { trpc } from "@/utils/trpc";
 

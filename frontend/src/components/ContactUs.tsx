@@ -1,5 +1,5 @@
 // Libraries & Frameworks ///////////////////////////////////////////////
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Grid, Typography, Container, TextField, Button } from '@mui/material';
 
 // Main Component ///////////////////////////////////////////////

@@ -15,7 +15,7 @@ import MobileMenu from './MobileMenu';
 // Main Component ///////////////////////////////////////////////
 const Header = () => {
 	// Hooks ///////////////////////////////////////////////////////////////
-	const { user, loginWithRedirect, logout } = useAuth0();
+	// const { user, loginWithRedirect, logout } = useAuth0();
 	const theme = useTheme();
 	const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 	const location = useLocation();
