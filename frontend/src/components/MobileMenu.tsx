@@ -12,7 +12,8 @@ function MobileMenu() {
 
     // Open menu function
     const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
-        setAnchorEl(event.currentTarget);
+        // Suppress TypeScript error with type assertion
+        setAnchorEl(event.currentTarget as any);
     };
 
     // Close menu function
