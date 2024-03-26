@@ -60,7 +60,7 @@ const Footer = () => {
 									sx={{
 										width: { xs: '70%', sm: '70%', md: '100%' },
 										height: { xs: '70%', sm: '70%', md: '100%' },
-										margin: { xs: 'left', sm: 'left', md: 'auto'}
+										margin: { xs: 'left', sm: 'left', md: 'auto' }
 									}}
 								/>
 							</Paper>
@@ -128,8 +128,14 @@ const Footer = () => {
 								variant="h6"
 								sx={{ fontWeight: 'bold', color: 'primary.main' }}
 							>
-								Company
+								Main
 							</Typography>
+							<Button
+								href="/"
+								sx={{ textTransform: 'none', color: 'black', display: 'block', paddingX: '2px' }}
+							>
+								Home
+							</Button>
 							<Button
 								href="/AboutUs"
 								sx={{ textTransform: 'none', color: 'black', display: 'block', paddingX: '2px' }}
@@ -141,12 +147,6 @@ const Footer = () => {
 								sx={{ textTransform: 'none', color: 'black', display: 'block', paddingX: '2px' }}
 							>
 								Events
-							</Button>
-							<Button
-								href="/ContactUs"
-								sx={{ textTransform: 'none', color: 'black', display: 'block', paddingX: '2px' }}
-							>
-								Contact Us
 							</Button>
 						</Grid>
 
@@ -205,7 +205,7 @@ const Footer = () => {
 										}}
 										style={{ width: 35 }}
 									>
-										<Button href="https://www.facebook.com" target="_blank"
+										<Button href="https://www.facebook.com/groups/760209788651681/?_rdr" target="_blank"
 											sx={{ padding: '0' }}
 										>
 											<img
@@ -223,7 +223,7 @@ const Footer = () => {
 										}}
 										style={{ width: 35 }}
 									>
-										<Button href="https://www.instagram.com" target="_blank">
+										<Button href="https://www.instagram.com/explore/tags/750yp/" target="_blank">
 											<img
 												src="https://static-00.iconduck.com/assets.00/social-instagram-icon-1024x1024-qshv5qmi.png"
 												alt="Instagram"
@@ -239,7 +239,7 @@ const Footer = () => {
 										}}
 										style={{ width: 35 }}
 									>
-										<Button href="https://www.linkedin.com" target="_blank">
+										<Button href="https://www.linkedin.com/in/young-professionals-9b27a52a4/" target="_blank">
 											<img
 												src="https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-linkedin-512.png"
 												alt="LinkedIn"

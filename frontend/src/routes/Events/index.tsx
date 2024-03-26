@@ -2,6 +2,7 @@ import Typography from '@mui/material/Typography';
 // import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 // import ContactUs from "../../components/ContactUs";
 import { Container, Box, CardMedia, Paper, Button, styled, Link, Grid } from '@mui/material';
+import ContactUs from '../../components/ContactUs';
 // import EventPanel from "@/components/EventPanel";
 // import { trpc } from "@/utils/trpc";
 
@@ -98,16 +99,15 @@ const Events = () => {
 						className="space-y-16"
 						sx={{ maxWidth: 1280 }}
 						marginX={'auto'}
-						marginBottom={5}
 					>
 						<div className="flex items-center w-3/4 bg-cyan-400 mx-auto py-4 px-7 rounded-md">
 							<Box sx={{
-								my: 8, textAlign: 'center',
+								py: 8, textAlign: 'center',
 								paddingX: { xs: 2 }
 							}}>
 								<Typography variant="h4" sx={{
 									fontWeight: 'bold',
-									mb: 3,
+									mb: 4,
 								}}>
 									Our Upcoming Events
 								</Typography>
@@ -137,9 +137,13 @@ const Events = () => {
 										paddingX: 8,
 										marginTop: 5,
 										bgcolor: '#f3ce49',
+										boxShadow: '2px 4px 6px black',
 									}}
 								>
-									<Link href="https://business.lewisvillechamber.org/events/details/750yp-mixer-03-28-2024-29929" sx={{ textDecoration: 'none', color: 'black' }}>
+									<Link href="https://business.lewisvillechamber.org/events/details/750yp-mixer-03-28-2024-29929"
+										sx={{
+											textDecoration: 'none',
+											color: 'black',}}>
 										Register Here
 									</Link>
 								</Button>
@@ -173,6 +177,7 @@ const Events = () => {
 						</Typography> */}
 					</Grid>
 				</Container>
+				<ContactUs />
 			</div>
 		</>
 	);

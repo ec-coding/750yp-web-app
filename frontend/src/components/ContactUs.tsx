@@ -24,7 +24,7 @@ const ContactUs = () => {
 			<form 
 			// onSubmit={handleSubmit}
 			>
-				<Grid container py={4}
+				<Grid container py={7}
 					sx={{
 						justifyContent: 'space-between',
 						width: {
