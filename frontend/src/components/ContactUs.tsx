@@ -6,23 +6,14 @@ import { Grid, Typography, Container, TextField, Button } from '@mui/material';
 const ContactUs = () => {
 	// Render ///////////////////////////////////////////////////////////////
 
-	const [formData, setFormData] = useState({
+	const [formData, 
+		// setFormData
+	] = useState({
 		firstName: '',
 		lastName: '',
 		email: '',
 		message: '',
 	});
-
-	const handleChange = (e) => {
-		const { name, value } = e.target;
-		setFormData({ ...formData, [name]: value });
-	};
-
-	const handleSubmit = (e) => {
-		e.preventDefault();
-		console.log('Form submitted:', formData);
-		// Add logic to handle form submission (e.g., send data to backend)
-	};
 
 	return (
 		<Container
@@ -30,7 +21,9 @@ const ContactUs = () => {
 			disableGutters
 			sx={{ backgroundColor: '#bae6fd' }}
 		>
-			<form onSubmit={handleSubmit}>
+			<form 
+			// onSubmit={handleSubmit}
+			>
 				<Grid container py={4}
 					sx={{
 						justifyContent: 'space-between',
@@ -84,7 +77,7 @@ const ContactUs = () => {
 									variant="outlined"
 									name="firstName"
 									value={formData.firstName}
-									onChange={handleChange}
+									// onChange={handleChange}
 									sx={{ backgroundColor: 'white', borderRadius: 1 }}
 								/>
 							</Grid>
@@ -95,7 +88,7 @@ const ContactUs = () => {
 									variant="outlined"
 									name="lastName"
 									value={formData.lastName}
-									onChange={handleChange}
+									// onChange={handleChange}
 									sx={{ backgroundColor: 'white', borderRadius: 1 }}
 								/>
 							</Grid>
@@ -106,7 +99,7 @@ const ContactUs = () => {
 									variant="outlined"
 									name="email"
 									value={formData.email}
-									onChange={handleChange}
+									// onChange={handleChange}
 									sx={{ backgroundColor: 'white', borderRadius: 1 }}
 								/>
 							</Grid>
@@ -118,7 +111,7 @@ const ContactUs = () => {
 									sx={{ backgroundColor: 'white', borderRadius: 1 }}
 									name="message"
 									value={formData.message}
-									onChange={handleChange}
+									// onChange={handleChange}
 								/>
 							</Grid>
 							<Grid item xs={12}>

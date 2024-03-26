@@ -11,7 +11,7 @@ import {
 	Paper,
 	useMediaQuery
 } from '@mui/material';
-import { useAuth0 } from '@auth0/auth0-react';
+// import { useAuth0 } from '@auth0/auth0-react';
 // Components, Hooks, & Utils ///////////////////////////////////////////////
 import ContactUs from '../../components/ContactUs';
 
@@ -20,7 +20,7 @@ import ContactUs from '../../components/ContactUs';
 const Home = () => {
 	// Hooks ///////////////////////////////////////////////////////////////
 	// const { user } = useUser();
-	const { user } = useAuth0();
+	// const { user } = useAuth0();
 	const MobileWidthBreakpoint = useMediaQuery('(max-width: 600px)');
 
 	// Styles ///////////////////////////////////////////////////////////////

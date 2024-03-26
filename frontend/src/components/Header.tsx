@@ -23,7 +23,7 @@ const Header = () => {
 	const isActiveLink = (path: string) => location.pathname === path;
 	const { isAuthenticated } = useAuth0();
 	console.log(isAuthenticated);
-	console.log(user);
+
 	// Styles ///////////////////////////////////////////////////////////////
 	const activeLinkStyle = {
 		textTransform: 'none',
