@@ -1,5 +1,5 @@
 // Libraries & Frameworks ///////////////////////////////////////////////
-import { useRef } from 'react';
+import { FormEvent, useRef } from 'react';
 import { Grid, Typography, Container, TextField, Button } from '@mui/material';
 import emailjs from '@emailjs/browser';
 
@@ -7,23 +7,25 @@ import emailjs from '@emailjs/browser';
 const ContactUs = () => {
 	// Render ///////////////////////////////////////////////////////////////
 
-	const form = useRef();
+	const form = useRef<HTMLFormElement>(null);
 
-	const sendEmail = (e) => {
+	const sendEmail = (e: FormEvent<HTMLFormElement>) => {
 		e.preventDefault();
 
-		emailjs
-			.sendForm('service_sygfv7f', 'template_lmj84tb', form.current, {
-				publicKey: 'E_dnRpULSYOobP5OU',
-			})
-			.then(
-				() => {
-					console.log('SUCCESS!');
-				},
-				(error) => {
-					console.log('FAILED...', error.text);
-				},
-			);
+		if (form.current) {
+			emailjs
+				.sendForm('service_sygfv7f', 'template_lmj84tb', form.current, {
+					publicKey: 'E_dnRpULSYOobP5OU',
+				})
+				.then(
+					() => {
+						console.log('SUCCESS!');
+					},
+					(error) => {
+						console.log('FAILED...', error.text);
+					},
+				);
+		}
 	};
 
 	return (
@@ -140,7 +142,7 @@ const ContactUs = () => {
 										padding: '10px 40px',
 										borderRadius: '9999px',
 									}}
-									onClick={sendEmail}
+									type="submit"  // Ensure the button triggers form submission
 								>
 									Submit
 								</Button>
