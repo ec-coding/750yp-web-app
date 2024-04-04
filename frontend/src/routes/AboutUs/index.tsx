@@ -237,7 +237,7 @@ const AboutUs = () => {
 								<Typography variant="h6" sx={{ fontWeight: 'bold' }}>
 									Can anyone join?
 								</Typography>
-								<Typography>
+								<Typography sx={{ marginTop: '5px', fontSize: '18px' }}>
 									Right now, it’s open to anyone regardless of their membership
 									with the Lewisville chamber.
 								</Typography>
@@ -247,7 +247,7 @@ const AboutUs = () => {
 								<Typography variant="h6" sx={{ fontWeight: 'bold' }}>
 									Is there a cost to join?
 								</Typography>
-								<Typography>
+								<Typography sx={{ marginTop: '5px', fontSize: '18px' }}>
 									It is FREE to join so come check us out! We also highly
 									encourage membership with the chamber to really get the best
 									ROI for your time.
@@ -258,7 +258,7 @@ const AboutUs = () => {
 								<Typography variant="h6" sx={{ fontWeight: 'bold' }}>
 									Who is considered a “young professional”?
 								</Typography>
-								<Typography>
+								<Typography sx={{ marginTop: '5px', fontSize: '18px' }}>
 									We wish we could host everyone, but the age cap for our group
 									is 43 and under.
 								</Typography>
@@ -268,8 +268,8 @@ const AboutUs = () => {
 								<Typography variant="h6" sx={{ fontWeight: 'bold' }}>
 									Do I have to live in Lewisville to join?
 								</Typography>
-								<Typography>
-									Absolutely not. You can join us regardless of your location
+								<Typography sx={{ marginTop: '5px', fontSize: '18px' }}>
+									Not at all! You can join us regardless of your location
 									but most of our events will be held in the Lewisville, Flower
 									Mound, and The Colony area.
 								</Typography>
@@ -279,7 +279,7 @@ const AboutUs = () => {
 								<Typography variant="h6" sx={{ fontWeight: 'bold' }}>
 									How often will 750YP meet?
 								</Typography>
-								<Typography>
+								<Typography sx={{ marginTop: '5px', fontSize: '18px' }}>
 									We will host one mixer a month, one professional development
 									event a quarter, and volunteer events once a quarter.
 								</Typography>
