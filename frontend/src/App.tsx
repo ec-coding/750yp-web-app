@@ -11,7 +11,7 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 const theme = createTheme({
 	typography: {
-		fontFamily: 'Fira Sans, sans-serif',
+		fontFamily: "Alike, serif",
 	},
 });
 

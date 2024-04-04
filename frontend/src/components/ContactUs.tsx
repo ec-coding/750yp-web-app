@@ -1,19 +1,30 @@
 // Libraries & Frameworks ///////////////////////////////////////////////
-import { useState } from 'react';
+import { useRef } from 'react';
 import { Grid, Typography, Container, TextField, Button } from '@mui/material';
+import emailjs from '@emailjs/browser';
 
 // Main Component ///////////////////////////////////////////////
 const ContactUs = () => {
 	// Render ///////////////////////////////////////////////////////////////
 
-	const [formData, 
-		// setFormData
-	] = useState({
-		firstName: '',
-		lastName: '',
-		email: '',
-		message: '',
-	});
+	const form = useRef();
+
+	const sendEmail = (e) => {
+		e.preventDefault();
+
+		emailjs
+			.sendForm('service_sygfv7f', 'template_lmj84tb', form.current, {
+				publicKey: 'E_dnRpULSYOobP5OU',
+			})
+			.then(
+				() => {
+					console.log('SUCCESS!');
+				},
+				(error) => {
+					console.log('FAILED...', error.text);
+				},
+			);
+	};
 
 	return (
 		<Container
@@ -21,9 +32,7 @@ const ContactUs = () => {
 			disableGutters
 			sx={{ backgroundColor: '#bae6fd' }}
 		>
-			<form 
-			// onSubmit={handleSubmit}
-			>
+			<form ref={form} onSubmit={sendEmail}>
 				<Grid container py={7}
 					sx={{
 						justifyContent: 'space-between',
@@ -43,7 +52,7 @@ const ContactUs = () => {
 							variant="h4"
 							color={'#3b0764'}
 							sx={{
-								fontWeight: '500',
+								fontWeight: '600',
 							}}
 						>
 							Want to learn more? Get in touch!
@@ -76,8 +85,6 @@ const ContactUs = () => {
 									label="First Name*"
 									variant="outlined"
 									name="firstName"
-									value={formData.firstName}
-									// onChange={handleChange}
 									sx={{ backgroundColor: 'white', borderRadius: 1 }}
 								/>
 							</Grid>
@@ -87,8 +94,6 @@ const ContactUs = () => {
 									label="Last Name*"
 									variant="outlined"
 									name="lastName"
-									value={formData.lastName}
-									// onChange={handleChange}
 									sx={{ backgroundColor: 'white', borderRadius: 1 }}
 								/>
 							</Grid>
@@ -98,8 +103,6 @@ const ContactUs = () => {
 									label="E-mail*"
 									variant="outlined"
 									name="email"
-									value={formData.email}
-									// onChange={handleChange}
 									sx={{ backgroundColor: 'white', borderRadius: 1 }}
 								/>
 							</Grid>
@@ -109,9 +112,7 @@ const ContactUs = () => {
 									label="Phone #"
 									variant="outlined"
 									sx={{ backgroundColor: 'white', borderRadius: 1 }}
-									name="message"
-									value={formData.message}
-									// onChange={handleChange}
+									name="phone"
 								/>
 							</Grid>
 							<Grid item xs={12}>
@@ -122,6 +123,7 @@ const ContactUs = () => {
 									multiline
 									rows={4}
 									sx={{ backgroundColor: 'white', borderRadius: 1 }}
+									name="message"
 								/>
 							</Grid>
 							<Grid
@@ -130,7 +132,6 @@ const ContactUs = () => {
 								sx={{ display: 'flex', justifyContent: 'center' }}
 							>
 								<Button
-									disabled={true}
 									variant="contained"
 									sx={{
 										backgroundColor: 'blue[900]',
@@ -139,8 +140,9 @@ const ContactUs = () => {
 										padding: '10px 40px',
 										borderRadius: '9999px',
 									}}
+									onClick={sendEmail}
 								>
-									Submissions Currently Disabled
+									Submit
 								</Button>
 							</Grid>
 						</Grid>

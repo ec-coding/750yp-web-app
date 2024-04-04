@@ -51,7 +51,8 @@ const Home = () => {
 						<Grid item xs={12} sm={6}>
 							<Box
 								sx={{
-									padding: { xs: 0, sm: 0, md: 6, lg: 10 },
+									paddingX: { xs: 0, sm: 0, md: 6, lg: 6 },
+									paddingY: { xs: 0, sm: 0, md: 6, lg: 12 },
 									textAlign: { xs: 'center', sm: 'center', md: 'left' }
 								}}
 							>
