@@ -28,7 +28,10 @@ const Events = () => {
 			<div className="h-screen w-screen overflow-x-hidden">
 				<Container maxWidth={false} disableGutters>
 					<Grid
-						sx={{ flexGrow: 1, backgroundColor: '#bae6fd', paddingY: 8, paddingX: 4 }}
+						sx={{ flexGrow: 1, backgroundColor: '#bae6fd', 
+						paddingY: { xs: 0, sm: 0, md: 6, lg: 8 }, 
+						paddingX: { xs: 0, sm: 0, md: 4, lg: 4 } 
+					}}
 					>
 						<Grid
 							container
@@ -76,7 +79,7 @@ const Events = () => {
 									</Typography>
 								</Box>
 								<Box padding={0}>
-									<Typography variant="body1" sx={{ fontSize: 22, marginY: 4 }}>
+									<Typography variant="body1" sx={{ fontSize: 22, marginY: 2 }}>
 										Our events are designed to connect you with industry
 										leaders, foster meaningful conversations, and provide
 										insights that propel your career forward. Don&apos;t miss

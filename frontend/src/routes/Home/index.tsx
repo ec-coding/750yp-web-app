@@ -44,15 +44,19 @@ const Home = () => {
 					alignContent={'center'}
 					alignItems={'center'}
 					justifyContent={'space-between'}
-					sx={{ flexGrow: 1, backgroundColor: '#bae6fd', paddingY: 8, paddingX: 4 }}
+					sx={{ flexGrow: 1, backgroundColor: '#bae6fd', 
+					paddingY: { xs: 6, sm: 6, md: 6, lg: 8 }, 
+					paddingX: { xs: 0, sm: 0, md: 4, lg: 4 } 
+				}}
 					marginX={'auto'}
 				>
 					<Grid container sx={{ maxWidth: 1280 }} mx={'auto'}>
 						<Grid item xs={12} sm={6}>
 							<Box
 								sx={{
-									paddingX: { xs: 0, sm: 0, md: 6, lg: 6 },
-									paddingY: { xs: 0, sm: 0, md: 6, lg: 12 },
+									paddingRight: { xs: 4, sm: 4, md: 6, lg: 6 },
+									paddingLeft: { xs: 4, sm: 4, md: 2, lg: 2 },
+									paddingY: { xs: 0, sm: 0, md: 6, lg: 16 },
 									textAlign: { xs: 'center', sm: 'center', md: 'left' }
 								}}
 							>
@@ -107,7 +111,8 @@ const Home = () => {
 
 				{/* events */}
 				<Box sx={{
-					my: 8, textAlign: 'center',
+					my: { xs: 6, sm: 6, md: 6, lg: 8 }, 
+					textAlign: 'center',
 					paddingX: { xs: 2 }
 				}}>
 					<Typography variant="h4" sx={{

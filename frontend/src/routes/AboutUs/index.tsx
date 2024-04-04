@@ -54,13 +54,16 @@ const AboutUs = () => {
 								justifyContent="center"
 								margin={0}
 								sx={{
-									padding: { xs: 4, sm: 4, md: 6, lg: 8 }
+									paddingLeft: { xs: 4, sm: 4, md: 6, lg: 8 },
+									paddingRight: { xs: 4, sm: 4, md: 2, lg: 2 }
 								}}
 							>
 								<Box marginY={2}>
 									<Typography
 										variant="h4"
-										sx={{ fontWeight: 'bold' }}
+										sx={{ fontWeight: 'bold',
+										marginTop: { xs: 6, sm: 4, md: 0, lg: 0 }
+									}}
 										color={'#3b0764'}
 									>
 										Our Mission
