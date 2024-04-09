@@ -126,7 +126,7 @@ const Events = () => {
 										marginX: 'auto'
 									}}
 								>
-									<Img src="https://chambermaster.blob.core.windows.net/userfiles/UserFiles/chambers/437/Image/2024/750YPMarchMixer2024.png" />
+									<Img src="https://i.imgur.com/XhFHAlE.png" />
 								</Paper>
 								<Button
 									variant="contained"
@@ -143,7 +143,7 @@ const Events = () => {
 										boxShadow: '2px 4px 6px black',
 									}}
 								>
-									<Link href="https://business.lewisvillechamber.org/events/details/750yp-mixer-03-28-2024-29929"
+									<Link href="https://business.lewisvillechamber.org/events/details/750yp-mixer-04-25-2024-29930?calendarMonth=2024-04-01"
 										sx={{
 											textDecoration: 'none',
 											color: 'black',}}>
