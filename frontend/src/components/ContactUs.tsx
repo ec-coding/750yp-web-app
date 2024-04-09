@@ -8,8 +8,7 @@ const ContactUs = () => {
 	// Render ///////////////////////////////////////////////////////////////
 	const [isSubmitted, setIsSubmitted] = useState(false);
 
-	const handleClose = (event, reason) => {
-		// Close the Snackbar when user clicks outside or presses Escape key
+	const handleClose = (event: React.SyntheticEvent, reason: string) => {
 		if (reason === 'clickaway') {
 			return;
 		}
