@@ -1,19 +1,19 @@
 // Libraries & Frameworks ///////////////////////////////////////////////
-import { FormEvent, useRef, useState } from 'react';
+import { React, FormEvent, useRef, useState } from 'react';
 import { Grid, Typography, Container, TextField, Button, Snackbar } from '@mui/material';
 import emailjs from '@emailjs/browser';
 
 // Main Component ///////////////////////////////////////////////
 const ContactUs = () => {
 	// Render ///////////////////////////////////////////////////////////////
-	const [isSubmitted, setIsSubmitted] = useState(false);
+    const [isSubmitted, setIsSubmitted] = React.useState(false);
 
-	const handleClose = (event: React.SyntheticEvent, reason: string) => {
-		if (reason === 'clickaway') {
-			return;
-		}
-		setIsSubmitted(false);
-	};
+    const handleClose = (event: React.SyntheticEvent<Element, Event>, reason: string) => {
+        if (reason === 'clickaway') {
+            return;
+        }
+        setIsSubmitted(false);
+    };
 
 	const form = useRef<HTMLFormElement>(null);
 
