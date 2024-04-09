@@ -1,15 +1,25 @@
 // Libraries & Frameworks ///////////////////////////////////////////////
-import { FormEvent, useRef } from 'react';
-import { Grid, Typography, Container, TextField, Button } from '@mui/material';
+import { FormEvent, useRef, useState } from 'react';
+import { Grid, Typography, Container, TextField, Button, Snackbar } from '@mui/material';
 import emailjs from '@emailjs/browser';
 
 // Main Component ///////////////////////////////////////////////
 const ContactUs = () => {
 	// Render ///////////////////////////////////////////////////////////////
+	const [isSubmitted, setIsSubmitted] = useState(false);
+
+	const handleClose = (event, reason) => {
+		// Close the Snackbar when user clicks outside or presses Escape key
+		if (reason === 'clickaway') {
+			return;
+		}
+		setIsSubmitted(false);
+	};
 
 	const form = useRef<HTMLFormElement>(null);
 
 	const sendEmail = (e: FormEvent<HTMLFormElement>) => {
+
 		e.preventDefault();
 
 		if (form.current) {
@@ -19,6 +29,8 @@ const ContactUs = () => {
 				})
 				.then(
 					() => {
+						e.preventDefault();
+						setIsSubmitted(true);
 						console.log('SUCCESS!');
 					},
 					(error) => {
@@ -34,7 +46,7 @@ const ContactUs = () => {
 			disableGutters
 			sx={{ backgroundColor: '#bae6fd' }}
 		>
-			<form ref={form} onSubmit={sendEmail}>
+			<form ref={form} onSubmit={sendEmail} >
 				<Grid container py={7}
 					sx={{
 						justifyContent: 'space-between',
@@ -146,6 +158,14 @@ const ContactUs = () => {
 								>
 									Submit
 								</Button>
+								<Snackbar
+									open={isSubmitted}
+									autoHideDuration={6000}  // Adjust as needed
+									onClose={handleClose}
+									message="Contact form submitted successfully!"
+								// You can customize the appearance of the Snackbar here
+								// For example, you can add an action button or additional styling
+								/>
 							</Grid>
 						</Grid>
 					</Grid>
