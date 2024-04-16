@@ -3,6 +3,7 @@ import Typography from '@mui/material/Typography';
 // import ContactUs from "../../components/ContactUs";
 import { Container, Box, CardMedia, Paper, Button, styled, Link, Grid } from '@mui/material';
 import ContactUs from '../../components/ContactUs';
+import EventRotation from '../../components/EventRotation';
 // import EventPanel from "@/components/EventPanel";
 // import { trpc } from "@/utils/trpc";
 
@@ -13,25 +14,18 @@ const Events = () => {
 	// React.useEffect(() => {
 	//   setEvents(response.data);
 	// }, [response.data]);
-	const Img = styled('img')({
-		margin: 'auto',
-		display: 'block',
-		width: '100%',
-		height: '100%',
-		borderRadius: '4px',
-		objectFit: 'cover',
-		objectPosition: 'center',
-	});
+
 
 	return (
 		<>
 			<div className="h-screen w-screen overflow-x-hidden">
 				<Container maxWidth={false} disableGutters>
 					<Grid
-						sx={{ flexGrow: 1, backgroundColor: '#bae6fd', 
-						paddingY: { xs: 0, sm: 0, md: 6, lg: 8 }, 
-						paddingX: { xs: 0, sm: 0, md: 4, lg: 4 } 
-					}}
+						sx={{
+							flexGrow: 1, backgroundColor: '#bae6fd',
+							paddingY: { xs: 0, sm: 0, md: 6, lg: 8 },
+							paddingX: { xs: 0, sm: 0, md: 4, lg: 4 }
+						}}
 					>
 						<Grid
 							container
@@ -103,14 +97,14 @@ const Events = () => {
 						sx={{ maxWidth: 1280 }}
 						marginX={'auto'}
 					>
-						<div className="flex items-center w-3/4 bg-cyan-400 mx-auto py-4 px-7 rounded-md">
+						<div>
 							<Box sx={{
 								py: 8, textAlign: 'center',
 								paddingX: { xs: 2 }
 							}}>
 								<Typography variant="h4" sx={{
 									fontWeight: 'bold',
-									mb: 4,
+									mb: 8,
 								}}>
 									Our Upcoming Events
 								</Typography>
@@ -118,38 +112,8 @@ const Events = () => {
 									Participate in our community gatherings for the opportunity to
 									network and develop collectively.
 								</Typography> */}
-								<Paper
-									sx={{
-										width: { xs: '100%', sm: '100%', md: '500px' },
-										height: { xs: '100%', sm: '100%', md: '400px' },
-										boxShadow: '2px 4px 8px black',
-										marginX: 'auto'
-									}}
-								>
-									<Img src="https://i.imgur.com/XhFHAlE.png" />
-								</Paper>
-								<Button
-									variant="contained"
-									color="primary"
-									sx={{
-										textTransform: 'none',
-										color: 'black',
-										fontWeight: 'bold',
-										fontSize: '20px',
-										borderRadius: '60px',
-										paddingX: 8,
-										marginTop: 5,
-										bgcolor: '#f3ce49',
-										boxShadow: '2px 4px 6px black',
-									}}
-								>
-									<Link href="https://business.lewisvillechamber.org/events/details/750yp-mixer-04-25-2024-29930?calendarMonth=2024-04-01"
-										sx={{
-											textDecoration: 'none',
-											color: 'black',}}>
-										Register Here
-									</Link>
-								</Button>
+								<EventRotation />
+
 							</Box>
 
 							{/* <div className='flex-1'>

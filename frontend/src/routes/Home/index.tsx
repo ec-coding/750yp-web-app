@@ -14,6 +14,7 @@ import {
 // import { useAuth0 } from '@auth0/auth0-react';
 // Components, Hooks, & Utils ///////////////////////////////////////////////
 import ContactUs from '../../components/ContactUs';
+import EventRotation from '../../components/EventRotation';
 
 
 // Main Component ///////////////////////////////////////////////
@@ -111,10 +112,14 @@ const Home = () => {
 
 				{/* events */}
 				<Box sx={{
-					my: { xs: 6, sm: 6, md: 6, lg: 8 }, 
+					marginTop: { xs: 6, sm: 6, md: 6, lg: 8 }, 
+					marginBottom: { xs: 2, sm: 2, md: 4, lg: 4 }, 
 					textAlign: 'center',
+					maxWidth: 1280,
 					paddingX: { xs: 2 }
-				}}>
+				}}
+				marginX={'auto'}
+				>
 					<Typography variant="h4" sx={{
 						fontWeight: 'bold',
 						mb: 3,
@@ -125,35 +130,7 @@ const Home = () => {
 						Participate in our community gatherings for the opportunity to
 						network and develop collectively.
 					</Typography>
-					<Paper
-						sx={{
-							width: { xs: '100%', sm: '100%', md: '500px' },
-							height: { xs: '100%', sm: '100%', md: '400px' },
-							boxShadow: '2px 4px 8px black',
-							marginX: 'auto'
-						}}
-					>
-						<Img src="https://i.imgur.com/XhFHAlE.png" />
-					</Paper>
-					<Button
-						variant="contained"
-						color="primary"
-						sx={{
-							textTransform: 'none',
-							color: 'black',
-							fontWeight: 'bold',
-							fontSize: '20px',
-							borderRadius: '60px',
-							paddingX: 8,
-							marginTop: 5,
-							bgcolor: '#f3ce49',
-							boxShadow: '2px 4px 6px black',
-						}}
-					>
-						<Link href="https://business.lewisvillechamber.org/events/details/750yp-mixer-04-25-2024-29930?calendarMonth=2024-04-01" sx={{ textDecoration: 'none', color: 'black' }}>
-							Register Here
-						</Link>
-					</Button>
+					<EventRotation/>
 				</Box>
 
 				{/* about section */}

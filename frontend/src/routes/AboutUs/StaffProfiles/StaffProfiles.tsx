@@ -168,7 +168,7 @@ export default function StaffProfiles({ customProp }: { customProp: string }) {
 	if (customProp === 'kassandra') {
 		staff.name = 'Kassandra Nordhoff',
 			staff.title = 'Social Media Sith Lord',
-			staff.photo = 'https://i.imgur.com/mwBdzuw.jpg',
+			staff.photo = 'https://i.imgur.com/X1vto0t.jpeg',
 			modal.photo = staff.photo,
 			modal.name = staff.name,
 			modal.prof = "Business Development Executive",
