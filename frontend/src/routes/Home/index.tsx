@@ -45,7 +45,8 @@ const Home = () => {
 					alignContent={'center'}
 					alignItems={'center'}
 					justifyContent={'space-between'}
-					sx={{ flexGrow: 1, backgroundColor: '#bae6fd', 
+					sx={{ flexGrow: 1, 
+					background: 'linear-gradient(135deg, #32CEFC, #bae6fd)',
 					paddingY: { xs: 6, sm: 6, md: 6, lg: 8 }, 
 					paddingX: { xs: 0, sm: 0, md: 4, lg: 4 } 
 				}}

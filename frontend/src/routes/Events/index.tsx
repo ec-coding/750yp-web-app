@@ -1,11 +1,7 @@
 import Typography from '@mui/material/Typography';
-// import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-// import ContactUs from "../../components/ContactUs";
-import { Container, Box, CardMedia, Paper, Button, styled, Link, Grid } from '@mui/material';
+import { Container, Box, CardMedia, Grid } from '@mui/material';
 import ContactUs from '../../components/ContactUs';
 import EventRotation from '../../components/EventRotation';
-// import EventPanel from "@/components/EventPanel";
-// import { trpc } from "@/utils/trpc";
 
 const Events = () => {
 	// const response = trpc.event.getAll.useQuery();
@@ -22,7 +18,8 @@ const Events = () => {
 				<Container maxWidth={false} disableGutters>
 					<Grid
 						sx={{
-							flexGrow: 1, backgroundColor: '#bae6fd',
+							flexGrow: 1, 
+							background: 'linear-gradient(135deg, #bae6fd, #32CEFC)',
 							paddingY: { xs: 0, sm: 0, md: 6, lg: 8 },
 							paddingX: { xs: 0, sm: 0, md: 4, lg: 4 }
 						}}
