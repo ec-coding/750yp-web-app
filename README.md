@@ -1,6 +1,4 @@
-<p align="center">
-<img src="https://i.imgur.com/4Gkq1YS.png" width="80%">
-</p>
+<h1 align="center">750yp.com</h2>
 <h2 align="center">The Long-awaited Web App for the 750 YP Community</h2>
 <br>
 <table bordercolor="#66b2b2"> 
