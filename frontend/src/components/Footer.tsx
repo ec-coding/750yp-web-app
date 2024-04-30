@@ -54,13 +54,16 @@ const Footer = () => {
 								justifyContent: 'flex-start',
 							},
 						}}>
-							<Paper sx={{ backgroundColor: 'transparent', boxShadow: 'none' }}>
+							<Paper sx={{ 
+								backgroundColor: 'transparent', 
+							boxShadow: 'none',
+							}}>
 								<Img src="https://i.imgur.com/ICaBO54.png"
 									alt="750YP"
 									sx={{
 										width: { xs: '70%', sm: '70%', md: '100%' },
 										height: { xs: '70%', sm: '70%', md: '100%' },
-										margin: { xs: 'left', sm: 'left', md: 'auto' }
+										marginLeft: { xs: '0', sm: '0', md: 'auto' }
 									}}
 								/>
 							</Paper>
@@ -81,7 +84,7 @@ const Footer = () => {
 								<Grid item
 									style={{ width: 35 }}
 								>
-									<Button href="https://www.facebook.com" target="_blank"
+									<Button href="https://www.facebook.com/groups/760209788651681/?_rdr" target="_blank"
 										sx={{ padding: '0' }}
 									>
 										<Button href="https://www.instagram.com" target="_blank">

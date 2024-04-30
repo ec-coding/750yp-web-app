@@ -4,8 +4,6 @@ import {
 	Box,
 	Grid,
 	Typography,
-	Button,
-	Link,
 	CardMedia,
 	styled,
 	Paper,
@@ -15,13 +13,15 @@ import {
 // Components, Hooks, & Utils ///////////////////////////////////////////////
 import ContactUs from '../../components/ContactUs';
 import EventRotation from '../../components/EventRotation';
-
+import Collaboration from '../../img/Collaboration.png';
+import Authenticity from '../../img/Authenticity.png';
+import Professionalism from '../../img/Professionalism.png';
+import GrowthMindset from '../../img/Growth Mindset.png';
+import ServantLeadership from '../../img/Servant Leadership.png';
+import Values from '../../components/Values';
 
 // Main Component ///////////////////////////////////////////////
 const Home = () => {
-	// Hooks ///////////////////////////////////////////////////////////////
-	// const { user } = useUser();
-	// const { user } = useAuth0();
 	const MobileWidthBreakpoint = useMediaQuery('(max-width: 600px)');
 
 	// Styles ///////////////////////////////////////////////////////////////
@@ -45,11 +45,12 @@ const Home = () => {
 					alignContent={'center'}
 					alignItems={'center'}
 					justifyContent={'space-between'}
-					sx={{ flexGrow: 1, 
-					background: 'linear-gradient(135deg, #32CEFC, #bae6fd)',
-					paddingY: { xs: 6, sm: 6, md: 6, lg: 8 }, 
-					paddingX: { xs: 0, sm: 0, md: 4, lg: 4 } 
-				}}
+					sx={{
+						flexGrow: 1,
+						background: 'linear-gradient(135deg, #32CEFC, #bae6fd)',
+						paddingY: { xs: 6, sm: 6, md: 6, lg: 8 },
+						paddingX: { xs: 0, sm: 0, md: 4, lg: 4 }
+					}}
 					marginX={'auto'}
 				>
 					<Grid container sx={{ maxWidth: 1280 }} mx={'auto'}>
@@ -64,8 +65,11 @@ const Home = () => {
 							>
 								<Typography
 									variant="h4"
-									color={'#3b0764'}
-									sx={{ fontWeight: 'bold', marginBottom: 2 }}
+									color={'black'}
+									sx={{
+										fontWeight: 'bold', marginBottom: 2,
+										textShadow: '1px 1px 0 white, -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white'
+									}}
 								>
 									Welcoming all Young Professionals!
 								</Typography>
@@ -113,13 +117,13 @@ const Home = () => {
 
 				{/* events */}
 				<Box sx={{
-					marginTop: { xs: 6, sm: 6, md: 6, lg: 8 }, 
-					marginBottom: { xs: 2, sm: 2, md: 4, lg: 4 }, 
+					marginTop: { xs: 6, sm: 6, md: 6, lg: 8 },
+					marginBottom: { xs: 2, sm: 2, md: 4, lg: 4 },
 					textAlign: 'center',
 					maxWidth: 1280,
 					paddingX: { xs: 2 }
 				}}
-				marginX={'auto'}
+					marginX={'auto'}
 				>
 					<Typography variant="h4" sx={{
 						fontWeight: 'bold',
@@ -131,7 +135,7 @@ const Home = () => {
 						Participate in our community gatherings for the opportunity to
 						network and develop collectively.
 					</Typography>
-					<EventRotation/>
+					<EventRotation />
 				</Box>
 
 				{/* about section */}
@@ -270,9 +274,66 @@ const Home = () => {
 						</Grid>
 					</Container>
 				</Box>
-
+				<Box sx={{ backgroundColor: 'white', py: 8 }}>
+					<Container maxWidth="lg">
+						<Grid container spacing={5}>
+							<Grid item xs={12}>
+								<Grid item xs={12}
+									marginBottom={4}
+									sx={{
+										marginTop: { xs: 0, sm: 0, md: 2 },
+									}}
+								>
+									<Typography variant="h4" sx={{
+										fontWeight: 'bold',
+										textAlign: { xs: 'center', sm: 'center', md: 'center' },
+										paddingX: { xs: 0, md: 2 }
+									}}>
+										Our Values
+									</Typography>
+									{/* <Typography variant="h6"
+										marginY="0.5rem"
+										sx={{
+											fontWeight: 'none',
+											textAlign: { xs: 'center', sm: 'center', md: 'center' },
+											paddingX: { xs: 0, md: 2 }
+										}}>
+										The principles that define who we are
+									</Typography> */}
+								</Grid>
+								<Box sx={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
+									<Values
+										name="1. Collaboration"
+										img={Collaboration}
+										desc="We will foster a community that understands different perspectives so that we can accomplish more together."
+									/>
+									<Values
+										name="2. Authenticity"
+										img={Authenticity}
+										desc="We will promote genuine connections and trust within our community."
+									/>
+									<Values
+										name="3. Professonalism"
+										img={Professionalism}
+										desc="We will conduct ourselves with integrity, expertise, respect, and excellence."
+									/>
+									<Values
+										name="4. Growth Mindset"
+										img={GrowthMindset}
+										desc="We will encourage learning, resilience, and innovation with an optimistic attitude."
+									/>
+									<Values
+										name="5. Servant Leadership"
+										img={ServantLeadership}
+										desc="We will emphasize humility and empathy, with a focus on serving the needs of others."
+									/>
+								</Box>
+							</Grid>
+						</Grid>
+					</Container>
+				</Box >
 				<ContactUs />
-			</Container>
+			</Container >
 
 		</>
 	);
