@@ -21,7 +21,6 @@ const EventRotation = () => {
                     <Paper
                         sx={{
                             width: { xs: '100%', sm: '100%', md: '500px' },
-                            height: { xs: '100%', sm: '100%', md: '400px' },
                             boxShadow: '2px 4px 8px black',
                             top: '10px',
                             marginX: 'auto',
