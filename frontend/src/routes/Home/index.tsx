@@ -287,7 +287,7 @@ const Home = () => {
 									<Typography variant="h4" sx={{
 										fontWeight: 'bold',
 										textAlign: { xs: 'center', sm: 'center', md: 'center' },
-										paddingX: { xs: 0, md: 2 }
+										paddingX: { xs: 0, md: 2 },
 									}}>
 										Our Values
 									</Typography>
