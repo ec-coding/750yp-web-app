@@ -13,8 +13,8 @@ const EventRotation = () => {
 
     return (
         <>
-            <Grid container>
-                <Grid
+            <Grid container justifyContent="center">
+                {/* <Grid
                     xs={12}
                     sm={6}
                 >
@@ -89,7 +89,7 @@ const EventRotation = () => {
                             Register Here
                         </Link>
                     </Button>
-                </Grid>
+                </Grid> */}
                 <Grid
                     xs={12}
                     sm={6}
