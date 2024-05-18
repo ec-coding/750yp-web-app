@@ -1,12 +1,12 @@
 import Typography from '@mui/material/Typography';
-import { Container, Box, CardMedia, Grid } from '@mui/material';
+import { Container, Box, CardMedia, Grid, useMediaQuery } from '@mui/material';
 import ContactUs from '../../components/ContactUs';
 import EventRotation from '../../components/EventRotation';
 
 const Events = () => {
 	// const response = trpc.event.getAll.useQuery();
 	// const [events, setEvents] = React.useState(response.data);
-
+	const MobileWidthBreakpoint = useMediaQuery('(max-width: 600px)');
 	// React.useEffect(() => {
 	//   setEvents(response.data);
 	// }, [response.data]);
@@ -17,80 +17,6 @@ const Events = () => {
 			<div className="h-screen w-screen overflow-x-hidden">
 				<Container maxWidth={false} disableGutters>
 					<Grid
-						sx={{
-							flexGrow: 1, 
-							background: 'linear-gradient(135deg, #bae6fd, #32CEFC)',
-							paddingY: { xs: 0, sm: 0, md: 6, lg: 8 },
-							paddingX: { xs: 0, sm: 0, md: 4, lg: 4 }
-						}}
-					>
-						<Grid
-							container
-							alignItems="center"
-							padding={0}
-							sx={{ maxWidth: 1280 }}
-							marginX={'auto'}
-						>
-							<Grid
-								xs={12}
-								sm={6}
-								container
-								alignItems="center"
-								justifyContent="space-between"
-								margin={0}
-								paddingY={3}
-							>
-								<CardMedia
-									component="img"
-									image="https://i.imgur.com/ZVLTYe8.jpg"
-									alt="750YP"
-									className="hero-image"
-									sx={{ boxShadow: '2px 4px 8px black' }}
-								/>
-							</Grid>
-
-							<Grid
-								xs={12}
-								sm={6}
-								alignItems="center"
-								justifyContent="center"
-								margin={0}
-								padding={8}
-								sx={{
-									padding: { xs: 4, sm: 4, md: 8 }
-								}}
-							>
-								<Box marginBottom={3}>
-									<Typography
-										variant="h4"
-										sx={{ fontWeight: 'bold' }}
-										color={'#3b0764'}
-									>
-										Professional Mixers
-									</Typography>
-								</Box>
-								<Box padding={0}>
-									<Typography variant="body1" sx={{ fontSize: 22, marginY: 2 }}>
-										Our events are designed to connect you with industry
-										leaders, foster meaningful conversations, and provide
-										insights that propel your career forward. Don&apos;t miss
-										out on the opportunities that await – your next
-										career-defining connection could be just around the corner!
-									</Typography>
-								</Box>
-							</Grid>
-						</Grid>
-					</Grid>
-					<Grid
-						className="text-4xl text-center font-bold my-10"
-						sx={{ maxWidth: 1280 }}
-						marginX={'auto'}
-					>
-						<Typography sx={{ fontSize: 18 }}></Typography>
-					</Grid>
-
-					<Grid
-						className="space-y-16"
 						sx={{ maxWidth: 1280 }}
 						marginX={'auto'}
 					>
@@ -101,48 +27,188 @@ const Events = () => {
 							}}>
 								<Typography variant="h4" sx={{
 									fontWeight: 'bold',
-									mb: 8,
+									mb: 4,
 								}}>
 									Our Upcoming Events
 								</Typography>
-								{/* <Typography sx={{ fontSize: 20, mb: 4 }}>
-									Participate in our community gatherings for the opportunity to
-									network and develop collectively.
-								</Typography> */}
 								<EventRotation />
-
 							</Box>
-
-							{/* <div className='flex-1'>
-                <Typography sx={{ fontWeight: "bold" }}>
-                  Events ({events ? events.length : "error"} Results)
-                </Typography>
-              </div> */}
 							<div className="flex flex-1 justify-end">
-								{/* <button className="bg-purple-950 text-white py-1 px-16 rounded-full focus:outline-none focus:ring focus:border-blue-300">
-									Filter
-								</button> */}
 							</div>
 						</div>
 						<div className="bio-panel-container flex items-center justify-center space-x-12 overflow-x-auto">
 						</div>
-						{/* <div className='bio-panel-container flex items-center justify-center space-x-12 overflow-x-auto'>
-              <EventPanel />
-              <EventPanel />
-              <EventPanel />
-            </div> */}
-						{/* <Typography
-							variant="h6"
-							className="my-10 flex items-center justify-center "
-						>
-							<button className="bg-purple-950 text-white py-1 px-16 rounded-full focus:outline-none focus:ring focus:border-blue-300">
-								Load More
-							</button>
-						</Typography> */}
 					</Grid>
-				</Container>
+					<Box sx={{ backgroundColor: '#576B95' }}>
+						<Container maxWidth="lg">
+							<Grid container spacing={5}>
+								<Grid item xs={12} paddingY={6}>
+									<Grid item xs={12} sm={12}
+										marginTop={2}
+										marginBottom={6}
+									>
+										<Typography variant="h4" sx={{
+											fontWeight: 'bold',
+											textAlign: { xs: 'center', sm: 'center', md: 'center' },
+											paddingX: { xs: 0, md: 2 },
+											color: 'white',
+											// textShadow: '1.5px 1.5px 0 black',
+										}}>
+											What types of events does 750YP host?
+										</Typography>
+									</Grid>
+									<Box sx={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
+										{/* topics */}
+										<Grid container
+											sx={{
+												boxShadow: '2px 4px 12px black',
+											}}
+										>
+											<Grid lg={7}
+												sx={{
+													backgroundColor: "white",
+													// borderRadius: 4,
+													padding: 4,
+													boxShadow: "0px 4px 8px gray",
+												}}
+											>
+												<Typography
+													variant='h4'
+													sx={{
+														fontWeight: "bold",
+														fontSize: 22,
+														marginBottom: 2,
+													}}
+													className='text-purple-950'
+												>
+													Sip & Strive (Mixers)
+												</Typography>
+												<Typography variant='body1' sx={{ fontSize: 18 }}>
+													Join us for an exhilarating evening of connections and
+													collaborations at our vibrant networking mixer! Unwind
+													in a laid-back atmosphere designed for young
+													professionals eager to expand their networks. Elevate
+													your business game, make meaningful connections, and
+													enjoy the dynamic energy of like-minded individuals.
+													Let&apos;s mix, mingle, and make things happen – your
+													next big opportunity might just be a handshake away!
+												</Typography>
+											</Grid>
+											<Grid lg={5}>
+												<CardMedia
+													component='img'
+													image='https://i.imgur.com/ZVLTYe8.jpg'
+													alt='750YP'
+													sx={{
+														height: "400px",
+													}}
+												/>
+											</Grid>
+										</Grid>
+										<Grid container
+											sx={{
+												boxShadow: '2px 4px 12px black',
+											}}
+										>
+											<Grid lg={7}
+												sx={{
+													backgroundColor: "white",
+													// borderRadius: 4,
+													padding: 4,
+													boxShadow: "0px 4px 8px gray",
+												}}
+											>
+												<Typography
+													variant='h4'
+													sx={{
+														fontWeight: "bold",
+														fontSize: 22,
+														marginBottom: 2,
+													}}
+													className='text-purple-950'
+												>
+													Rise & Thrive (Professional Development)
+												</Typography>
+												<Typography variant='body1' sx={{ fontSize: 18 }}>
+													Dive into an engaging professional development
+													experience crafted for young professionals. Join us for
+													interactive sessions, forward-thinking speakers, and
+													hands-on workshops. Walk away not just inspired, but
+													armed with real-world skills and tools to conquer your
+													career goals!
+												</Typography>
+											</Grid>
+											<Grid lg={5}>
+												<CardMedia
+													component='img'
+													image='https://i.imgur.com/8FQbRqu.jpg'
+													alt='750YP'
+													sx={{
+														height: "400px",
+													}}
+												/>
+											</Grid>
+										</Grid>
+										<Grid container
+											sx={{
+												boxShadow: '2px 4px 12px black',
+											}}
+										>
+											<Grid lg={7}
+												sx={{
+													backgroundColor: "white",
+													// borderRadius: 4,
+													padding: 4,
+													boxShadow: "0px 4px 8px gray",
+												}}
+											>
+												<Typography
+													variant='h4'
+													sx={{
+														fontWeight: "bold",
+														fontSize: 22,
+														marginBottom: 2,
+													}}
+													className='text-purple-950'
+												>
+													Soar & Serve (Volunteerism)
+												</Typography>
+												<Typography variant='body1' sx={{ fontSize: 18 }}>
+													Come collaborate with us for meaningful engagements
+													where you can make a difference while forging new
+													friendships. Discover the immense benefits of giving
+													back, fostering personal growth, and contributing to the
+													greater good. Let&apos;s come together, have fun, and
+													create positive change in our community – because making
+													a difference has never been this exciting!
+												</Typography>
+											</Grid>
+											<Grid lg={5}>
+												<CardMedia
+													component='img'
+													image='https://i.imgur.com/9H4NnDg.jpg'
+													alt='750YP'
+													sx={{
+														height: "400px",
+													}}
+												/>
+											</Grid>
+										</Grid>
+									</Box>
+								</Grid>
+							</Grid>
+						</Container>
+					</Box>
+					<Grid
+						className="text-4xl text-center font-bold my-10"
+						sx={{ maxWidth: 1280 }}
+						marginX={'auto'}
+					>
+						<Typography sx={{ fontSize: 18 }}></Typography>
+					</Grid>
+				</Container >
 				<ContactUs />
-			</div>
+			</div >
 		</>
 	);
 };

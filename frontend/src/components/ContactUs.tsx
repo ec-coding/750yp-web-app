@@ -44,7 +44,7 @@ const ContactUs = () => {
 		<Container
 			maxWidth={false}
 			disableGutters
-			sx={{ backgroundColor: '#bae6fd' }}
+			sx={{ backgroundColor: '#0E2545' }}
 		>
 			<form ref={form} onSubmit={sendEmail} >
 				<Grid container py={7}
@@ -64,14 +64,14 @@ const ContactUs = () => {
 					<Grid item xs={12} sx={{ marginBotton: 1 }}>
 						<Typography
 							variant="h4"
-							color={'#3b0764'}
+							color={'white'}
 							sx={{
 								fontWeight: '600',
 							}}
 						>
 							Want to learn more? Get in touch!
 						</Typography>
-						<Typography variant="h6" sx={{ marginTop: 2, marginBottom: 4, fontWeight: '400' }}>
+						<Typography variant="h6" sx={{ marginTop: 2, marginBottom: 4, fontWeight: '400', color: 'white' }}>
 							At 750YP, we are here to help you grow and connect with like-minded
 							individuals.
 						</Typography>
@@ -84,7 +84,7 @@ const ContactUs = () => {
 					>
 						<Typography
 							variant="h5"
-							color={'#3b0764'}
+							color={'white'}
 							sx={{
 								fontWeight: 'bold',
 								marginBottom: 2,

@@ -1,4 +1,4 @@
-import { Container, Box, CardMedia, Paper, Button, styled, Link, Grid } from '@mui/material';
+import { Container, Box, CardMedia, Paper, Button, styled, Link, Grid, Typography } from '@mui/material';
 
 const EventRotation = () => {
     const Img = styled('img')({
@@ -115,7 +115,7 @@ const EventRotation = () => {
                             borderRadius: '60px',
                             paddingX: 8,
                             marginTop: 3,
-                            marginBottom: 10,
+                            marginBottom: 8,
                             bgcolor: '#f3ce49',
                             boxShadow: '2px 4px 6px black',
                         }}
@@ -129,6 +129,14 @@ const EventRotation = () => {
                         </Link>
                     </Button>
                 </Grid>
+            </Grid>
+            <Grid marginBottom={4}>
+                <Typography fontWeight="bold" variant="h6">
+                    Interested in more events like these?
+                </Typography>
+                <Typography variant="h6">
+                    Check out our other events at the <a href="https://business.lewisvillechamber.org/events/">Lewisville Chamber!</a>
+                </Typography>
             </Grid>
         </>
     )

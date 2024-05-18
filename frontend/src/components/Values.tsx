@@ -23,7 +23,7 @@ const Values = ({ name, img, desc }: { name: string, img: string, desc: string }
     return (
         <Grid container alignItems="center"
             sx={{
-                backgroundColor: 'skyBlue',
+                backgroundColor: '#576B95',
                 borderRadius: 4,
                 padding: 4,
                 boxShadow: "0px 4px 8px gray",
@@ -62,8 +62,7 @@ const Values = ({ name, img, desc }: { name: string, img: string, desc: string }
                         fontWeight: "bold",
                         fontSize: 22,
                         marginBottom: 2,
-                        color: 'black',
-                        textShadow: '1px 1px 0 white, -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white',
+                        color: 'white',
                         ...(MobileWidthBreakpoint && {
                                 display: 'flex',
                                 justifyContent: 'center',
@@ -77,7 +76,7 @@ const Values = ({ name, img, desc }: { name: string, img: string, desc: string }
                 <Typography variant='body1' 
                 sx={{ 
                     fontSize: 18,
-                    color: 'black',
+                    color: 'white',
                     ...(MobileWidthBreakpoint && {
                         display: 'flex',
                         justifyContent: 'center',

@@ -13,12 +13,7 @@ import {
 // Components, Hooks, & Utils ///////////////////////////////////////////////
 import ContactUs from '../../components/ContactUs';
 import EventRotation from '../../components/EventRotation';
-import Collaboration from '../../img/Collaboration.png';
-import Authenticity from '../../img/Authenticity.png';
-import Professionalism from '../../img/Professionalism.png';
-import GrowthMindset from '../../img/Growth Mindset.png';
-import ServantLeadership from '../../img/Servant Leadership.png';
-import Values from '../../components/Values';
+
 
 // Main Component ///////////////////////////////////////////////
 const Home = () => {
@@ -47,7 +42,7 @@ const Home = () => {
 					justifyContent={'space-between'}
 					sx={{
 						flexGrow: 1,
-						background: 'linear-gradient(135deg, #32CEFC, #bae6fd)',
+						background: '#0E2545',
 						paddingY: { xs: 6, sm: 6, md: 6, lg: 8 },
 						paddingX: { xs: 0, sm: 0, md: 4, lg: 4 }
 					}}
@@ -65,15 +60,14 @@ const Home = () => {
 							>
 								<Typography
 									variant="h4"
-									color={'black'}
+									color={'white'}
 									sx={{
 										fontWeight: 'bold', marginBottom: 2,
-										textShadow: '1px 1px 0 white, -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white'
 									}}
 								>
 									Welcoming all Young Professionals!
 								</Typography>
-								<Typography variant="body1" sx={{ fontSize: 22, marginY: 4 }}>
+								<Typography variant="body1" sx={{ fontSize: 22, marginY: 4, color: 'white' }}>
 									750 YP represents a fresh initiative by the Lewisville Area
 									Chamber of Commerce, focused on bringing together emerging young
 									professionals and nurturing the future leaders of our community.
@@ -139,199 +133,8 @@ const Home = () => {
 				</Box>
 
 				{/* about section */}
-				<Box sx={{ backgroundColor: '#FFECB3', py: 8 }}>
-					<Container maxWidth="lg">
-						<Grid container spacing={5}>
-							{MobileWidthBreakpoint ? null : (
-								<Grid item xs={12} sm={6}>
-									<CardMedia
-										component='img'
-										image='https://i.imgur.com/8YiFgwj.jpg'
-										alt='750YP'
-										sx={{
-											boxShadow: '2px 4px 12px black',
-											height: "500px",
-											marginBottom: "20px"
-										}}
-									/>
-									<CardMedia
-										component='img'
-										image='https://i.imgur.com/9sny6hU.jpg'
-										alt='750YP'
-										sx={{
-											boxShadow: '2px 4px 12px black',
-											height: "500px",
-										}}
-									/>
-								</Grid>
-							)}
-							<Grid item xs={12} sm={6}>
-								<Grid item xs={12} sm={6}
-									marginBottom={4}
-									sx={{
-										marginTop: { xs: 0, sm: 0, md: 2 },
-									}}
-								>
-									<Typography variant="h4" sx={{
-										fontWeight: 'bold',
-										textAlign: { xs: 'center', sm: 'center', md: 'left' },
-										paddingX: { xs: 0, md: 2 }
-									}}>
-										About 750YP
-									</Typography>
-								</Grid>
-								<Box sx={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
-									{/* topics */}
-									<Box
-										sx={{
-											backgroundColor: "white",
-											borderRadius: 4,
-											padding: 4,
-											boxShadow: "0px 4px 8px gray",
-										}}
-									>
-										<Typography
-											variant='h4'
-											sx={{
-												fontWeight: "bold",
-												fontSize: 22,
-												marginBottom: 2,
-											}}
-											className='text-purple-950'
-										>
-											Sip & Strive (Mixers)
-										</Typography>
-										<Typography variant='body1' sx={{ fontSize: 18 }}>
-											Join us for an exhilarating evening of connections and
-											collaborations at our vibrant networking mixer! Unwind
-											in a laid-back atmosphere designed for young
-											professionals eager to expand their networks. Elevate
-											your business game, make meaningful connections, and
-											enjoy the dynamic energy of like-minded individuals.
-											Let&apos;s mix, mingle, and make things happen – your
-											next big opportunity might just be a handshake away!
-										</Typography>
-									</Box>
-									<Box
-										sx={{
-											backgroundColor: "white",
-											borderRadius: 4,
-											padding: 4,
-											boxShadow: "0px 4px 8px gray",
-										}}
-									>
-										<Typography
-											variant='h4'
-											sx={{
-												fontWeight: "bold",
-												fontSize: 22,
-												marginBottom: 2,
-											}}
-											className='text-purple-950'
-										>
-											Rise & Thrive (Professional Development)
-										</Typography>
-										<Typography variant='body1' sx={{ fontSize: 18 }}>
-											Dive into an engaging professional development
-											experience crafted for young professionals. Join us for
-											interactive sessions, forward-thinking speakers, and
-											hands-on workshops. Walk away not just inspired, but
-											armed with real-world skills and tools to conquer your
-											career goals!
-										</Typography>
-									</Box>
-									<Box
-										sx={{
-											backgroundColor: "white",
-											borderRadius: 4,
-											padding: 4,
-											boxShadow: "0px 4px 8px gray",
-										}}
-									>
-										<Typography
-											variant='h4'
-											sx={{
-												fontWeight: "bold",
-												fontSize: 22,
-												marginBottom: 2,
-											}}
-											className='text-purple-950'
-										>
-											Soar & Serve (Volunteerism)
-										</Typography>
-										<Typography variant='body1' sx={{ fontSize: 18 }}>
-											Come collaborate with us for meaningful engagements
-											where you can make a difference while forging new
-											friendships. Discover the immense benefits of giving
-											back, fostering personal growth, and contributing to the
-											greater good. Let&apos;s come together, have fun, and
-											create positive change in our community – because making
-											a difference has never been this exciting!
-										</Typography>
-									</Box>
-								</Box>
-							</Grid>
-						</Grid>
-					</Container>
-				</Box>
-				<Box sx={{ backgroundColor: 'white', py: 8 }}>
-					<Container maxWidth="lg">
-						<Grid container spacing={5}>
-							<Grid item xs={12}>
-								<Grid item xs={12}
-									marginBottom={4}
-									sx={{
-										marginTop: { xs: 0, sm: 0, md: 2 },
-									}}
-								>
-									<Typography variant="h4" sx={{
-										fontWeight: 'bold',
-										textAlign: { xs: 'center', sm: 'center', md: 'center' },
-										paddingX: { xs: 0, md: 2 },
-									}}>
-										Our Values
-									</Typography>
-									{/* <Typography variant="h6"
-										marginY="0.5rem"
-										sx={{
-											fontWeight: 'none',
-											textAlign: { xs: 'center', sm: 'center', md: 'center' },
-											paddingX: { xs: 0, md: 2 }
-										}}>
-										The principles that define who we are
-									</Typography> */}
-								</Grid>
-								<Box sx={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
-									<Values
-										name="1. Collaboration"
-										img={Collaboration}
-										desc="We will foster a community that understands different perspectives so that we can accomplish more together."
-									/>
-									<Values
-										name="2. Authenticity"
-										img={Authenticity}
-										desc="We will promote genuine connections and trust within our community."
-									/>
-									<Values
-										name="3. Professonalism"
-										img={Professionalism}
-										desc="We will conduct ourselves with integrity, expertise, respect, and excellence."
-									/>
-									<Values
-										name="4. Growth Mindset"
-										img={GrowthMindset}
-										desc="We will encourage learning, resilience, and innovation with an optimistic attitude."
-									/>
-									<Values
-										name="5. Servant Leadership"
-										img={ServantLeadership}
-										desc="We will emphasize humility and empathy, with a focus on serving the needs of others."
-									/>
-								</Box>
-							</Grid>
-						</Grid>
-					</Container>
-				</Box >
+
+				
 				<ContactUs />
 			</Container >
 

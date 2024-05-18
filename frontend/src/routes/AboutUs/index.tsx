@@ -6,25 +6,33 @@ import Typography from '@mui/material/Typography';
 import ContactUs from '../../components/ContactUs';
 import StaffProfiles from './StaffProfiles/StaffProfiles';
 import { Container, Box, CardMedia, Grid } from '@mui/material';
+import Values from '../../components/Values';
 // import styles from './AboutUs.module.css';
-
+import Collaboration from '../../img/Collaboration.png';
+import Authenticity from '../../img/Authenticity.png';
+import Professionalism from '../../img/Professionalism.png';
+import GrowthMindset from '../../img/Growth Mindset.png';
+import ServantLeadership from '../../img/Servant Leadership.png';
 ///////////////////////////////////////////////////////////////
 // Grid layout needs to be reworked to be correctly responsive
 ///////////////////////////////////////////////////////////////
+import Link from '@mui/material/Link';
 
 const AboutUs = () => {
 	return (
 		<>
 			<div className="h-screen w-screen overflow-x-hidden">
-				<Container maxWidth={false} disableGutters className="space-y-16">
-					<Grid className="bg-sky-200">
+				<Container maxWidth={false} disableGutters>
+					<Grid sx={{
+						background: '#0E2545'
+					}}>
 						<Grid
 							container
 							alignItems="center"
 							padding={0}
 							sx={{ maxWidth: 1280 }}
 							marginX={'auto'}
-							paddingY={5}
+							paddingY={8}
 						>
 							<Grid
 								xs={12}
@@ -33,9 +41,7 @@ const AboutUs = () => {
 								alignItems="center"
 								justifyContent="space-between"
 								margin={0}
-								sx={{
-									paddingY: { xs: 0, sm: 0, md: 3 }
-								}}
+								paddingBottom={4}
 							>
 								<CardMedia
 									component="img"
@@ -61,34 +67,96 @@ const AboutUs = () => {
 								<Box marginY={2}>
 									<Typography
 										variant="h4"
-										sx={{ fontWeight: 'bold',
-										marginTop: { xs: 6, sm: 4, md: 0, lg: 0 }
-									}}
-										color={'#3b0764'}
+										sx={{
+											fontWeight: 'bold',
+											marginTop: { xs: 6, sm: 4, md: 0, lg: 0 }
+										}}
+										color={'white'}
 									>
 										Our Mission
 									</Typography>
 								</Box>
 								<Box padding={0}>
-									<Typography variant="body1" sx={{ fontSize: 22 }}>
-										750 YP is a new program of the Lewisville Area Chamber of
-										Commerce that aims to gather young talent while developing
-										the next generation of leaders. We offer a dynamic hub for
-										young professionals dedicated to nurturing holistic
-										development, bridging professional milestones and personal
-										aspirations through meaningful connections and shared
-										experiences.
+									<Typography variant="body1" sx={{ fontSize: 22, color: 'white' }}>
+										750 YP is a new program of the <Link
+											href="https://business.lewisvillechamber.org/events/"
+											color="inherit"
+											fontWeight="bold"
+											underline="none"
+											sx={{
+												color: 'tan',
+												'&:hover': {
+													color: 'lightYellow', // Change to your desired hover color
+												},
+												'&:active': {
+													color: 'lightSkyBlue', // Change to your desired active color
+												},
+											}}>
+											Lewisville Area Chamber of Commerce
+										</Link> that aims to gather young talent while developing the next generation of leaders.
+										We offer a dynamic hub for young professionals dedicated to nurturing holistic development,
+										bridging professional milestones and personal aspirations through meaningful connections
+										and shared experiences.
 									</Typography>
 								</Box>
 							</Grid>
 						</Grid>
 					</Grid>
 
-					<Grid sx={{ backgroundColor: '#FFECB3' }} marginX={'auto'}>
+					{/* VALUES */}
+					<Box sx={{ backgroundColor: 'white', paddingBottom: 6 }}>
+						<Container maxWidth="lg">
+							<Grid container spacing={5}>
+								<Grid item xs={12}>
+									<Grid item xs={12}
+										marginBottom={4}
+
+									>
+										<Typography variant="h4" sx={{
+											fontWeight: 'bold',
+											textAlign: { xs: 'center', sm: 'center', md: 'center' },
+											paddingX: { xs: 0, md: 2 },
+										}}>
+											Our Values
+										</Typography>
+									</Grid>
+									<Box sx={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
+										<Values
+											name="1. Collaboration"
+											img={Collaboration}
+											desc="We will foster a community that understands different perspectives so that we can accomplish more together."
+										/>
+										<Values
+											name="2. Authenticity"
+											img={Authenticity}
+											desc="We will promote genuine connections and trust within our community."
+										/>
+										<Values
+											name="3. Professonalism"
+											img={Professionalism}
+											desc="We will conduct ourselves with integrity, expertise, respect, and excellence."
+										/>
+										<Values
+											name="4. Growth Mindset"
+											img={GrowthMindset}
+											desc="We will encourage learning, resilience, and innovation with an optimistic attitude."
+										/>
+										<Values
+											name="5. Servant Leadership"
+											img={ServantLeadership}
+											desc="We will emphasize humility and empathy, with a focus on serving the needs of others."
+										/>
+									</Box>
+								</Grid>
+							</Grid>
+						</Container>
+					</Box >
+
+					<Grid sx={{ backgroundColor: '#0E2545' }} marginX={'auto'}>
 						<Box marginBottom={4}>
 							<Typography
 								variant="h4"
-								sx={{ fontWeight: 'bold' }}
+								sx={{ fontWeight: 'bold', color: 'white' }}
 								textAlign='center'
 								paddingTop={5}
 							>
@@ -203,6 +271,7 @@ const AboutUs = () => {
 						</Grid>
 					</Grid>
 					{/* <hr /> */}
+
 					<Grid
 						sx={{
 							justifyContent: 'space-between',
