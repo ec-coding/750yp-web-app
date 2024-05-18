@@ -143,6 +143,7 @@ const ContactUs = () => {
 							<Grid
 								item
 								xs={12}
+								mt={2}
 								sx={{ display: 'flex', justifyContent: 'center' }}
 							>
 								<Button
@@ -151,7 +152,7 @@ const ContactUs = () => {
 										backgroundColor: 'blue[900]',
 										color: 'white',
 										fontWeight: 'bold',
-										padding: '10px 40px',
+										padding: '10px 50px',
 										borderRadius: '9999px',
 									}}
 									type="submit"  // Ensure the button triggers form submission

@@ -52,7 +52,7 @@ const Events = () => {
 											textAlign: { xs: 'center', sm: 'center', md: 'center' },
 											paddingX: { xs: 0, md: 2 },
 											color: 'white',
-											// textShadow: '1.5px 1.5px 0 black',
+											textShadow: '2px 2px 2px black',
 										}}>
 											What types of events does 750YP host?
 										</Typography>
@@ -64,7 +64,7 @@ const Events = () => {
 												boxShadow: '2px 4px 12px black',
 											}}
 										>
-											<Grid lg={7}
+											<Grid lg={7} container alignContent="center"
 												sx={{
 													backgroundColor: "white",
 													// borderRadius: 4,
@@ -76,18 +76,15 @@ const Events = () => {
 													variant='h4'
 													sx={{
 														fontWeight: "bold",
-														fontSize: 22,
-														marginBottom: 2,
+														marginBottom: 4,
 													}}
 													className='text-purple-950'
 												>
-													Sip & Strive (Mixers)
+													Sip & Strive <br /> (Mixers)
 												</Typography>
-												<Typography variant='body1' sx={{ fontSize: 18 }}>
+												<Typography variant='body1' sx={{ fontSize: 20 }}>
 													Join us for an exhilarating evening of connections and
-													collaborations at our vibrant networking mixer! Unwind
-													in a laid-back atmosphere designed for young
-													professionals eager to expand their networks. Elevate
+													collaborations at our vibrant networking mixer! Elevate
 													your business game, make meaningful connections, and
 													enjoy the dynamic energy of like-minded individuals.
 													Let&apos;s mix, mingle, and make things happen – your
@@ -110,7 +107,7 @@ const Events = () => {
 												boxShadow: '2px 4px 12px black',
 											}}
 										>
-											<Grid lg={7}
+											<Grid lg={7} container alignContent="center"
 												sx={{
 													backgroundColor: "white",
 													// borderRadius: 4,
@@ -122,14 +119,13 @@ const Events = () => {
 													variant='h4'
 													sx={{
 														fontWeight: "bold",
-														fontSize: 22,
-														marginBottom: 2,
+														marginBottom: 4,
 													}}
 													className='text-purple-950'
 												>
-													Rise & Thrive (Professional Development)
+													Rise & Thrive <br />(Professional Development)
 												</Typography>
-												<Typography variant='body1' sx={{ fontSize: 18 }}>
+												<Typography variant='body1' sx={{ fontSize: 20 }}>
 													Dive into an engaging professional development
 													experience crafted for young professionals. Join us for
 													interactive sessions, forward-thinking speakers, and
@@ -154,7 +150,7 @@ const Events = () => {
 												boxShadow: '2px 4px 12px black',
 											}}
 										>
-											<Grid lg={7}
+											<Grid lg={7} container alignContent="center"
 												sx={{
 													backgroundColor: "white",
 													// borderRadius: 4,
@@ -166,14 +162,13 @@ const Events = () => {
 													variant='h4'
 													sx={{
 														fontWeight: "bold",
-														fontSize: 22,
-														marginBottom: 2,
+														marginBottom: 4,
 													}}
 													className='text-purple-950'
 												>
-													Soar & Serve (Volunteerism)
+													Soar & Serve <br /> (Volunteerism)
 												</Typography>
-												<Typography variant='body1' sx={{ fontSize: 18 }}>
+												<Typography variant='body1' sx={{ fontSize: 20 }}>
 													Come collaborate with us for meaningful engagements
 													where you can make a difference while forging new
 													friendships. Discover the immense benefits of giving
