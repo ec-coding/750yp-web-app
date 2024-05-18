@@ -63,6 +63,7 @@ const Values = ({ name, img, desc }: { name: string, img: string, desc: string }
                         fontSize: 22,
                         marginBottom: 2,
                         color: 'white',
+                        textShadow: '2px 2px 0px black',
                         ...(MobileWidthBreakpoint && {
                                 display: 'flex',
                                 justifyContent: 'center',
