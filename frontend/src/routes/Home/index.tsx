@@ -49,12 +49,11 @@ const Home = () => {
 					marginX={'auto'}
 				>
 					<Grid container sx={{ maxWidth: 1280 }} mx={'auto'}>
-						<Grid item xs={12} sm={6}>
+						<Grid item container xs={12} sm={6} alignItems="center">
 							<Box
 								sx={{
 									paddingRight: { xs: 4, sm: 4, md: 6, lg: 6 },
 									paddingLeft: { xs: 4, sm: 4, md: 2, lg: 2 },
-									paddingY: { xs: 0, sm: 0, md: 6, lg: 16 },
 									textAlign: { xs: 'center', sm: 'center', md: 'left' }
 								}}
 							>
@@ -62,12 +61,12 @@ const Home = () => {
 									variant="h4"
 									color={'white'}
 									sx={{
-										fontWeight: 'bold', marginBottom: 2,
+										fontWeight: 'bold', marginBottom: 4,
 									}}
 								>
 									Welcoming all Young Professionals!
 								</Typography>
-								<Typography variant="body1" sx={{ fontSize: 22, marginY: 4, color: 'white' }}>
+								<Typography variant="body1" sx={{ fontSize: 22, color: 'white' }}>
 									750 YP represents a fresh initiative by the Lewisville Area
 									Chamber of Commerce, focused on bringing together emerging young
 									professionals and nurturing the future leaders of our community.

@@ -76,7 +76,7 @@ const AboutUs = () => {
 										Our Mission
 									</Typography>
 								</Box>
-								<Box padding={0}>
+								<Box paddingBottom={4}>
 									<Typography variant="body1" sx={{ fontSize: 22, color: 'white' }}>
 										750 YP is a new program of the <Link
 											href="https://business.lewisvillechamber.org/events/"
@@ -153,7 +153,7 @@ const AboutUs = () => {
 					</Box >
 
 					<Grid sx={{ backgroundColor: '#0E2545' }} marginX={'auto'}>
-						<Box marginBottom={4}>
+						<Box >
 							<Typography
 								variant="h4"
 								sx={{ fontWeight: 'bold', color: 'white' }}
@@ -163,7 +163,7 @@ const AboutUs = () => {
 								Our Team
 							</Typography>
 						</Box>
-						<Grid marginTop={4} marginBottom={6} paddingBottom={5}
+						<Grid marginTop={4} paddingBottom={5}
 						>
 							<Grid
 								sx={{
@@ -271,92 +271,99 @@ const AboutUs = () => {
 						</Grid>
 					</Grid>
 					{/* <hr /> */}
-
 					<Grid
 						sx={{
-							justifyContent: 'space-between',
-							width: {
-								xs: '100%',
-								sm: '640px',
-								md: '768px',
-								lg: '1024px',
-								xl: '1280px'
-							},
-							marginX: 'auto'
+							background: 'lightGray'
 						}}
 					>
-						<Box marginY={5}>
-							<Typography
-								variant="h4"
-								sx={{
-									fontWeight: 'bold',
-									color: 'purple',
-									paddingX: { xs: 4, sm: 4, md: 8 }
-								}}
-							>
-								Frequently Asked Questions
-							</Typography>
-						</Box>
-						<Grid marginBottom={8}
+						<Grid
 							sx={{
-								'& > :not(style) + :not(style)': {
-									marginTop: '1.5rem', // Adjust as needed for space between child elements
+								justifyContent: 'space-between',
+								width: {
+									xs: '100%',
+									sm: '640px',
+									md: '768px',
+									lg: '1024px',
+									xl: '1280px'
 								},
-								paddingX: { xs: 5, sm: 5, md: 8 }
+								marginX: 'auto',
+								paddingY: 8
 							}}
 						>
-							<div>
-								<Typography variant="h6" sx={{ fontWeight: 'bold' }}>
-									Can anyone join?
+							<Box>
+								<Typography
+									variant="h4"
+									sx={{
+										fontWeight: 'bold',
+										color: 'purple',
+										paddingX: { xs: 4, sm: 4, md: 8 },
+										marginBottom: 5
+									}}
+								>
+									Frequently Asked Questions
 								</Typography>
-								<Typography sx={{ marginTop: '5px', fontSize: '18px' }}>
-									Right now, it’s open to anyone regardless of their membership
-									with the Lewisville chamber.
-								</Typography>
-							</div>
-							<hr />
-							<div>
-								<Typography variant="h6" sx={{ fontWeight: 'bold' }}>
-									Is there a cost to join?
-								</Typography>
-								<Typography sx={{ marginTop: '5px', fontSize: '18px' }}>
-									It is FREE to join so come check us out! We also highly
-									encourage membership with the chamber to really get the best
-									ROI for your time.
-								</Typography>
-							</div>
-							<hr />
-							<div>
-								<Typography variant="h6" sx={{ fontWeight: 'bold' }}>
-									Who is considered a “young professional”?
-								</Typography>
-								<Typography sx={{ marginTop: '5px', fontSize: '18px' }}>
-									We wish we could host everyone, but the age cap for our group
-									is 43 and under.
-								</Typography>
-							</div>
-							<hr />
-							<div>
-								<Typography variant="h6" sx={{ fontWeight: 'bold' }}>
-									Do I have to live in Lewisville to join?
-								</Typography>
-								<Typography sx={{ marginTop: '5px', fontSize: '18px' }}>
-									Not at all! You can join us regardless of your location
-									but most of our events will be held in the Lewisville, Flower
-									Mound, and The Colony area.
-								</Typography>
-							</div>
-							<hr />
-							<div>
-								<Typography variant="h6" sx={{ fontWeight: 'bold' }}>
-									How often will 750YP meet?
-								</Typography>
-								<Typography sx={{ marginTop: '5px', fontSize: '18px' }}>
-									We will host one mixer a month, one professional development
-									event a quarter, and volunteer events once a quarter.
-								</Typography>
-							</div>
-							<hr />
+							</Box>
+							<Grid
+								sx={{
+									'& > :not(style) + :not(style)': {
+										marginTop: '1.5rem', // Adjust as needed for space between child elements
+									},
+									paddingX: { xs: 5, sm: 5, md: 8 }
+								}}
+							>
+								<div>
+									<Typography variant="h6" sx={{ fontWeight: 'bold' }}>
+										Can anyone join?
+									</Typography>
+									<Typography sx={{ marginTop: '5px', fontSize: '18px' }}>
+										Right now, it’s open to anyone regardless of their membership
+										with the Lewisville chamber.
+									</Typography>
+								</div>
+								<hr />
+								<div>
+									<Typography variant="h6" sx={{ fontWeight: 'bold' }}>
+										Is there a cost to join?
+									</Typography>
+									<Typography sx={{ marginTop: '5px', fontSize: '18px' }}>
+										It is FREE to join so come check us out! We also highly
+										encourage membership with the chamber to really get the best
+										ROI for your time.
+									</Typography>
+								</div>
+								<hr />
+								<div>
+									<Typography variant="h6" sx={{ fontWeight: 'bold' }}>
+										Who is considered a “young professional”?
+									</Typography>
+									<Typography sx={{ marginTop: '5px', fontSize: '18px' }}>
+										We wish we could host everyone, but the age cap for our group
+										is 43 and under.
+									</Typography>
+								</div>
+								<hr />
+								<div>
+									<Typography variant="h6" sx={{ fontWeight: 'bold' }}>
+										Do I have to live in Lewisville to join?
+									</Typography>
+									<Typography sx={{ marginTop: '5px', fontSize: '18px' }}>
+										Not at all! You can join us regardless of your location
+										but most of our events will be held in the Lewisville, Flower
+										Mound, and The Colony area.
+									</Typography>
+								</div>
+								<hr />
+								<div>
+									<Typography variant="h6" sx={{ fontWeight: 'bold' }}>
+										How often will 750YP meet?
+									</Typography>
+									<Typography sx={{ marginTop: '5px', fontSize: '18px' }}>
+										We will host one mixer a month, one professional development
+										event a quarter, and volunteer events once a quarter.
+									</Typography>
+								</div>
+
+							</Grid>
 						</Grid>
 					</Grid>
 				</Container>

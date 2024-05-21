@@ -15,9 +15,13 @@ const Events = () => {
 	return (
 		<>
 			<div className="h-screen w-screen overflow-x-hidden">
-				<Container maxWidth={false} disableGutters>
+				<Container maxWidth={false} disableGutters
+				sx={{
+					background: '#0E2545'
+				}}
+				>
 					<Grid
-						sx={{ maxWidth: 1280 }}
+						sx={{ maxWidth: 1280, background: 'white' }}
 						marginX={'auto'}
 					>
 						<div>

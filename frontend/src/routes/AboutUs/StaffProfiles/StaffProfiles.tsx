@@ -233,15 +233,15 @@ export default function StaffProfiles({ customProp }: { customProp: string }) {
 					</Grid>
 					<Grid>
 						<Typography
-							variant="h5"
+							variant="h6"
 							sx={{ fontWeight: 'bold' }}
 							marginTop={2}
 							color={'white'}
 							className="text-xl text-center font-bold">{staff.name}
 						</Typography>
 						<Typography
-							variant="h6"
-							sx={{ color: 'white' }}
+							variant="body1"
+							sx={{ color: 'white', fontSize: '18px' }}
 							marginY={0}
 							className="text-base text-center font-bold">{staff.title}
 						</Typography>

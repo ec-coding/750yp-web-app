@@ -90,7 +90,7 @@ const Header = () => {
 						<img
 							src="https://i.imgur.com/ICaBO54.png"
 							alt="750YP"
-							style={{ width: isMobile ? 100 : 150 }}
+							style={{ width: isMobile ? 100 : 100 }}
 						/>
 					</Link>
 					<MobileMenu />

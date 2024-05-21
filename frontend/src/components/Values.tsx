@@ -76,7 +76,7 @@ const Values = ({ name, img, desc }: { name: string, img: string, desc: string }
                 </Typography>
                 <Typography variant='body1' 
                 sx={{ 
-                    fontSize: 18,
+                    fontSize: 16,
                     color: 'white',
                     ...(MobileWidthBreakpoint && {
                         display: 'flex',
