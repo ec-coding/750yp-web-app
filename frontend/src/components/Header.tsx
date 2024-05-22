@@ -29,7 +29,7 @@ const Header = () => {
 		textTransform: 'none',
 		color: 'black',
 		fontWeight: 'bold',
-		fontSize: 20,
+		fontSize: 18,
 		transition: 'color 0.3s ease',
 		// being implicit just in case
 		// mx: 0.5,
@@ -47,7 +47,7 @@ const Header = () => {
 		textTransform: 'none',
 		color: 'grey',
 		fontWeight: 'normal',
-		fontSize: 20,
+		fontSize: 18,
 		transition: 'color 0.3s ease',
 		// being implicit just in case
 		// mx: 0.5,
