@@ -66,7 +66,7 @@ const Home = () => {
 								>
 									Welcoming all Young Professionals!
 								</Typography>
-								<Typography variant="body1" sx={{ fontSize: 22, color: 'white' }}>
+								<Typography variant="body1" sx={{ fontSize: 22, color: 'white', paddingBottom: 6 }}>
 									750 YP represents a fresh initiative by the Lewisville Area
 									Chamber of Commerce, focused on bringing together emerging young
 									professionals and nurturing the future leaders of our community.
