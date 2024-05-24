@@ -123,27 +123,27 @@ const AboutUs = () => {
 									<Box sx={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
 										<Values
 											name="1. Collaboration"
-											img={Collaboration}
+											img="https://i.imgur.com/Fh7bzqD.png"
 											desc="We will foster a community that understands different perspectives so that we can accomplish more together."
 										/>
 										<Values
 											name="2. Authenticity"
-											img={Authenticity}
+											img="https://i.imgur.com/AJKIlms.png"
 											desc="We will promote genuine connections and trust within our community."
 										/>
 										<Values
 											name="3. Professonalism"
-											img={Professionalism}
+											img="https://i.imgur.com/mwZsxnO.png"
 											desc="We will conduct ourselves with integrity, expertise, respect, and excellence."
 										/>
 										<Values
 											name="4. Growth Mindset"
-											img={GrowthMindset}
+											img="https://i.imgur.com/E3EsRUZ.png"
 											desc="We will encourage learning, resilience, and innovation with an optimistic attitude."
 										/>
 										<Values
 											name="5. Servant Leadership"
-											img={ServantLeadership}
+											img="https://i.imgur.com/39hmeCI.png"
 											desc="We will emphasize humility and empathy, with a focus on serving the needs of others."
 										/>
 									</Box>
@@ -176,7 +176,7 @@ const AboutUs = () => {
 								marginX="auto"
 							>
 								<Grid xs={12}
-									sm={2.4}
+									sm={2.75}
 									sx={{
 										display: 'flex',
 										alignItems: 'center',
@@ -185,7 +185,7 @@ const AboutUs = () => {
 									<StaffProfiles customProp="lois" />
 								</Grid>
 								<Grid xs={12}
-									sm={2.4}
+									sm={2.75}
 									sx={{
 										display: 'flex',
 										alignItems: 'center',
@@ -194,7 +194,7 @@ const AboutUs = () => {
 									<StaffProfiles customProp="landon" />
 								</Grid>
 								<Grid xs={12}
-									sm={2.4}
+									sm={2.75}
 									sx={{
 										display: 'flex',
 										alignItems: 'center',
@@ -203,7 +203,7 @@ const AboutUs = () => {
 									<StaffProfiles customProp="nina" />
 								</Grid>
 								<Grid xs={12}
-									sm={2.4}
+									sm={2.75}
 									sx={{
 										display: 'flex',
 										alignItems: 'center',
@@ -211,8 +211,19 @@ const AboutUs = () => {
 									}}>
 									<StaffProfiles customProp="justus" />
 								</Grid>
+							</Grid>
+							<Grid
+								sx={{
+									display: 'flex',
+									alignItems: 'center',
+									justifyContent: 'center',
+									maxWidth: '1280px'
+								}}
+								container
+								marginX="auto"
+							>
 								<Grid xs={12}
-									sm={2.4}
+									sm={2.75}
 									sx={{
 										display: 'flex',
 										alignItems: 'center',
@@ -220,18 +231,8 @@ const AboutUs = () => {
 									}}>
 									<StaffProfiles customProp="joshua" />
 								</Grid>
-							</Grid>
-							<Grid
-								sx={{
-									display: 'flex',
-									alignItems: 'center',
-									justifyContent: 'center',
-								}}
-								container
-								marginX="auto"
-							>
 								<Grid xs={12}
-									sm={1.65}
+									sm={2.75}
 									sx={{
 										display: 'flex',
 										alignItems: 'center',
@@ -240,7 +241,7 @@ const AboutUs = () => {
 									<StaffProfiles customProp="kayla" />
 								</Grid>
 								<Grid xs={12}
-									sm={1.65}
+									sm={2.75}
 									sx={{
 										display: 'flex',
 										alignItems: 'center',
@@ -249,16 +250,7 @@ const AboutUs = () => {
 									<StaffProfiles customProp="davis" />
 								</Grid>
 								<Grid xs={12}
-									sm={1.65}
-									sx={{
-										display: 'flex',
-										alignItems: 'center',
-										justifyContent: 'center',
-									}}>
-									<StaffProfiles customProp="david" />
-								</Grid>
-								<Grid xs={12}
-									sm={1.65}
+									sm={2.75}
 									sx={{
 										display: 'flex',
 										alignItems: 'center',

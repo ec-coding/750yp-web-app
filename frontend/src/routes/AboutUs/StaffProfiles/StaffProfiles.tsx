@@ -151,20 +151,6 @@ export default function StaffProfiles({ customProp }: { customProp: string }) {
 			modal.vacation = 'I would love to go to Australia someday'
 	}
 
-	if (customProp === 'david') {
-		staff.name = 'David Sublett',
-			staff.title = 'N.E.R.D.',
-			staff.photo = 'https://i.imgur.com/rCFOkqV.jpg',
-			modal.photo = staff.photo,
-			modal.name = staff.name,
-			modal.prof = "Financial Advisor",
-			modal.title = 'N.E.R.D.',
-			modal.music = 'Indie Folk',
-			modal.food = 'Mexican',
-			modal.hobbies = 'Camping, anything pop culture-esque, pickling things',
-			modal.vacation = 'Anywhere there are mountains'
-	}
-
 	if (customProp === 'kassandra') {
 		staff.name = 'Kassandra Nordhoff',
 			staff.title = 'Social Media Sith Lord',

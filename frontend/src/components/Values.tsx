@@ -47,13 +47,11 @@ const Values = ({ name, img, desc }: { name: string, img: string, desc: string }
             }),
             }}
             >
-                <Paper>
                     <Img src={img}
                         sx={{
                             width: '100px'
                         }}
                     />
-                </Paper>
             </Grid>
             <Grid>
                 <Typography
