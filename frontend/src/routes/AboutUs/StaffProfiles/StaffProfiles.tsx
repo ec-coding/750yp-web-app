@@ -56,7 +56,7 @@ export default function StaffProfiles({ customProp }: { customProp: string }) {
 	if (customProp === 'lois') {
 		staff.name = 'Lois Kim',
 			staff.title = 'Empress of Everything',
-			staff.photo = 'https://i.imgur.com/jLjxZ3Y.jpg',
+			staff.photo = 'https://i.imgur.com/DG6kbnm.png',
 			modal.photo = staff.photo,
 			modal.name = staff.name,
 			modal.prof = "Financial Professional",
@@ -70,7 +70,7 @@ export default function StaffProfiles({ customProp }: { customProp: string }) {
 	if (customProp === 'landon') {
 		staff.name = 'Landon Merigold',
 			staff.title = 'Minister of Culture',
-			staff.photo = 'https://i.imgur.com/H6Hpi4l.jpg',
+			staff.photo = 'https://i.imgur.com/eaWWnM1.jpeg',
 			modal.photo = staff.photo,
 			modal.name = staff.name,
 			modal.prof = "Loan Officer",
@@ -98,7 +98,7 @@ export default function StaffProfiles({ customProp }: { customProp: string }) {
 	if (customProp === 'justus') {
 		staff.name = 'Justus Carlile',
 			staff.title = 'Sheriff of Shindigs',
-			staff.photo = 'https://i.imgur.com/mCLG8BX.png',
+			staff.photo = 'https://i.imgur.com/iGM7P8r.png',
 			modal.photo = staff.photo,
 			modal.name = staff.name,
 			modal.prof = "Real Estate Broker & Small Business Owner",
@@ -126,7 +126,7 @@ export default function StaffProfiles({ customProp }: { customProp: string }) {
 	if (customProp === 'kayla') {
 		staff.name = 'Kayla Baumann',
 			staff.title = 'Connection Connoisseur',
-			staff.photo = 'https://i.imgur.com/BsPLJX3.jpg',
+			staff.photo = 'https://i.imgur.com/vJomm5m.png',
 			modal.photo = staff.photo,
 			modal.name = staff.name,
 			modal.prof = "Director of Community and Donor Engagement, Communities In Schools of North Texas",
@@ -140,7 +140,7 @@ export default function StaffProfiles({ customProp }: { customProp: string }) {
 	if (customProp === 'davis') {
 		staff.name = 'Davis Perrone',
 			staff.title = 'Digital Dynamo',
-			staff.photo = 'https://i.imgur.com/Qai4nql.png',
+			staff.photo = 'https://i.imgur.com/eYqPUSu.png',
 			modal.photo = staff.photo,
 			modal.name = staff.name,
 			modal.prof = "Business Development Officer",
@@ -154,7 +154,7 @@ export default function StaffProfiles({ customProp }: { customProp: string }) {
 	if (customProp === 'kassandra') {
 		staff.name = 'Kassandra Nordhoff',
 			staff.title = 'Social Media Sith Lord',
-			staff.photo = 'https://i.imgur.com/X1vto0t.jpeg',
+			staff.photo = 'https://i.imgur.com/t4SWRns.png',
 			modal.photo = staff.photo,
 			modal.name = staff.name,
 			modal.prof = "Business Development Executive",

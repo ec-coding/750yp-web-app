@@ -98,7 +98,7 @@ const Events = () => {
 											<Grid lg={5}>
 												<CardMedia
 													component='img'
-													image='https://i.imgur.com/ZVLTYe8.jpg'
+													image='https://i.imgur.com/X2ruTUt.jpg'
 													alt='750YP'
 													sx={{
 														height: "400px",
@@ -106,7 +106,7 @@ const Events = () => {
 												/>
 											</Grid>
 										</Grid>
-										<Grid container
+										{/* <Grid container
 											sx={{
 												boxShadow: '2px 4px 12px black',
 											}}
@@ -148,7 +148,7 @@ const Events = () => {
 													}}
 												/>
 											</Grid>
-										</Grid>
+										</Grid> */}
 										<Grid container
 											sx={{
 												boxShadow: '2px 4px 12px black',
@@ -185,7 +185,7 @@ const Events = () => {
 											<Grid lg={5}>
 												<CardMedia
 													component='img'
-													image='https://i.imgur.com/9H4NnDg.jpg'
+													image='https://i.imgur.com/whQiuw5.jpg'
 													alt='750YP'
 													sx={{
 														height: "400px",

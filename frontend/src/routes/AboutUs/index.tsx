@@ -45,7 +45,7 @@ const AboutUs = () => {
 							>
 								<CardMedia
 									component="img"
-									image="https://i.imgur.com/Cpungs1.jpg"
+									image="https://i.imgur.com/ZWP1FpM.jpg"
 									alt="750YP"
 									className="hero-image"
 									sx={{
