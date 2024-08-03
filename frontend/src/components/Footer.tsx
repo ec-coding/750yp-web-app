@@ -242,7 +242,7 @@ const Footer = () => {
 										}}
 										style={{ width: 35 }}
 									>
-										<Button href="https://www.linkedin.com/in/young-professionals-9b27a52a4/" target="_blank">
+										<Button href="https://www.linkedin.com/showcase/750yp/" target="_blank">
 											<img
 												src="https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-linkedin-512.png"
 												alt="LinkedIn"

@@ -102,7 +102,7 @@ const EventRotation = () => {
                             marginX: 'auto'
                         }}
                     >
-                        <Img src="https://i.imgur.com/UTLDwcq.jpeg" />
+                        <Img src="https://i.imgur.com/KcUWYa6.png" />
                     </Paper>
                     <Button
                         variant="contained"
@@ -120,7 +120,7 @@ const EventRotation = () => {
                             boxShadow: '2px 4px 6px black',
                         }}
                     >
-                        <Link href="https://business.lewisvillechamber.org/events/register/29933"
+                        <Link href="https://business.lewisvillechamber.org/events/details/750yp-mixer-08-22-2024-29934?calendarMonth=2024-08-01"
                             sx={{
                                 textDecoration: 'none',
                                 color: 'black',
@@ -136,6 +136,11 @@ const EventRotation = () => {
                 </Typography>
                 <Typography variant="h6">
                     Check out our other events at the <a href="https://business.lewisvillechamber.org/events/">Lewisville Chamber!</a>
+                </Typography>
+            </Grid>
+            <Grid marginBottom={4}>
+                <Typography variant="h6">
+                And lastly, be sure to check out our <a href="https://lp.constantcontactpages.com/sl/yrCKui6/750YPNewsletter">Monthly Newsletter!</a>
                 </Typography>
             </Grid>
         </>
