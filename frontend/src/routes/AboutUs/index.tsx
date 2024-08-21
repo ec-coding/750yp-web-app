@@ -175,89 +175,15 @@ const AboutUs = () => {
 								container
 								marginX="auto"
 							>
-								<Grid xs={12}
-									sm={2.75}
-									sx={{
-										display: 'flex',
-										alignItems: 'center',
-										justifyContent: 'center',
-									}}>
 									<StaffProfiles customProp="lois" />
-								</Grid>
-								<Grid xs={12}
-									sm={2.75}
-									sx={{
-										display: 'flex',
-										alignItems: 'center',
-										justifyContent: 'center',
-									}}>
 									<StaffProfiles customProp="landon" />
-								</Grid>
-								<Grid xs={12}
-									sm={2.75}
-									sx={{
-										display: 'flex',
-										alignItems: 'center',
-										justifyContent: 'center',
-									}}>
 									<StaffProfiles customProp="nina" />
-								</Grid>
-								<Grid xs={12}
-									sm={2.75}
-									sx={{
-										display: 'flex',
-										alignItems: 'center',
-										justifyContent: 'center',
-									}}>
 									<StaffProfiles customProp="justus" />
-								</Grid>
-							</Grid>
-							<Grid
-								sx={{
-									display: 'flex',
-									alignItems: 'center',
-									justifyContent: 'center',
-									maxWidth: '1280px'
-								}}
-								container
-								marginX="auto"
-							>
-								<Grid xs={12}
-									sm={2.75}
-									sx={{
-										display: 'flex',
-										alignItems: 'center',
-										justifyContent: 'center',
-									}}>
-									<StaffProfiles customProp="joshua" />
-								</Grid>
-								<Grid xs={12}
-									sm={2.75}
-									sx={{
-										display: 'flex',
-										alignItems: 'center',
-										justifyContent: 'center',
-									}}>
 									<StaffProfiles customProp="kayla" />
-								</Grid>
-								<Grid xs={12}
-									sm={2.75}
-									sx={{
-										display: 'flex',
-										alignItems: 'center',
-										justifyContent: 'center',
-									}}>
+									<StaffProfiles customProp="joshua" />
 									<StaffProfiles customProp="davis" />
-								</Grid>
-								<Grid xs={12}
-									sm={2.75}
-									sx={{
-										display: 'flex',
-										alignItems: 'center',
-										justifyContent: 'center',
-									}}>
 									<StaffProfiles customProp="kassandra" />
-								</Grid>
+									<StaffProfiles customProp="paige" />
 
 							</Grid>
 						</Grid>

@@ -112,7 +112,7 @@ export default function StaffProfiles({ customProp }: { customProp: string }) {
 	if (customProp === 'joshua') {
 		staff.name = 'Josh Clark',
 			staff.title = 'Sous Chef of Shindigs',
-			staff.photo = 'https://i.imgur.com/TEKSo83.jpg',
+			staff.photo = 'https://i.imgur.com/DdUgdiJ.png',
 			modal.photo = staff.photo,
 			modal.name = staff.name,
 			modal.prof = "Real Estate Agent",
@@ -165,6 +165,20 @@ export default function StaffProfiles({ customProp }: { customProp: string }) {
 			modal.vacation = 'California or any “Disney” park place'
 	}
 
+	if (customProp === 'paige') {
+		staff.name = 'Paige Ackerman',
+			staff.title = 'Community Engagement',
+			staff.photo = 'https://i.imgur.com/1ApCYpC.png',
+			modal.photo = staff.photo,
+			modal.name = staff.name,
+			modal.prof = "Insurance Broker",
+			modal.title = 'Community Engagement',
+			modal.music = 'Pop, Country',
+			modal.food = 'Sushi',
+			modal.hobbies = 'Traveling, Baking, and Organizing',
+			modal.vacation = 'Switzerland'
+	}
+
 	// if (customProp === 'edwin') {
 	// 	staff.name = 'Edwin Choi',
 	// 		staff.title = 'Software Sovereign',
@@ -180,7 +194,16 @@ export default function StaffProfiles({ customProp }: { customProp: string }) {
 	// }
 
 	return (
-		<Grid >
+		<Grid item
+			xs={12}
+			md={3.25}
+			lg={3.25}
+			sx={{
+				display: 'flex',
+				alignItems: 'center',
+				justifyContent: 'center',
+			}}
+		>
 			<Button
 				onClick={handleOpen}
 				style={{
@@ -277,7 +300,7 @@ export default function StaffProfiles({ customProp }: { customProp: string }) {
 										width: '100%', // Full width
 										height: '100%', // Full height
 										objectFit: 'cover', // Cover the container with the image while maintaining aspect ratio
-									  }}
+									}}
 								/>
 							</Grid>
 						</Grid>
