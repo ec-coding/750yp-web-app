@@ -53,6 +53,7 @@ const EventRotation = () => {
                         </Link>
                     </Button>
                 </Grid>
+
                 <Grid xs={12} container>
                     <Grid
                         xs={12}
@@ -67,6 +68,10 @@ const EventRotation = () => {
                         >
                             <Img src="https://i.imgur.com/P4cW5yE.png" />
                         </Paper>
+                    </Grid>
+                    <Grid xs={12} py={3} my={3} sx={{ background: 'lightBlue' }}>
+                        <Typography marginBottom={1} variant="h6">Presenting Sponsor: </Typography>
+                        <Typography variant="h5" sx={{ fontWeight: 'bold' }}>Gotcha Covered of Lewisville</Typography>
                     </Grid>
                     <Grid
                         xs={12}

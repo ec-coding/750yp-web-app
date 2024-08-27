@@ -27,7 +27,6 @@ const Events = () => {
 						<div>
 							<Box sx={{
 								py: 8, textAlign: 'center',
-								paddingX: { xs: 2 }
 							}}>
 								<Typography variant="h4" sx={{
 									fontWeight: 'bold',
