@@ -26,7 +26,7 @@ const EventRotation = () => {
                             marginX: 'auto'
                         }}
                     >
-                        <Img src="https://i.imgur.com/KcUWYa6.png" />
+                        <Img src="https://i.imgur.com/i9EsPrf.jpeg" />
                     </Paper>
                     <Button
                         variant="contained"
@@ -44,7 +44,7 @@ const EventRotation = () => {
                             boxShadow: '2px 4px 6px black',
                         }}
                     >
-                        <Link href="https://business.lewisvillechamber.org/events/details/750yp-mixer-08-22-2024-29934?calendarMonth=2024-08-01"
+                        <Link href="https://business.lewisvillechamber.org/events/details/yp-s-og-s-mixer-29935?calendarMonth=2024-09-01"
                             sx={{
                                 textDecoration: 'none',
                                 color: 'black',
@@ -78,7 +78,7 @@ const EventRotation = () => {
                                 marginX: 'auto'
                             }}
                         >
-                            <Img src="https://i.imgur.com/sGtN577.png" />
+                            <Img src="https://i.imgur.com/rT9G6v1.png" />
                         </Paper>
                         <Button
                             variant="contained"

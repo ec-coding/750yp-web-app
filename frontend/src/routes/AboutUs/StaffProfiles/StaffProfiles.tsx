@@ -167,12 +167,12 @@ export default function StaffProfiles({ customProp }: { customProp: string }) {
 
 	if (customProp === 'paige') {
 		staff.name = 'Paige Ackerman',
-			staff.title = 'Community Engagement',
+			staff.title = 'Network Navigator',
 			staff.photo = 'https://i.imgur.com/hL8iQJA.png',
 			modal.photo = staff.photo,
 			modal.name = staff.name,
 			modal.prof = "Insurance Broker",
-			modal.title = 'Community Engagement',
+			modal.title = 'Network Navigator',
 			modal.music = 'Pop, Country',
 			modal.food = 'Sushi',
 			modal.hobbies = 'Traveling, Baking, and Organizing',
