@@ -11,6 +11,15 @@ const EventRotation = () => {
         objectPosition: 'center',
     });
 
+    const Img2 = styled('img')({
+        margin: 'auto',
+        display: 'block',
+        width: '90%',
+        height: '90%',
+        borderRadius: '4px',
+
+    });
+
     return (
         <>
             <Grid container justifyContent="center">
@@ -69,9 +78,21 @@ const EventRotation = () => {
                             <Img src="https://i.imgur.com/P4cW5yE.png" />
                         </Paper>
                     </Grid>
-                    <Grid xs={12} py={3} my={3} sx={{ background: 'lightBlue' }}>
-                        <Typography marginBottom={1} variant="h6">Presenting Sponsor: </Typography>
-                        <Typography variant="h5" sx={{ fontWeight: 'bold' }}>Gotcha Covered of Lewisville</Typography>
+                    <Grid xs={12} py={3} my={3} sx={{}}>
+                        <Typography marginBottom={1} variant="h5">Presenting Sponsors: </Typography>
+                        <Grid container justifyContent="center">
+                            <Grid item xs={12} lg={3}>
+                                <a href="https://www.gotchacovered.com/lewisville/#~971bf9db-53ac-4d36-8930-55f7a5de6249">
+                                    <Img2 src="https://i.imgur.com/rekbMro.png" />
+                                </a>
+                            </Grid>
+                            <Grid item xs={12} lg={3} sx={{
+                            }}>
+                                <a href="https://www.rbfcu.org/?gclid=Cj0KCQjwrp-3BhDgARIsAEWJ6SwfsPlUxM6hx2FGkSWTs9_oAG9ueKfQhjlh4MoWXOUCtUZeyPmsDisaAnZUEALw_wcB&ef_id=Cj0KCQjwrp-3BhDgARIsAEWJ6SwfsPlUxM6hx2FGkSWTs9_oAG9ueKfQhjlh4MoWXOUCtUZeyPmsDisaAnZUEALw_wcB:G:s&gad_source=1">
+                                    <Img2 src="https://i.imgur.com/2l7ReID.jpeg" />
+                                </a>
+                            </Grid>
+                        </Grid>
                     </Grid>
                     <Grid
                         xs={12}
