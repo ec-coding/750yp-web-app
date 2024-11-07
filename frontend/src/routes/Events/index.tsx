@@ -34,7 +34,10 @@ const Events = () => {
 								}}>
 									Our Upcoming Events
 								</Typography>
-								<EventRotation />
+								<Typography variant="h5">
+									Please check back in 2025!
+								</Typography>
+								{/* <EventRotation /> */}
 							</Box>
 							<div className="flex flex-1 justify-end">
 							</div>

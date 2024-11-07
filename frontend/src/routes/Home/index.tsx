@@ -129,7 +129,10 @@ const Home = () => {
 						Participate in our community gatherings for the opportunity to
 						network and develop collectively.
 					</Typography>
-					<EventRotation />
+					<Typography variant="h5">
+						Please check back in 2025!
+					</Typography>
+					{/* <EventRotation /> */}
 				</Box>
 
 				{/* about section */}
