@@ -226,7 +226,7 @@ const Footer = () => {
 										}}
 										style={{ width: 35 }}
 									>
-										<Button href="https://www.instagram.com/explore/tags/750yp/" target="_blank">
+										<Button href="https://www.instagram.com/750yp/" target="_blank">
 											<img
 												src="https://static-00.iconduck.com/assets.00/social-instagram-icon-1024x1024-qshv5qmi.png"
 												alt="Instagram"

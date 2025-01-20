@@ -77,8 +77,8 @@ const AboutUs = () => {
 									</Typography>
 								</Box>
 								<Box paddingBottom={4}>
-									<Typography variant="body1" sx={{ fontSize: 22, color: 'white' }}>
-										750 YP is a new program of the <Link
+									<Typography variant="body1" sx={{ fontSize: 22.25, color: 'white' }}>
+										750 YP is a program of the <Link
 											href="https://business.lewisvillechamber.org/events/"
 											color="inherit"
 											fontWeight="bold"
@@ -183,8 +183,6 @@ const AboutUs = () => {
 									<StaffProfiles customProp="joshua" />
 									<StaffProfiles customProp="davis" />
 									<StaffProfiles customProp="kassandra" />
-									<StaffProfiles customProp="paige" />
-
 							</Grid>
 						</Grid>
 					</Grid>
@@ -276,8 +274,7 @@ const AboutUs = () => {
 										How often will 750YP meet?
 									</Typography>
 									<Typography sx={{ marginTop: '5px', fontSize: '18px' }}>
-										We will host one mixer a month, one professional development
-										event a quarter, and volunteer events once a quarter.
+										We will host one mixer each month and one volunteer event each quarter.
 									</Typography>
 								</div>
 

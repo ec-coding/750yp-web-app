@@ -55,12 +55,12 @@ export default function StaffProfiles({ customProp }: { customProp: string }) {
 
 	if (customProp === 'lois') {
 		staff.name = 'Lois Kim',
-			staff.title = 'Empress of Everything',
+			staff.title = 'Co-Chair',
 			staff.photo = 'https://i.imgur.com/DG6kbnm.png',
 			modal.photo = staff.photo,
 			modal.name = staff.name,
 			modal.prof = "Financial Professional",
-			modal.title = 'Co-Chair AKA Empress of ______',
+			modal.title = 'Co-Chair AKA Empress of Everything',
 			modal.music = 'Everything but currently on a EDM phase.',
 			modal.food = 'Anything Asian but I may be biased...',
 			modal.hobbies = 'Volleyball, hanging with my dog, volunteering, and trying out new restaurants!',
@@ -69,7 +69,7 @@ export default function StaffProfiles({ customProp }: { customProp: string }) {
 
 	if (customProp === 'landon') {
 		staff.name = 'Landon Merigold',
-			staff.title = 'Minister of Culture',
+			staff.title = 'Co-Chair',
 			staff.photo = 'https://i.imgur.com/eaWWnM1.jpeg',
 			modal.photo = staff.photo,
 			modal.name = staff.name,
@@ -83,12 +83,12 @@ export default function StaffProfiles({ customProp }: { customProp: string }) {
 
 	if (customProp === 'nina') {
 		staff.name = 'Nina Hernandez',
-			staff.title = 'Tea-EO',
+			staff.title = 'Treasurer',
 			staff.photo = 'https://i.imgur.com/MtVek4f.jpg',
 			modal.photo = staff.photo,
 			modal.name = staff.name,
 			modal.prof = "Director of Communications & Events",
-			modal.title = 'Tea-EO',
+			modal.title = 'Treasurer AKA Tea-EO',
 			modal.music = 'Anything R&B',
 			modal.food = 'WINGS!! Spicy & Crunchy, PLEASE!',
 			modal.hobbies = 'I love going on long walks with my little family or finding anything to craft!',
@@ -97,12 +97,12 @@ export default function StaffProfiles({ customProp }: { customProp: string }) {
 
 	if (customProp === 'justus') {
 		staff.name = 'Justus Carlile',
-			staff.title = 'Sheriff of Shindigs',
+			staff.title = 'Event Coordinator',
 			staff.photo = 'https://i.imgur.com/iGM7P8r.png',
 			modal.photo = staff.photo,
 			modal.name = staff.name,
 			modal.prof = "Real Estate Broker & Small Business Owner",
-			modal.title = 'Sheriff of Shindigs',
+			modal.title = 'Event Coordinator AKA Sheriff of Shindigs',
 			modal.music = 'Electronic, Punk, Country, or Industrial/Metal.',
 			modal.food = 'Italian. Pasta is life.',
 			modal.hobbies = 'Gardening, travel, home improvement projects, and concerts.',
@@ -111,12 +111,12 @@ export default function StaffProfiles({ customProp }: { customProp: string }) {
 
 	if (customProp === 'joshua') {
 		staff.name = 'Josh Clark',
-			staff.title = 'Sous Chef of Shindigs',
+			staff.title = 'Volunteer Coordinator',
 			staff.photo = 'https://i.imgur.com/DdUgdiJ.png',
 			modal.photo = staff.photo,
 			modal.name = staff.name,
 			modal.prof = "Real Estate Agent",
-			modal.title = 'Sous Chef of Shindigs',
+			modal.title = 'Volunteer Coordinator AKA Sous Chef of Shindigs',
 			modal.music = '80\'\s New Wave',
 			modal.food = 'Anything smothered in Hot Honey',
 			modal.hobbies = 'Rock climbing and running',
@@ -125,12 +125,12 @@ export default function StaffProfiles({ customProp }: { customProp: string }) {
 
 	if (customProp === 'kayla') {
 		staff.name = 'Kayla Baumann',
-			staff.title = 'Connection Connoisseur',
+			staff.title = 'Secretary',
 			staff.photo = 'https://i.imgur.com/vJomm5m.png',
 			modal.photo = staff.photo,
 			modal.name = staff.name,
-			modal.prof = "Director of Community and Donor Engagement, Communities In Schools of North Texas",
-			modal.title = 'Connection Connoisseur',
+			modal.prof = "Director of Community Engagement, Communities In Schools of North Texas",
+			modal.title = 'Secretary AKA Connection Connoisseur',
 			modal.music = 'Worship or Taylor Swift',
 			modal.food = 'Pasta',
 			modal.hobbies = 'Spending time with family & friends, puzzles, calligraphy, reading',
@@ -139,7 +139,7 @@ export default function StaffProfiles({ customProp }: { customProp: string }) {
 
 	if (customProp === 'davis') {
 		staff.name = 'Davis Perrone',
-			staff.title = 'Digital Dynamo',
+			staff.title = 'Social Media Coordinator',
 			staff.photo = 'https://i.imgur.com/eYqPUSu.png',
 			modal.photo = staff.photo,
 			modal.name = staff.name,
@@ -153,12 +153,12 @@ export default function StaffProfiles({ customProp }: { customProp: string }) {
 
 	if (customProp === 'kassandra') {
 		staff.name = 'Kassandra Nordhoff',
-			staff.title = 'Social Media Sith Lord',
+			staff.title = 'Social Media Coordinator',
 			staff.photo = 'https://i.imgur.com/t4SWRns.png',
 			modal.photo = staff.photo,
 			modal.name = staff.name,
 			modal.prof = "Business Development Executive",
-			modal.title = 'Social Media Sith Lord',
+			modal.title = 'Social Media Co-Chair AKA Social Media Sith Lord',
 			modal.music = 'Classic Rock',
 			modal.food = 'Seafood',
 			modal.hobbies = 'Thrift Shopping and Visiting new restaurants',
@@ -196,8 +196,8 @@ export default function StaffProfiles({ customProp }: { customProp: string }) {
 	return (
 		<Grid item
 			xs={12}
-			md={3.25}
-			lg={3.25}
+			md={3}
+			lg={3}
 			sx={{
 				display: 'flex',
 				alignItems: 'center',
