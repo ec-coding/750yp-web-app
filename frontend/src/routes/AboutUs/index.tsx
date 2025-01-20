@@ -274,7 +274,7 @@ const AboutUs = () => {
 										How often will 750YP meet?
 									</Typography>
 									<Typography sx={{ marginTop: '5px', fontSize: '18px' }}>
-										We will host one mixer each month and one volunteer event each quarter.
+										We will host one mixer each month and two volunteer events each year.
 									</Typography>
 								</div>
 
