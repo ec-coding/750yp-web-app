@@ -116,7 +116,7 @@ export default function StaffProfiles({ customProp }: { customProp: string }) {
 			modal.photo = staff.photo,
 			modal.name = staff.name,
 			modal.prof = "Real Estate Agent",
-			modal.title = 'Volunteer Coordinator AKA Sous Chef of Shindigs',
+			modal.title = 'Volunteer Coordinator AKA Clarity Champion',
 			modal.music = '80\'\s New Wave',
 			modal.food = 'Anything smothered in Hot Honey',
 			modal.hobbies = 'Rock climbing and running',
