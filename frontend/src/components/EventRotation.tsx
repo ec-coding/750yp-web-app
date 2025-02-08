@@ -74,7 +74,7 @@ const EventRotation = () => {
                                 marginX: 'auto'
                             }}
                         >
-                            <Img src="https://i.imgur.com/RRavxiB.png" />
+                            <Img src="https://i.imgur.com/Epsq4a8.png" />
                         </Paper>
                         <Button
                             variant="contained"
@@ -92,7 +92,7 @@ const EventRotation = () => {
                                 boxShadow: '2px 4px 6px black',
                             }}
                         >
-                            <Link href="https://lewisvillechamber.chambermaster.com/eventregistration/register/30429"
+                            <Link href="https://lewisvillechamber.chambermaster.com/eventregistration/register/30442"
                                 sx={{
                                     textDecoration: 'none',
                                     color: 'black',
