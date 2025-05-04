@@ -183,6 +183,7 @@ const AboutUs = () => {
 									<StaffProfiles customProp="joshua" />
 									<StaffProfiles customProp="davis" />
 									<StaffProfiles customProp="kassandra" />
+									<StaffProfiles customProp="rachel" />
 							</Grid>
 						</Grid>
 					</Grid>

@@ -179,6 +179,20 @@ export default function StaffProfiles({ customProp }: { customProp: string }) {
 			modal.vacation = 'Switzerland'
 	}
 
+	if (customProp === 'rachel') {
+		staff.name = 'Rachel Grunn',
+			staff.title = 'Engagement Coordinator',
+			staff.photo = 'https://i.imgur.com/Rm5reBY.jpeg',
+			modal.photo = staff.photo,
+			modal.name = staff.name,
+			modal.prof = "Real Estate Advisor",
+			modal.title = 'Engagement Coordinator AKA Facilitator of First Impressions',
+			modal.music = 'Neo-Soul & R&B Fusion',
+			modal.food = 'Sushi',
+			modal.hobbies = 'Horseback Riding',
+			modal.vacation = 'Okinawa, Japan'
+	}
+
 	// if (customProp === 'edwin') {
 	// 	staff.name = 'Edwin Choi',
 	// 		staff.title = 'Software Sovereign',
@@ -197,7 +211,7 @@ export default function StaffProfiles({ customProp }: { customProp: string }) {
 		<Grid item
 			xs={12}
 			md={3}
-			lg={3}
+			lg={3.25}
 			sx={{
 				display: 'flex',
 				alignItems: 'center',
