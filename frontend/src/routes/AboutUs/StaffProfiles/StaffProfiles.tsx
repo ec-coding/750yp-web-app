@@ -84,7 +84,7 @@ export default function StaffProfiles({ customProp }: { customProp: string }) {
 	if (customProp === 'nina') {
 		staff.name = 'Nina Hernandez',
 			staff.title = 'Treasurer',
-			staff.photo = 'https://i.imgur.com/MtVek4f.jpg',
+			staff.photo = 'https://i.imgur.com/y4O6fj2.jpeg',
 			modal.photo = staff.photo,
 			modal.name = staff.name,
 			modal.prof = "Director of Communications & Events",
