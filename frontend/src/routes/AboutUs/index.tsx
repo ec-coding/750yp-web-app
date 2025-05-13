@@ -184,6 +184,7 @@ const AboutUs = () => {
 									<StaffProfiles customProp="davis" />
 									<StaffProfiles customProp="kassandra" />
 									<StaffProfiles customProp="rachel" />
+									<StaffProfiles customProp="lake" />
 							</Grid>
 						</Grid>
 					</Grid>

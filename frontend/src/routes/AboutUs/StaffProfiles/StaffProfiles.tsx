@@ -193,6 +193,20 @@ export default function StaffProfiles({ customProp }: { customProp: string }) {
 			modal.vacation = 'Okinawa, Japan'
 	}
 
+	if (customProp === 'lake') {
+		staff.name = 'Lake Finninger',
+			staff.title = 'Event Planner',
+			staff.photo = 'https://i.imgur.com/NYDBqDA.jpeg',
+			modal.photo = staff.photo,
+			modal.name = staff.name,
+			modal.prof = "Insurance Broker",
+			modal.title = 'Event Planner',
+			modal.music = 'Country & Blues',
+			modal.food = 'Mediterranean or a hearty sub',
+			modal.hobbies = 'Family, friends and golf with a yearly skydive',
+			modal.vacation = 'Whistler in the Winter but honestly anywhere outside of the state of Texas. I love seeing new places and being able to meet as many people as possible!'
+	}
+
 	// if (customProp === 'edwin') {
 	// 	staff.name = 'Edwin Choi',
 	// 		staff.title = 'Software Sovereign',
@@ -211,7 +225,7 @@ export default function StaffProfiles({ customProp }: { customProp: string }) {
 		<Grid item
 			xs={12}
 			md={3}
-			lg={3.25}
+			lg={2.75}
 			sx={{
 				display: 'flex',
 				alignItems: 'center',
