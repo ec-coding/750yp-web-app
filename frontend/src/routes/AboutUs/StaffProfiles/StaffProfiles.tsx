@@ -139,7 +139,7 @@ export default function StaffProfiles({ customProp }: { customProp: string }) {
 
 	if (customProp === 'davis') {
 		staff.name = 'Davis Perrone',
-			staff.title = 'Social Media Coordinator',
+			staff.title = 'Engagement Coordinator',
 			staff.photo = 'https://i.imgur.com/eYqPUSu.png',
 			modal.photo = staff.photo,
 			modal.name = staff.name,
@@ -195,12 +195,12 @@ export default function StaffProfiles({ customProp }: { customProp: string }) {
 
 	if (customProp === 'lake') {
 		staff.name = 'Lake Finninger',
-			staff.title = 'Event Planner',
+			staff.title = 'Event Coordinator',
 			staff.photo = 'https://i.imgur.com/NYDBqDA.jpeg',
 			modal.photo = staff.photo,
 			modal.name = staff.name,
 			modal.prof = "Insurance Broker",
-			modal.title = 'Event Planner',
+			modal.title = 'Event Coordinator',
 			modal.music = 'Country & Blues',
 			modal.food = 'Mediterranean or a hearty sub',
 			modal.hobbies = 'Family, friends and golf with a yearly skydive',
@@ -225,7 +225,7 @@ export default function StaffProfiles({ customProp }: { customProp: string }) {
 		<Grid item
 			xs={12}
 			md={3}
-			lg={2.75}
+			lg={3.25}
 			sx={{
 				display: 'flex',
 				alignItems: 'center',

@@ -178,7 +178,6 @@ const AboutUs = () => {
 									<StaffProfiles customProp="lois" />
 									<StaffProfiles customProp="landon" />
 									<StaffProfiles customProp="nina" />
-									<StaffProfiles customProp="justus" />
 									<StaffProfiles customProp="kayla" />
 									<StaffProfiles customProp="joshua" />
 									<StaffProfiles customProp="davis" />
