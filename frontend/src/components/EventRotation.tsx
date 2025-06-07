@@ -74,7 +74,7 @@ const EventRotation = () => {
                                 marginX: 'auto'
                             }}
                         >
-                            <Img src="https://i.imgur.com/3ksVw0t.jpeg" />
+                            <Img src="https://i.imgur.com/ePKGmEG.jpeg" />
                         </Paper>
                         <Button
                             variant="contained"
@@ -92,7 +92,85 @@ const EventRotation = () => {
                                 boxShadow: '2px 4px 6px black',
                             }}
                         >
-                            <Link href="https://business.lewisvillechamber.org/events/details/750yp-mixer-05-22-2025-30457?calendarMonth=2025-05-01"
+                            <Link href="https://business.lewisvillechamber.org/events/details/750yp-mixer-06-26-2025-30458?calendarMonth=2025-06-01"
+                                sx={{
+                                    textDecoration: 'none',
+                                    color: 'black',
+                                }}>
+                                Register Here
+                            </Link>
+                        </Button>
+                    </Grid>
+                </Grid>
+                <Grid xs={12} container>
+                    <Grid
+                        xs={12}
+                    >
+                        <Paper
+                            sx={{
+                                width: { xs: '100%', sm: '100%', md: '500px' },
+                                boxShadow: '2px 4px 8px black',
+                                marginX: 'auto'
+                            }}
+                        >
+                            <Img src="https://i.imgur.com/yzrPYOb.jpeg" />
+                        </Paper>
+                        <Button
+                            variant="contained"
+                            color="primary"
+                            sx={{
+                                textTransform: 'none',
+                                color: 'black',
+                                fontWeight: 'bold',
+                                fontSize: '20px',
+                                borderRadius: '60px',
+                                paddingX: 8,
+                                marginY: 3,
+                                marginBottom: 8,
+                                bgcolor: '#f3ce49',
+                                boxShadow: '2px 4px 6px black',
+                            }}
+                        >
+                            <Link href="https://business.lewisvillechamber.org/events/details/750yp-mixer-07-24-2025-30459?calendarMonth=2025-07-01"
+                                sx={{
+                                    textDecoration: 'none',
+                                    color: 'black',
+                                }}>
+                                Register Here
+                            </Link>
+                        </Button>
+                    </Grid>
+                </Grid>
+                <Grid xs={12} container>
+                    <Grid
+                        xs={12}
+                    >
+                        <Paper
+                            sx={{
+                                width: { xs: '100%', sm: '100%', md: '500px' },
+                                boxShadow: '2px 4px 8px black',
+                                marginX: 'auto'
+                            }}
+                        >
+                            <Img src="https://i.imgur.com/jhVpgMt.jpeg" />
+                        </Paper>
+                        <Button
+                            variant="contained"
+                            color="primary"
+                            sx={{
+                                textTransform: 'none',
+                                color: 'black',
+                                fontWeight: 'bold',
+                                fontSize: '20px',
+                                borderRadius: '60px',
+                                paddingX: 8,
+                                marginY: 3,
+                                marginBottom: 8,
+                                bgcolor: '#f3ce49',
+                                boxShadow: '2px 4px 6px black',
+                            }}
+                        >
+                            <Link href="https://business.lewisvillechamber.org/events/details/750yp-mixer-08-28-2025-30460?calendarMonth=2025-08-01"
                                 sx={{
                                     textDecoration: 'none',
                                     color: 'black',
