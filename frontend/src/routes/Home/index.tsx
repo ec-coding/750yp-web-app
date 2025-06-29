@@ -13,7 +13,6 @@ import {
 // Components, Hooks, & Utils ///////////////////////////////////////////////
 import ContactUs from '../../components/ContactUs';
 import EventRotation from '../../components/EventRotation';
-import Newsletter from '../../components/Newsletter';
 
 
 // Main Component ///////////////////////////////////////////////

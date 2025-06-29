@@ -116,6 +116,27 @@ const Header = () => {
 									Events
 								</Button>
 							</Link>
+							<Link to="/Gallery">
+								<Button
+									sx={isActiveLink('/Gallery') ? activeLinkStyle : linkStyle}
+								>
+									Gallery
+								</Button>
+							</Link>
+							<Link to="/Olympics">
+								<Button
+									sx={isActiveLink('/Olympics') ? activeLinkStyle : linkStyle}
+								>
+									Olympics
+								</Button>
+							</Link>
+							<Link to="/Testimonials">
+								<Button
+									sx={isActiveLink('/Testimonials') ? activeLinkStyle : linkStyle}
+								>
+									Testimonials
+								</Button>
+							</Link>
 							{/* needs functionality */}
 							{/* {isAuthenticated ? (
 				
