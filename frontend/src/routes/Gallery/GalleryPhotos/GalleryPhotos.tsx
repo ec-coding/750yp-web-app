@@ -9,7 +9,7 @@ export default function GalleryPhotos({ customProp }: { customProp: string }) {
             <Grid item
                 xs={12}
                 md={5.75}
-                lg={5.75}
+                lg={5}
                 sx={{
                     display: 'flex',
                     alignItems: 'center',
