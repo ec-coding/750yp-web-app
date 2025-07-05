@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://i.imgur.com/Dt7H5cv.png" width="80%">
+<img src="https://i.imgur.com/Dt7H5cv.png" width="50%">
 </p>
 <h2 align="center">The Long-awaited Web App for the 750 YP Community</h2>
 <br>
