@@ -126,7 +126,7 @@ export default function StaffProfiles({ customProp }: { customProp: string }) {
 	if (customProp === 'kayla') {
 		staff.name = 'Kayla Baumann',
 			staff.title = 'Secretary',
-			staff.photo = 'https://i.imgur.com/vJomm5m.png',
+			staff.photo = 'https://i.imgur.com/bKFxuYP.jpeg',
 			modal.photo = staff.photo,
 			modal.name = staff.name,
 			modal.prof = "Director of Community Engagement, Communities In Schools of North Texas",
