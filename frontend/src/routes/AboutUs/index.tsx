@@ -132,7 +132,7 @@ const AboutUs = () => {
 											desc="We will promote genuine connections and trust within our community."
 										/>
 										<Values
-											name="3. Professonalism"
+											name="3. Professionalism"
 											img="https://i.imgur.com/mwZsxnO.png"
 											desc="We will conduct ourselves with integrity, expertise, respect, and excellence."
 										/>
